@@ -22,6 +22,7 @@ class App extends Component {
 	}
 
 	componentWillMount(){
+	 	this.handleMenu("invisible", "visible");
 	 	document.querySelector('body').style.background = 'black';
 	}
 
