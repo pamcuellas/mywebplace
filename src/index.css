@@ -24,12 +24,12 @@
   src: local('Prompt'), url('./fonts/Prompt-Regular.ttf') format('truetype');
 }
 
-@font-face {
+/*@font-face {
     font-family: GraublauWeb;
     font-weight: bold;
     src: url("./fonts/AGaramondPro-Bold.otf") format("opentype");
 }
-/* EXAMPLE TO SUPORT MANY BROWSERS
+*//* EXAMPLE TO SUPORT MANY BROWSERS
 font-face {
     font-family: GraublauWeb;
     src: url("webfont.eot");  IE9 Compat Modes 
@@ -111,14 +111,9 @@ body {
 
 .linkMenu:hover 
 {
-/*  color: #204056; 
-  font-weight: bolder;
-*/
   color: #000000;
   text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.3);
   font-weight: bolder;
-
-
 }
 
 .linkMenu > i {
@@ -352,42 +347,32 @@ footer a i  {
 @media screen and (max-width: 700px) {
 
   .navbar {
-    background-color: currentColor;
   }
 
   .linkMenu {
-    font-size: 17px;
   }
 
   .firstmenu {
-    margin-left: 25px;
   }
 
   .linkMenu > i {
-    margin-right: 7px;
   }
 
   .title {
-    margin-top: 40px;
   }
 
   footer {
-    position: absolute;
-    background-color: currentColor;
+    display: flex;
+    flex-direction: line;
+    justify-content: center;
     align-items: center;
+    position: relative;
   }
 
   footer p {
-    text-align: center;
-    font-size: 12px;
-    padding: 7px;
   }
 
   footer ul li {
-    margin-right: 8px; 
-    margin-bottom: 8px; 
-    font-size: 12px;
-    padding: 7px;
   }
 
 }
@@ -395,41 +380,27 @@ footer a i  {
 @media screen and (max-width: 500px) {
 
   .linkMenu {
-    font-size: 16px;
   }
 
 
   .navbar {
-    display: contents;
-    align-content: center;
   }
   .firstmenu {
-    margin-bottom: 5px;
-    margin-top: 5px;
   }
 
   .secondmenu {
-    margin-left: 15px;
   }
 
   .title {
-    margin-top: 5px;
   }
 
   footer {
-    align-items: center;
   }
 
   footer p {
-    text-align: center;
-    margin-bottom: 0px;
-    padding: 5px;
   }
 
   footer ul li {
-    margin-right: 8px; 
-    margin-bottom: 8px; 
-    padding: 5px;
   }
 
 }
@@ -562,26 +533,26 @@ footer a i  {
     Each list item needs a background-image and the last four need an animation-delay (this way they all fire off one after the other in ten second intervals):
     */
     .slideshow li:nth-child(1) { 
-      background-image: url(./images/wind-energy-karsten-wurth-short-min.jpg);  
+      background-image: url(./images/wind-energy-rawfilm-.jpg);  
     }
     .slideshow li:nth-child(2) { 
-      background-image: url(./images/wind-energy-constantine-fountos.jpg);  
+      background-image: url(./images/wind-energy-karsten-wurth.jpg);  
       animation-delay: 10s; 
     }
     .slideshow li:nth-child(3) { 
-      background-image: url(./images/wind-energy-tim-vanderhoydonck.jpg);  
+      background-image: url(./images/wind-energy-constantine-fountos.jpg);  
       animation-delay: 20s; 
     }
     .slideshow li:nth-child(4) { 
-      background-image: url(./images/wind-energy-bert-sz.jpg);  
+      background-image: url(./images/wind-energy-tim-vanderhoydonck.jpg);  
       animation-delay: 30s; 
     }
     .slideshow li:nth-child(5) { 
-      background-image: url(./images/wind-energy-jason-blackeye-.jpg);  
+      background-image: url(./images/wind-energy-bert-sz.jpg);  
       animation-delay: 40s; 
     }
     .slideshow li:nth-child(6) { 
-      background-image: url(./images/wind-energy-rawfilm-.jpg);  
+      background-image: url(./images/wind-energy-jason-blackeye-.jpg);  
       animation-delay: 50s; 
     }
     .slideshow li:nth-child(7) { 
