@@ -1,0 +1,672 @@
+@import url(https://use.fontawesome.com/releases/v5.3.1/css/all.css);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:600|Muli|Source+Sans+Pro|Raleway|Open+Sans|Roboto|Montserrat);
+
+/* General Styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Source Sans Pro', sans-serif;  
+}   
+
+.visible {
+  visibility: visible;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+@font-face {
+  font-family: 'Prompt';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Prompt'), url('./fonts/Prompt-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: GraublauWeb;
+    font-weight: bold;
+    src: url("./fonts/AGaramondPro-Bold.otf") format("opentype");
+}
+/* EXAMPLE TO SUPORT MANY BROWSERS
+font-face {
+    font-family: GraublauWeb;
+    src: url("webfont.eot");  IE9 Compat Modes 
+    src: url("webfont.eot?#iefix") format("embedded-opentype"),  IE6-IE8 
+         url("webfont.woff") format("woff"),  Modern Browsers 
+         url("webfont.ttf")  format("truetype"),  Safari, Android, iOS 
+         url("webfont.svg#svgFontName") format("svg");  Legacy iOS 
+}*/
+
+
+body {
+/*  background-color: #292929; /*#232526;*/
+  color: #afb1d3;
+  font-family: 'Prompt', serif;
+}
+
+.app {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  border: 0px solid white;
+}
+
+/**************  MENUS/Navbar  ****************/ 
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width:100%;
+  height: 50px;
+  position: fixed;
+  z-index: 1001;
+}
+
+.navbar .firstmenu a {
+  text-decoration-line: none;
+  font-size: 1.5em;
+}
+
+.secondmenu {
+  margin-left: 20px;
+  font-size: 15px;
+}
+
+
+.navbar .fa-bars {
+  transition: all 0.4s ease-out;  
+  transition: color 0.4s ease-out;
+}
+
+.navbar .fa-bars:hover {
+  color: #FFFFFF;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3)
+}
+
+.linkMenu {
+  text-decoration: none;
+  margin-right: 20px;
+  margin-left: 5px;
+  display: inline-flex;
+  transition: all 0.5s ease-out;  
+  transition: color 0.5s ease-out;
+  font-family: 'Montserrat', sans-serif;
+  /*font-family: 'Prompt', serif;*/
+  /*font-family: 'GraublauWeb';*/
+  letter-spacing: 0.10em;
+  color: white;
+  text-transform: uppercase;
+ /* text-decoration-line: underline;
+  text-underline-position: under;*/
+  font-size: 0.8em;
+}
+
+.linkMenu:hover 
+{
+/*  color: #204056; 
+  font-weight: bolder;
+*/
+  color: #000000;
+  text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.3);
+  font-weight: bolder;
+
+
+}
+
+.linkMenu > i {
+  margin-right: 4px;
+}
+
+.color {
+  color: #000000;
+}
+
+/*.data {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;
+  width: 18.75rem;
+  height: 100%;
+  min-height: 38.125rem;
+  border-style: solid;
+  border-color: #d7dcd2;
+  border-width: 0;
+  border-right-width: 1px;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  margin-left: -18.75rem;
+  background-color: #e0e1ee
+}
+*/
+.profile{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.personaldata {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 20%; 
+  font-size: 1.5em;
+}
+
+.photo {
+  /*width: 100%;*/
+}
+
+ 
+.photo img {
+  max-width: 40%;
+  min-width: 200px;
+  border-radius: 20%;
+  border: 5px solid #2c3e50;
+  margin-left: 10px;
+  margin-right: 10px;
+  /*padding: 0.5px;*/
+  /*box-shadow: 2px 2px 2px 2px #dce4eb;*/
+}
+
+.container{
+  width: 100%;
+  min-height: 100%;
+  max-width: 70rem; /*52.5rem;*/
+  margin: 0 auto;
+}
+
+ul {
+  list-style: none; /* to remove the bullets */
+}
+
+
+/*Footer Section*/
+footer {
+  bottom:0;
+  position:fixed;
+  width:100%;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+/* Courtesy */
+footer p:not(.rights) {
+  text-transform: uppercase;
+  font-weight: 100;
+  font-size: 0.7em;
+  opacity: 0.9; 
+  align-self: center;
+  margin-left: 20px;
+  color: #f9f9f9;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0.13em;
+}
+footer p a {
+  color: white;
+  text-decoration: none; 
+  letter-spacing: 0.1em;
+  color: #FFFFFF; /* #d8d8d8; 909090;*/ 
+  font-family: 'Montserrat', sans-serif;
+  transition: all 0.5s ease-out;  
+  transition: color 0.5s ease-out;
+}
+footer p a:hover {
+  color: #000000;
+  text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.3)
+}
+
+
+/* social */
+footer ul {
+  display: flex;
+  align-items: flex-end; 
+  margin-right: 15px;
+}
+footer ul li {
+  text-align: center;
+  margin: 5px;
+  padding-left: 7px;
+  font-size: 12px;
+}
+footer .fab{
+  transition: all 0.5s ease-out;  
+  transition: color 0.5s ease-out;
+  color: #FFFFFF;
+}
+footer .fab:hover{
+  color: #000000;
+  text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.3)
+}
+footer a i  {
+  margin: 0; 
+  padding: 0; 
+  width: 30px; 
+  height: 30px;
+}
+
+
+.rights {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 10px;
+  text-transform: none;
+}
+
+
+
+/*********************** Content ************************/
+
+.content {
+  display: block; /*  flex;*/ 
+  width: 100%;
+  text-align: center;
+  flex-direction: column;
+  }
+
+.content-content-area {
+  margin-top: 20px;
+}
+
+
+/*************** ANIMATION ********************/
+
+.title {
+  display: relative;
+  flex-direction: row;
+  justify-content: center;
+  font: bold 32px "Open Sans", sans-serif;
+  width: 100%;
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
+.title p {
+  display: inline-block;
+  vertical-align: top;
+  align-items: center;
+  align-content: center;
+  margin-left: -100px; 
+}
+
+.word {
+  position: absolute;
+  opacity: 0;
+}
+
+.letter {
+  display: inline-block;
+  position: relative;
+  float: left;
+  transform: translateZ(25px);
+  transform-origin: 50% 50% 25px;
+}
+
+.letter.out {
+  transform: rotateX(90deg);
+  transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.letter.behind {
+  transform: rotateX(-90deg);
+}
+
+.letter.in {
+  transform: rotateX(0deg);
+  transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.wisteria {
+  color: #8e44ad;
+}
+
+.belize {
+  color: #2980b9;
+}
+
+.pomegranate {
+  color: #c0392b;
+}
+
+.green {
+  color: #16a085;
+}
+
+.midnight {
+  color: #2c3e50;
+}
+
+.white {
+  color: white;
+}
+
+.gray1 {
+  color: #8d8d8d;
+}
+.gray2 {
+  color: #9a9a9a;
+}
+.gray3 {
+  color: #a6a6a6;
+}
+.gray4 {
+  color: #b3b3b3;
+}
+.gray5 {
+  color: #c0c0c0;
+}
+.gray6 {
+  color: #cdcdcd;
+}
+.gray7 {
+  color: #d9d9d9;
+}
+
+
+/* MY @MEDIA */ 
+@media screen and (max-width: 700px) {
+
+  .navbar {
+    background-color: currentColor;
+  }
+
+  .linkMenu {
+    font-size: 17px;
+  }
+
+  .firstmenu {
+    margin-left: 25px;
+  }
+
+  .linkMenu > i {
+    margin-right: 7px;
+  }
+
+  .title {
+    margin-top: 40px;
+  }
+
+  footer {
+    position: absolute;
+    background-color: currentColor;
+    align-items: center;
+  }
+
+  footer p {
+    text-align: center;
+    font-size: 12px;
+    padding: 7px;
+  }
+
+  footer ul li {
+    margin-right: 8px; 
+    margin-bottom: 8px; 
+    font-size: 12px;
+    padding: 7px;
+  }
+
+}
+
+@media screen and (max-width: 500px) {
+
+  .linkMenu {
+    font-size: 16px;
+  }
+
+
+  .navbar {
+    display: contents;
+    align-content: center;
+  }
+  .firstmenu {
+    margin-bottom: 5px;
+    margin-top: 5px;
+  }
+
+  .secondmenu {
+    margin-left: 15px;
+  }
+
+  .title {
+    margin-top: 5px;
+  }
+
+  footer {
+    align-items: center;
+  }
+
+  footer p {
+    text-align: center;
+    margin-bottom: 0px;
+    padding: 5px;
+  }
+
+  footer ul li {
+    margin-right: 8px; 
+    margin-bottom: 8px; 
+    padding: 5px;
+  }
+
+}
+
+
+
+/* ========================================================*/
+
+    ul {
+      list-style: none; /* to remove the bullets */
+    }
+
+    
+
+    /* Header Styles using flex-box*/
+    .landing-header {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; /* Seems to align horizontally and vertically   */
+      animation: 24s fadein 4s forwards;
+      opacity: 0;
+      top: 30vh;
+      position: relative; 
+    }
+
+    .landing-header h1 {
+      color: #fff; 
+      margin-bottom: 20px;
+      font-family: 'Montserrat', sans-serif;
+    }  
+
+    @keyframes fadein {
+      50%
+      {
+        opacity: 1;
+      }
+      100%
+      {
+        opacity: 0;
+      }
+    }
+
+
+    @media (max-width: 800px) {
+      #landing-header {
+        padding: 20px 50px;
+        flex-direction: column;
+      }
+
+      #landing-header h2 {
+        margin-bottom: 15px;
+      }
+
+    } 
+
+
+
+
+
+
+    /*Create a new CSS file in /public/stylesheets named landing.css
+    Open landing.css and set the body's background-color to black*/
+/*    body {
+      background-color: #000;
+    }
+*/    /*Now we need to position the welcome text and view all campgrounds buton:*/
+   /* #landing-header {
+      z-index: 1;
+      position: relative;
+      text-align: center;
+      padding-top: 40vh;
+    }*/
+    /*We set the z-index to 1 so all of the elements inside the landing-header div will be in front of the background images
+
+    The position is set to relative so we can use the z-index property; the default position value is static, which ignores z-index
+
+    We use text-align to center our text and button
+
+    We use padding-top to vertically center our div, since it's contents take up quite a bit of space we use 40vh (view height) instead of 50, this 
+    way the content looks more visually centered
+
+    We also need to change the h1 text color to white:*/
+
+    /*#landing-header h1 {
+      color: #fff;
+        font-family: 'Muli', sans-serif;
+      font-family: 'Source Sans Pro', sans-serif;  
+      font-style: italic;
+      font-family: 'Raleway', sans-serif;
+    }
+*/
+
+    /*The unordered list and its list items that we added to landing.ejs need some styling to make them fit across the entire page
+    First we'll style the unordered list:*/
+    .slideshow { 
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: 0;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    /*This will fix the ul to the window, positioning it in the top left corner and filling the entire screen by setting width and height to 
+    100%; we set the z-index to 0 to keep the background images behind the rest of the page's content; list-style is set to none in order to 
+    hide the bullet points from the list's default styling; margin and padding are removed entirely
+
+    Now we can style all of the list items:
+    */
+    .slideshow li { 
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-size: cover;
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+      opacity: 0;
+      z-index: 0;
+      animation: imageAnimation 110s linear infinite; 
+    }
+    /*Notice the animation property at the bottom of this rule, this is how we add an animation to an element; in this case we 
+    have an animation named imageAnimation that lasts for 50s (seconds), keeps linear timing    (the whole animation runs at the 
+      same speed), and loops an infinite number of times
+
+    Each list item needs a background-image and the last four need an animation-delay (this way they all fire off one after the other in ten second intervals):
+    */
+    .slideshow li:nth-child(1) { 
+      background-image: url(./images/wind-energy-karsten-wurth.jpg);  
+    }
+    .slideshow li:nth-child(2) { 
+      background-image: url(./images/wind-energy-constantine-fountos.jpg);  
+      animation-delay: 10s; 
+    }
+    .slideshow li:nth-child(3) { 
+      background-image: url(./images/wind-energy-tim-vanderhoydonck.jpg);  
+      animation-delay: 20s; 
+    }
+    .slideshow li:nth-child(4) { 
+      background-image: url(./images/wind-energy-bert-sz.jpg);  
+      animation-delay: 30s; 
+    }
+    .slideshow li:nth-child(5) { 
+      background-image: url(./images/wind-energy-jason-blackeye-.jpg);  
+      animation-delay: 40s; 
+    }
+    .slideshow li:nth-child(6) { 
+      background-image: url(./images/wind-energy-rawfilm-.jpg);  
+      animation-delay: 50s; 
+    }
+    .slideshow li:nth-child(7) { 
+      background-image: url(./images/wind-energy-rawfilm.jpg);  
+      animation-delay: 60s; 
+    }
+
+    .slideshow li:nth-child(8) { 
+      background-image: url(./images/wind-energy-andrea-boldizsar.jpg);  
+      animation-delay: 70s; 
+    }
+    .slideshow li:nth-child(9) { 
+      background-image: url(./images/wind-energy-jason-blackeye.jpg);  
+      animation-delay: 80s; 
+    }
+    .slideshow li:nth-child(10) { 
+      background-image: url(./images/wind-energy-master-wen.jpg);  
+      animation-delay: 90s; 
+    }
+
+
+    /*Now we can create the keyframes for the animation:*/
+    @keyframes imageAnimation { 
+      0% { 
+        opacity: 0; 
+        animation-timing-function: ease-in;
+      }
+      10% {
+        opacity: 1;
+        animation-timing-function: ease-out;
+      }
+      20% {
+        opacity: 1
+      }
+      30% {
+        opacity: 0
+      }
+    }
+    /*The animation will be named imageAnimation, which matches with the value from our animation property in the .slideshow (unordered list) rule
+
+    From 0% to 10% (the beginning of our animation) the list item begins changing it's opacity from 0 to 1 (invisible to visible)
+    the animation-timing-function is set to ease-in at 0% and ease-out and 10%, this makes for a more smooth fade-in (read more about this here)
+    The list item's opacity then stays at 1 until it reaches 20% at which point it fades back out, reaching 0 at 30% and staying at 0 for the remainder
+    of the animation
+    If we have 5 background images visible for 5 seconds each, then the time it takes to fade the image in and keep it visible is 10 seconds with a 5 second 
+    crossfade/fadeout into the next image; The entire animation cycle for all 5 images takes 50 seconds total
+    100% divided by 5 is 20% so each image's fadein and visibility should last 20% of the cycle; half of 20% is 10%, that is why our fade in is from 0% to
+    10%, then we keep it visible until 20% is reached and begin the fadeout from 20% to 30%, the 5 second fadeout overlaps the next image's 5 second fadein,
+     which is what creates the crossfade effect
+    Lastly, we need to add animation support for older browsers; we've already added the modernizr CDN to our landing page's head element, now we just need 
+    the following rule in our landing.css:*/
+
+    /* Older browser support - .no-cssanimations class added by modernizr */
+    .no-cssanimations .slideshow li {
+        opacity: 1;
+    }
+    /*And that's it!
+    You now have a full screen background slider. If you're interested in learning more about animations with CSS checkout this tutorial*/
+
+
+
