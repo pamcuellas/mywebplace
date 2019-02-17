@@ -348,33 +348,6 @@ footer a i  {
   color: #2c3e50;
 }
 
-.white {
-  color: white;
-}
-
-.gray1 {
-  color: #8d8d8d;
-}
-.gray2 {
-  color: #9a9a9a;
-}
-.gray3 {
-  color: #a6a6a6;
-}
-.gray4 {
-  color: #b3b3b3;
-}
-.gray5 {
-  color: #c0c0c0;
-}
-.gray6 {
-  color: #cdcdcd;
-}
-.gray7 {
-  color: #d9d9d9;
-}
-
-
 /* MY @MEDIA */ 
 @media screen and (max-width: 700px) {
 
@@ -589,14 +562,14 @@ footer a i  {
     Each list item needs a background-image and the last four need an animation-delay (this way they all fire off one after the other in ten second intervals):
     */
     .slideshow li:nth-child(1) { 
-      background-image: url(./images/wind-energy-karsten-wurth.jpg);  
+      background-image: url(./images/wind-energy-constantine-fountos.jpg);  
     }
     .slideshow li:nth-child(2) { 
-      background-image: url(./images/wind-energy-constantine-fountos.jpg);  
+      background-image: url(./images/wind-energy-tim-vanderhoydonck.jpg);  
       animation-delay: 10s; 
     }
     .slideshow li:nth-child(3) { 
-      background-image: url(./images/wind-energy-tim-vanderhoydonck.jpg);  
+      background-image: url(./images/wind-energy-karsten-wurth.jpg);  
       animation-delay: 20s; 
     }
     .slideshow li:nth-child(4) { 
