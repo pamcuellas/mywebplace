@@ -562,14 +562,14 @@ footer a i  {
     Each list item needs a background-image and the last four need an animation-delay (this way they all fire off one after the other in ten second intervals):
     */
     .slideshow li:nth-child(1) { 
-      background-image: url(./images/wind-energy-constantine-fountos.jpg);  
+      background-image: url(./images/wind-energy-karsten-wurth-short-min.jpg);  
     }
     .slideshow li:nth-child(2) { 
-      background-image: url(./images/wind-energy-tim-vanderhoydonck.jpg);  
+      background-image: url(./images/wind-energy-constantine-fountos.jpg);  
       animation-delay: 10s; 
     }
     .slideshow li:nth-child(3) { 
-      background-image: url(./images/wind-energy-karsten-wurth.jpg);  
+      background-image: url(./images/wind-energy-tim-vanderhoydonck.jpg);  
       animation-delay: 20s; 
     }
     .slideshow li:nth-child(4) { 
