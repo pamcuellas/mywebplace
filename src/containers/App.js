@@ -26,7 +26,7 @@ class App extends Component {
 	}
 
 	componentDidMount(){
-	 	this.handleMenu("invisible", "visible");
+	 	this.handleMenu("visible", "invisible");
 	 	//manageNavbar ();
 	}
 
