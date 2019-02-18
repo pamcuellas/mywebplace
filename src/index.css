@@ -365,7 +365,7 @@ footer a i  {
     justify-content: space-around;  /* To really put spaces between the items, in this case "divs", must be combined with  display:; */
     flex-flow: row;/* to put all items (divs) in colum mode */
     flex-wrap: wrap; /* When the vertical space becomes to short to support lines in column mode, lines come to the right to fit;*/
-    position: relative;
+    position: fixed;
   }
 
   footer p:not(.rights) {
