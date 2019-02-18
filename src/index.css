@@ -360,27 +360,78 @@ footer a i  {
 
   .title {
   }
-
   footer {
-    display: flex;
-    flex-direction: line;
-    justify-content: center;
-    align-items: center;
+    display: flex;  /* To really put spaces between the items, in this case "divs", must be combined with  justify-content:*/
+    justify-content: space-around;  /* To really put spaces between the items, in this case "divs", must be combined with  display:; */
+    flex-flow: row;/* to put all items (divs) in colum mode */
+    flex-wrap: wrap; /* When the vertical space becomes to short to support lines in column mode, lines come to the right to fit;*/
     position: relative;
   }
 
-  footer p {
+  footer p:not(.rights) {
+    margin-left: unset;
+    margin-top: 5px;
+  }
+
+  footer ul {
+    margin-right: 0;
   }
 
   footer ul li {
+    margin: 0 auto;
+    margin-right: 0;
   }
 
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 530px) {
+
+  .secondmenu {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
 
   .linkMenu {
+    font-size: 0.75em;
+    margin-top: 3px;
+    margin-bottom: 3px;
   }
+
+  footer {
+    height: 65px;
+  }  
+
+  footer p:not(.rights) {
+    font-size: 0.6em;
+  }
+
+  .rights {
+    font-size: 0.6em;
+    height: 27%;
+  }
+
+  footer ul li {
+    font-size: 0.7em;
+  }
+
+
+/*.linkMenu {
+  text-decoration: none;
+  margin-right: 20px;
+  margin-left: 5px;
+  display: inline-flex;
+  transition: all 0.5s ease-out;  
+  transition: color 0.5s ease-out;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0.10em;
+  color: white;
+  text-transform: uppercase;
+  font-size: 0.8em;
+}
+*/
+
+
 
 
   .navbar {

@@ -27,7 +27,7 @@ class App extends Component {
 
 	componentDidMount(){
 	 	this.handleMenu("visible", "invisible");
-	 	//manageNavbar ();
+	 		 	//manageNavbar ();
 	}
 
 	handleMenu = (classToRemove, classToAdd, page = this.state.currPage) => {
@@ -39,17 +39,21 @@ class App extends Component {
 
  		// Show/hide navbar
 		linkMenu.forEach((e, i, a) => {
-			e.classList.replace(classToRemove, classToAdd);
+			e.classList.remove(classToRemove);
+			e.classList.add( classToAdd);
+			//e.classList.replace(classToRemove, classToAdd);
 		});
 
 		// Hide/Show footer
  		const social = document.querySelectorAll(".social");
 		social.forEach((e, i, a) => {
-			e.classList.replace(classToRemove, classToAdd);
+			e.classList.remove(classToRemove);
+			e.classList.add( classToAdd);
 		});
 		const courtesy = document.querySelectorAll(".courtesy");
 		courtesy.forEach((e, i, a) => {
-			e.classList.replace(classToRemove, classToAdd);
+			e.classList.remove(classToRemove);
+			e.classList.add( classToAdd);
 		});
 
 		// Change menuControl image, body, navbar and footer backgrounds based on visible/invisible options and page.
@@ -64,8 +68,11 @@ class App extends Component {
 			this.setState( state => ({ menuControl:  {image: <i className="fas fa-bars color" ></i>} }));
 		}
 
-		document.querySelector('.navbar').style.background = navbarBackground;
-		document.querySelector('footer').style.background = footerBackground;
+		// document.querySelector('.navbar').style.background = navbarBackground;
+		// document.querySelector('footer').style.background = footerBackground;
+
+		document.querySelector('.navbar').setAttribute("style", "background:" + navbarBackground);
+		document.querySelector('footer').setAttribute("style", "background:" + footerBackground);
 	}
 
 	onHideMenu(e) {
