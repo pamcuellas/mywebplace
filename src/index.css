@@ -1,13 +1,16 @@
 @import url(https://use.fontawesome.com/releases/v5.3.1/css/all.css);
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:600|Muli|Source+Sans+Pro|Raleway|Open+Sans|Roboto|Montserrat);
+@import url(https://fonts.googleapis.com/css?family=Great+Vibes|Open+Sans:600|Muli|Source+Sans+Pro|Raleway|Open+Sans|Roboto|Montserrat);
 
-/* General Styles */
-
+/******** General Styles *********/
 * {
   margin: 0;
   padding: 0;
   font-family: 'Source Sans Pro', sans-serif;  
 }   
+
+html, body{
+  height: 100%;
+}
 
 .visible {
   visibility: visible;
@@ -23,13 +26,13 @@
   font-weight: normal;
   src: local('Prompt'), url('./fonts/Prompt-Regular.ttf') format('truetype');
 }
-
-/*@font-face {
+/*
+@font-face {
     font-family: GraublauWeb;
     font-weight: bold;
     src: url("./fonts/AGaramondPro-Bold.otf") format("opentype");
-}
-*//* EXAMPLE TO SUPORT MANY BROWSERS
+}*/
+/* EXAMPLE TO SUPORT MANY BROWSERS
 font-face {
     font-family: GraublauWeb;
     src: url("webfont.eot");  IE9 Compat Modes 
@@ -37,25 +40,25 @@ font-face {
          url("webfont.woff") format("woff"),  Modern Browsers 
          url("webfont.ttf")  format("truetype"),  Safari, Android, iOS 
          url("webfont.svg#svgFontName") format("svg");  Legacy iOS 
-}*/
-
+}
+*/
 
 body {
-/*  background-color: #292929; /*#232526;*/
-  color: #afb1d3;
+  color: #a6a6a6;
   font-family: 'Prompt', serif;
+  font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+  /*line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px)/(1600 - 300)));*/
 }
 
-.app {
+
+#root, .app{
+  min-height: 100%;
+  height: 100%;
+}
+
+.container{
+  min-height: 100%;
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  position: absolute;
-  margin: 0;
-  padding: 0;
-  border: 0px solid white;
 }
 
 /**************  MENUS/Navbar  ****************/ 
@@ -66,20 +69,20 @@ body {
   align-items: center;
   width:100%;
   height: 50px;
+  top: 0;
   position: fixed;
   z-index: 1001;
 }
 
 .navbar .firstmenu a {
   text-decoration-line: none;
-  font-size: 1.5em;
+  font-size: 25px;
 }
 
 .secondmenu {
   margin-left: 20px;
   font-size: 15px;
 }
-
 
 .navbar .fa-bars {
   transition: all 0.4s ease-out;  
@@ -124,25 +127,6 @@ body {
   color: #000000;
 }
 
-/*.data {
-  display: flex;
-  flex-direction: column;
-  justify-content: center; 
-  align-items: center;
-  width: 18.75rem;
-  height: 100%;
-  min-height: 38.125rem;
-  border-style: solid;
-  border-color: #d7dcd2;
-  border-width: 0;
-  border-right-width: 1px;
-  position: fixed;
-  z-index: 1000;
-  top: 0;
-  margin-left: -18.75rem;
-  background-color: #e0e1ee
-}
-*/
 .profile{
   display: flex;
   flex-direction: row;
@@ -160,7 +144,6 @@ body {
 .photo {
   /*width: 100%;*/
 }
-
  
 .photo img {
   max-width: 40%;
@@ -173,36 +156,34 @@ body {
   /*box-shadow: 2px 2px 2px 2px #dce4eb;*/
 }
 
-.container{
-  width: 100%;
-  min-height: 100%;
-  max-width: 70rem; /*52.5rem;*/
-  margin: 0 auto;
-}
-
 ul {
   list-style: none; /* to remove the bullets */
 }
 
+.main {
+  overflow: auto;
+  padding-bottom: 50px;
+}
 
 /*Footer Section*/
 footer {
-  bottom:0;
-  position:fixed;
+  position:relative;
   width:100%;
   height: 50px;
+  margin-top: -50px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  clear: both;
+  z-index: 1002;
 }
-
 
 /* Courtesy */
 footer p:not(.rights) {
   text-transform: uppercase;
   font-weight: 100;
-  font-size: 0.7em;
+  font-size: 11px;
   opacity: 0.9; 
   align-self: center;
   margin-left: 20px;
@@ -253,19 +234,15 @@ footer a i  {
   height: 30px;
 }
 
-
 .rights {
   font-family: 'Montserrat', sans-serif;
   font-size: 10px;
   text-transform: none;
 }
 
-
-
 /*********************** Content ************************/
-
 .content {
-  display: block; /*  flex;*/ 
+  display: flex; 
   width: 100%;
   text-align: center;
   flex-direction: column;
@@ -275,9 +252,7 @@ footer a i  {
   margin-top: 20px;
 }
 
-
 /*************** ANIMATION ********************/
-
 .title {
   display: relative;
   flex-direction: row;
@@ -345,323 +320,272 @@ footer a i  {
 
 /* MY @MEDIA */ 
 @media screen and (max-width: 700px) {
-
-  .navbar {
-  }
-
-  .linkMenu {
-  }
-
-  .firstmenu {
-  }
-
-  .linkMenu > i {
-  }
-
-  .title {
-  }
-  footer {
-    display: flex;  /* To really put spaces between the items, in this case "divs", must be combined with  justify-content:*/
-    justify-content: space-around;  /* To really put spaces between the items, in this case "divs", must be combined with  display:; */
-    flex-flow: row;/* to put all items (divs) in colum mode */
-    flex-wrap: wrap; /* When the vertical space becomes to short to support lines in column mode, lines come to the right to fit;*/
-    position: fixed;
-  }
-
-  footer p:not(.rights) {
-    margin-left: unset;
-    margin-top: 5px;
-  }
-
-  footer ul {
-    margin-right: 0;
-  }
-
-  footer ul li {
-    margin: 0 auto;
-    margin-right: 0;
-  }
+    footer {
+      display: flex;  /* To really put spaces between the items, in this case "divs", must be combined with  justify-content:*/
+      justify-content: space-around;  /* To really put spaces between the items, in this case "divs", must be combined with  display:; */
+      flex-flow: row;/* to put all items (divs) in colum/row mode */
+      flex-wrap: wrap; /* When the vertical space becomes to short to support lines in column mode, lines come to the right to fit;*/
+    }
+    footer p:not(.rights) {
+      margin-left: unset;
+      margin-top: 7px;
+    }
+    footer ul {
+      margin-right: 0;
+    }
+    footer ul li {
+      margin: 0 auto;
+      margin-right: 7px;
+      padding-left: 0;
+    }
+    .rights {
+      margin-left: 7px;
+    }
 
 }
-
 @media screen and (max-width: 530px) {
-
-  .secondmenu {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-  }
-
-  .linkMenu {
-    font-size: 0.75em;
-    margin-top: 3px;
-    margin-bottom: 3px;
-  }
-
-  footer {
-    height: 65px;
-  }  
-
-  footer p:not(.rights) {
-    font-size: 0.6em;
-  }
-
-  .rights {
-    font-size: 0.6em;
-    height: 27%;
-  }
-
-  footer ul li {
-    font-size: 0.7em;
-  }
-
-
-/*.linkMenu {
-  text-decoration: none;
-  margin-right: 20px;
-  margin-left: 5px;
-  display: inline-flex;
-  transition: all 0.5s ease-out;  
-  transition: color 0.5s ease-out;
-  font-family: 'Montserrat', sans-serif;
-  letter-spacing: 0.10em;
-  color: white;
-  text-transform: uppercase;
-  font-size: 0.8em;
-}
-*/
-
-
-
-
-  .navbar {
-  }
-  .firstmenu {
-  }
-
-  .secondmenu {
-  }
-
-  .title {
-  }
-
-  footer {
-  }
-
-  footer p {
-  }
-
-  footer ul li {
-  }
-
-}
-
-
-
-/* ========================================================*/
-
-    ul {
-      list-style: none; /* to remove the bullets */
-    }
-
-    
-
-    /* Header Styles using flex-box*/
-    .landing-header {
+    .secondmenu {
       display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center; /* Seems to align horizontally and vertically   */
-      animation: 24s fadein 4s forwards;
-      opacity: 0;
-      top: 30vh;
-      position: relative; 
+      justify-content: space-around;
+      flex-wrap: wrap;
     }
-
-    .landing-header h1 {
-      color: #fff; 
-      margin-bottom: 20px;
-      font-family: 'Montserrat', sans-serif;
+    .linkMenu {
+      font-size: 0.75em;
+      margin-top: 3px;
+      margin-bottom: 3px;
+    }
+    footer {
+      height: 65px;
     }  
-
-    @keyframes fadein {
-      50%
-      {
-        opacity: 1;
-      }
-      100%
-      {
-        opacity: 0;
-      }
+    footer p:not(.rights) {
+      font-size: 0.6em;
+    }
+    .rights {
+      font-size: 0.6em;
+      height: 27%;
+    }
+    footer ul li {
+      font-size: 0.7em;
     }
 
+}
+  
+/* =======================================================*/
+/*                      LANGING PAGE                      */
+/* =======================================================*/
 
-    @media (max-width: 800px) {
-      #landing-header {
-        padding: 20px 50px;
-        flex-direction: column;
-      }
+ul {
+  list-style: none; /* to remove the bullets */
+}
 
-      #landing-header h2 {
-        margin-bottom: 15px;
-      }
+.slide{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+}
 
-    } 
+/* Header Styles using flex-box*/
+.slide-header {
+  padding-top: 80px;
+  position: relative;
+  overflow: hidden;
+  margin-top: 100px;
+}
+
+
+.slide-header h1 {
+  visibility: hidden;;
+  margin-top: 3%;
+  z-index: 1002;
+  /*font-size: 3rem;*/
+  color: #F4E6FA;
+  text-align: center;
+  letter-spacing: .11em;
+  font-family: 'Great Vibes', cursive; 
+  text-shadow: 2px 2px 2px rgba(255, 0, 255, 0.6);
+  animation: showup 25s ease-in 5s infinite both running;
+  -webkit-animation: showup 25s ease-in 5s infinite both running;
+
+}
+
+h1:hover {
+  font-weight: bolder;
+}
+
+@-webkit-keyframes showup {
+  0% {
+    transform: translateY(300px);  
+    visibility: visible;
+  }
+  80% {
+    opacity: 0.7;
+    transform: translateY(0px);      
+  }
+  90% {
+    opacity: 0.35;      
+  }
+  100% {
+    opacity: 0;      
+  }
+}
+
+@keyframes showup {
+  0% {
+    transform: translateY(300px);  
+    visibility: visible;
+  }
+  25% {
+    transform: translateY(0px);      
+  }
+  80% {
+    opacity: 0.7;
+    transform: translateY(0px);      
+  }
+  90% {
+    opacity: 0.35;      
+  }
+  100% {
+    opacity: 0;      
+  }
+}
 
 
 
+/*The unordered list and its list items that we added to landing.ejs need some styling to make them fit across the entire page
+First we'll style the unordered list:*/
+#slideshow { 
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+/*This will fix the ul to the window, positioning it in the top left corner and filling the entire screen by setting width and height to 
+100%; we set the z-index to 0 to keep the background images behind the rest of the page's content; list-style is set to none in order to 
+hide the bullet points from the list's default styling; margin and padding are removed entirely
 
-
-
-    /*Create a new CSS file in /public/stylesheets named landing.css
-    Open landing.css and set the body's background-color to black*/
-/*    body {
-      background-color: #000;
-    }
-*/    /*Now we need to position the welcome text and view all campgrounds buton:*/
-   /* #landing-header {
-      z-index: 1;
-      position: relative;
-      text-align: center;
-      padding-top: 40vh;
-    }*/
-    /*We set the z-index to 1 so all of the elements inside the landing-header div will be in front of the background images
-
-    The position is set to relative so we can use the z-index property; the default position value is static, which ignores z-index
-
-    We use text-align to center our text and button
-
-    We use padding-top to vertically center our div, since it's contents take up quite a bit of space we use 40vh (view height) instead of 50, this 
-    way the content looks more visually centered
-
-    We also need to change the h1 text color to white:*/
-
-    /*#landing-header h1 {
-      color: #fff;
-        font-family: 'Muli', sans-serif;
-      font-family: 'Source Sans Pro', sans-serif;  
-      font-style: italic;
-      font-family: 'Raleway', sans-serif;
-    }
+Now we can style all of the list items:
 */
+#slideshow li { 
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  opacity: 0;
+  z-index: 0;
+  -webkit-animation: imageAnimation 110s linear infinite; 
+  animation: imageAnimation 110s linear infinite; 
+}
+/*Notice the animation property at the bottom of this rule, this is how we add an animation to an element; in this case we 
+have an animation named imageAnimation that lasts for 50s (seconds), keeps linear timing    (the whole animation runs at the 
+  same speed), and loops an infinite number of times
 
-    /*The unordered list and its list items that we added to landing.ejs need some styling to make them fit across the entire page
-    First we'll style the unordered list:*/
-    .slideshow { 
-      position: fixed;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      left: 0;
-      z-index: 0;
-      list-style: none;
-      margin: 0;
-      padding: 0;
-    }
-    /*This will fix the ul to the window, positioning it in the top left corner and filling the entire screen by setting width and height to 
-    100%; we set the z-index to 0 to keep the background images behind the rest of the page's content; list-style is set to none in order to 
-    hide the bullet points from the list's default styling; margin and padding are removed entirely
+Each list item needs a background-image and the last four need an animation-delay (this way they all fire off one after the other in ten second intervals):
+*/
+#slideshow li:nth-child(1) { 
+  background-image: url(./images/wind-energy-kai-gradert-min.jpg);  /* compacted */ 
+}
+#slideshow li:nth-child(2) { 
+  background-image: url(./images/wind-energy-bert-sz.jpg);  /* compacted */
+  animation-delay: 10s; 
+}
+#slideshow li:nth-child(3) { 
+  background-image: url(./images/wind-energy-constantine-fountos.jpg);  /* compacted */ 
+  animation-delay: 20s; 
+}
+#slideshow li:nth-child(4) { 
+  background-image: url(./images/wind-energy-tim-vanderhoydonck.jpg);  /* compacted */ 
+  animation-delay: 30s; 
+}
+#slideshow li:nth-child(5) { 
+  background-image: url(./images/wind-energy-karsten-wurth.jpg); /* compacted */ 
+  animation-delay: 40s; 
+}
+#slideshow li:nth-child(6) { 
+  background-image: url(./images/wind-energy-philippe-bourhis-min.jpg); /* wind-energy-jason-blackeye-.jpg);  */ 
+  animation-delay: 50s; 
+}
+#slideshow li:nth-child(7) { 
+  background-image: url(./images/wind-energy-anna-jimenez-calaf-min.jpg); /*wind-energy-rawfilm.jpg);  */
+  animation-delay: 60s; 
+}
 
-    Now we can style all of the list items:
-    */
-    .slideshow li { 
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      top: 0;
-      left: 0;
-      background-size: cover;
-      background-position: 50% 50%;
-      background-repeat: no-repeat;
-      opacity: 0;
-      z-index: 0;
-      animation: imageAnimation 110s linear infinite; 
-    }
-    /*Notice the animation property at the bottom of this rule, this is how we add an animation to an element; in this case we 
-    have an animation named imageAnimation that lasts for 50s (seconds), keeps linear timing    (the whole animation runs at the 
-      same speed), and loops an infinite number of times
+#slideshow li:nth-child(8) { 
+  background-image: url(./images/wind-energy-georgi-petrov.jpg);   
+  animation-delay: 70s; 
+}
+#slideshow li:nth-child(9) { 
+  background-image: url(./images/wind-energy-jason-blackeye.jpg);  
+  animation-delay: 80s; 
+}
+#slideshow li:nth-child(10) { 
+  background-image: url(./images/wind-energy-andrea-boldizsar.jpg);  
+  animation-delay: 90s; 
+}
 
-    Each list item needs a background-image and the last four need an animation-delay (this way they all fire off one after the other in ten second intervals):
-    */
-    .slideshow li:nth-child(1) { 
-      background-image: url(./images/wind-energy-rawfilm-.jpg);  
-    }
-    .slideshow li:nth-child(2) { 
-      background-image: url(./images/wind-energy-karsten-wurth.jpg);  
-      animation-delay: 10s; 
-    }
-    .slideshow li:nth-child(3) { 
-      background-image: url(./images/wind-energy-constantine-fountos.jpg);  
-      animation-delay: 20s; 
-    }
-    .slideshow li:nth-child(4) { 
-      background-image: url(./images/wind-energy-tim-vanderhoydonck.jpg);  
-      animation-delay: 30s; 
-    }
-    .slideshow li:nth-child(5) { 
-      background-image: url(./images/wind-energy-bert-sz.jpg);  
-      animation-delay: 40s; 
-    }
-    .slideshow li:nth-child(6) { 
-      background-image: url(./images/wind-energy-jason-blackeye-.jpg);  
-      animation-delay: 50s; 
-    }
-    .slideshow li:nth-child(7) { 
-      background-image: url(./images/wind-energy-rawfilm.jpg);  
-      animation-delay: 60s; 
-    }
+/*Now we can create the keyframes for the animation:*/
+@keyframes imageAnimation { 
+  0% { 
+    opacity: 0; 
+    animation-timing-function: ease-in;
+  }
+  10% {
+    opacity: 1;
+    animation-timing-function: ease-out;
+  }
+  20% {
+    opacity: 1
+  }
+  30% {
+    opacity: 0
+  }
+}
 
-    .slideshow li:nth-child(8) { 
-      background-image: url(./images/wind-energy-andrea-boldizsar.jpg);  
-      animation-delay: 70s; 
-    }
-    .slideshow li:nth-child(9) { 
-      background-image: url(./images/wind-energy-jason-blackeye.jpg);  
-      animation-delay: 80s; 
-    }
-    .slideshow li:nth-child(10) { 
-      background-image: url(./images/wind-energy-master-wen.jpg);  
-      animation-delay: 90s; 
-    }
+@-webkit-keyframes imageAnimation { 
+  0% { 
+    opacity: 0; 
+    animation-timing-function: ease-in;
+  }
+  10% {
+    opacity: 1;
+    animation-timing-function: ease-out;
+  }
+  20% {
+    opacity: 1
+  }
+  30% {
+    opacity: 0
+  }
+}
 
+/*The animation will be named imageAnimation, which matches with the value from our animation property in the #slideshow (unordered list) rule
 
-    /*Now we can create the keyframes for the animation:*/
-    @keyframes imageAnimation { 
-      0% { 
-        opacity: 0; 
-        animation-timing-function: ease-in;
-      }
-      10% {
-        opacity: 1;
-        animation-timing-function: ease-out;
-      }
-      20% {
-        opacity: 1
-      }
-      30% {
-        opacity: 0
-      }
-    }
-    /*The animation will be named imageAnimation, which matches with the value from our animation property in the .slideshow (unordered list) rule
+From 0% to 10% (the beginning of our animation) the list item begins changing it's opacity from 0 to 1 (invisible to visible)
+the animation-timing-function is set to ease-in at 0% and ease-out and 10%, this makes for a more smooth fade-in (read more about this here)
+The list item's opacity then stays at 1 until it reaches 20% at which point it fades back out, reaching 0 at 30% and staying at 0 for the remainder
+of the animation
+If we have 5 background images visible for 5 seconds each, then the time it takes to fade the image in and keep it visible is 10 seconds with a 5 second 
+crossfade/fadeout into the next image; The entire animation cycle for all 5 images takes 50 seconds total
+100% divided by 5 is 20% so each image's fadein and visibility should last 20% of the cycle; half of 20% is 10%, that is why our fade in is from 0% to
+10%, then we keep it visible until 20% is reached and begin the fadeout from 20% to 30%, the 5 second fadeout overlaps the next image's 5 second fadein,
+ which is what creates the crossfade effect
+Lastly, we need to add animation support for older browsers; we've already added the modernizr CDN to our landing page's head element, now we just need 
+the following rule in our landing.css:*/
 
-    From 0% to 10% (the beginning of our animation) the list item begins changing it's opacity from 0 to 1 (invisible to visible)
-    the animation-timing-function is set to ease-in at 0% and ease-out and 10%, this makes for a more smooth fade-in (read more about this here)
-    The list item's opacity then stays at 1 until it reaches 20% at which point it fades back out, reaching 0 at 30% and staying at 0 for the remainder
-    of the animation
-    If we have 5 background images visible for 5 seconds each, then the time it takes to fade the image in and keep it visible is 10 seconds with a 5 second 
-    crossfade/fadeout into the next image; The entire animation cycle for all 5 images takes 50 seconds total
-    100% divided by 5 is 20% so each image's fadein and visibility should last 20% of the cycle; half of 20% is 10%, that is why our fade in is from 0% to
-    10%, then we keep it visible until 20% is reached and begin the fadeout from 20% to 30%, the 5 second fadeout overlaps the next image's 5 second fadein,
-     which is what creates the crossfade effect
-    Lastly, we need to add animation support for older browsers; we've already added the modernizr CDN to our landing page's head element, now we just need 
-    the following rule in our landing.css:*/
-
-    /* Older browser support - .no-cssanimations class added by modernizr */
-    .no-cssanimations .slideshow li {
-        opacity: 1;
-    }
-    /*And that's it!
-    You now have a full screen background slider. If you're interested in learning more about animations with CSS checkout this tutorial*/
+/* Older browser support - .no-cssanimations class added by modernizr */
+.no-cssanimations #slideshow li {
+    opacity: 1;
+}
 
 
 

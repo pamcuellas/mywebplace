@@ -16,8 +16,8 @@ class Home extends Component {
 
 	render () {
 		return(
-				<div>
-				    <ul className="slideshow">
+				<div className="slide">
+				    <ul id="slideshow">
 				      <li></li>
 				      <li></li>
 				      <li></li>
@@ -29,11 +29,11 @@ class Home extends Component {
 				      <li></li>
 				      <li></li>
 				    </ul>
-					<div className="landing-header">
+					<header className="slide-header">
 						<h1>Hi there!</h1>
 						<h1>This is Paulo Cuellas' web place.</h1>
 						<h1>It's nice to see you here.</h1>
-					</div>
+					</header>
 				</div>
 			);
 	}

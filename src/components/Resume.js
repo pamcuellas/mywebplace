@@ -16,7 +16,7 @@ class Resume extends Component {
 	render() { 
 		 return(
 
-			<div className="content">
+			<div>
 				<div className="title">
 					<p>
 						<span className="word">
@@ -92,6 +92,7 @@ class Resume extends Component {
 						<li> Lets write some text here to full this page.</li>
 						<li> Lets write some text here to full this page.</li>
 						<li> Lets write some text here to full this page.</li>
+						<li> This is the last line in this page .</li>
 					</ul>
 				</div>
 			</div>

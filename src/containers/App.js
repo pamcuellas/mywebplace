@@ -104,11 +104,13 @@ class App extends Component {
 		return(
 			
 				<div className="app">
-					<Navbar onChangePage={this.onChangePage} 
-							onHideMenu={this.onHideMenu} 
-							menuControl={this.state.menuControl}/>
-					<div className="container">
-						<Page currPage={this.state.currPage}/>
+					<div className="container">	
+						<div className="main">	
+							<Navbar onChangePage={this.onChangePage} 
+									onHideMenu={this.onHideMenu} 
+									menuControl={this.state.menuControl}/>
+							<Page currPage={this.state.currPage}/>
+						</div>
 					</div>
 					<Footer />
 				</div>
