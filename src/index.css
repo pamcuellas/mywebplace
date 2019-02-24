@@ -12,6 +12,18 @@ html, body{
   height: 100%;
 }
 
+body {
+  color: #a6a6a6;
+  font-family: 'Prompt', serif;
+  font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+  /*line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px)/(1600 - 300))); */
+}
+
+hr {
+  border: 1px solid gray;
+  width: 80%;
+}
+
 .visible {
   visibility: visible;
 }
@@ -43,12 +55,6 @@ font-face {
 }
 */
 
-body {
-  color: #a6a6a6;
-  font-family: 'Prompt', serif;
-  font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
-  /*line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px)/(1600 - 300)));*/
-}
 
 
 #root, .app{
@@ -139,22 +145,57 @@ body {
   justify-content: center;
   min-width: 20%; 
   font-size: 1.5em;
+  color: #474747;
+
 }
 
-.photo {
-  /*width: 100%;*/
-}
- 
-.photo img {
-  max-width: 40%;
-  min-width: 200px;
-  border-radius: 20%;
-  border: 5px solid #2c3e50;
-  margin-left: 10px;
-  margin-right: 10px;
-  /*padding: 0.5px;*/
-  /*box-shadow: 2px 2px 2px 2px #dce4eb;*/
-}
+/* BEGIN PHOTO ********************************************************************************************************************/
+
+  .photo{
+    position: relative;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 450px;
+    height: 350px;
+    background-color: #454549;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .placeholder{
+    display:inline-block;
+    width:400px;
+    height:300px;
+    box-sizing:border-box;
+    position:relative;
+  }
+
+  .column, .blind, .blindImg{
+    position:absolute;
+    top:0;
+    height:100%;
+    box-sizing:border-box;
+  }
+
+  .blind{
+    overflow:hidden;
+  }
+
+  .blindImg{
+    width:100%;
+    background-size:cover;
+  }
+
+
+/* END PHOTO ********************************************************************************************************************/
+
+
+
+
+
+
 
 ul {
   list-style: none; /* to remove the bullets */
@@ -246,9 +287,14 @@ footer a i  {
   width: 100%;
   text-align: center;
   flex-direction: column;
+  /*margin-left: -18%; */
   }
 
-.content-content-area {
+.content-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
   margin-top: 20px;
 }
 
@@ -259,7 +305,7 @@ footer a i  {
   justify-content: center;
   font: bold 32px "Open Sans", sans-serif;
   width: 100%;
-  margin-top: 60px;
+  margin-top: 70px;
   margin-bottom: 20px;
 }
 
@@ -332,6 +378,7 @@ footer a i  {
     }
     footer ul {
       margin-right: 0;
+      margin-top: 3px;
     }
     footer ul li {
       margin: 0 auto;
@@ -340,9 +387,11 @@ footer a i  {
     }
     .rights {
       margin-left: 7px;
+      margin-top: 7px;
     }
 
 }
+
 @media screen and (max-width: 530px) {
     .secondmenu {
       display: flex;
@@ -356,16 +405,24 @@ footer a i  {
     }
     footer {
       height: 65px;
+      margin-top: -65px;
     }  
+
+    .main {
+      padding-bottom: 65px;  
+    }
+
     footer p:not(.rights) {
       font-size: 0.6em;
     }
     .rights {
       font-size: 0.6em;
-      height: 27%;
     }
     footer ul li {
-      font-size: 0.7em;
+      font-size: 0.6em;
+    }
+    footer ul {
+      margin-top: 3px;
     }
 
 }
@@ -396,7 +453,7 @@ ul {
 
 
 .slide-header h1 {
-  visibility: hidden;;
+  visibility: hidden;
   margin-top: 3%;
   z-index: 1002;
   /*font-size: 3rem;*/
@@ -410,14 +467,14 @@ ul {
 
 }
 
-h1:hover {
-  font-weight: bolder;
-}
 
 @-webkit-keyframes showup {
   0% {
     transform: translateY(300px);  
     visibility: visible;
+  }
+  25% {
+    transform: translateY(0px);      
   }
   80% {
     opacity: 0.7;
@@ -483,8 +540,8 @@ Now we can style all of the list items:
   background-repeat: no-repeat;
   opacity: 0;
   z-index: 0;
-  -webkit-animation: imageAnimation 110s linear infinite; 
-  animation: imageAnimation 110s linear infinite; 
+  -webkit-animation: imageAnimation 90s linear infinite; 
+  animation: imageAnimation 90s linear infinite; 
 }
 /*Notice the animation property at the bottom of this rule, this is how we add an animation to an element; in this case we 
 have an animation named imageAnimation that lasts for 50s (seconds), keeps linear timing    (the whole animation runs at the 
@@ -496,41 +553,33 @@ Each list item needs a background-image and the last four need an animation-dela
   background-image: url(./images/wind-energy-kai-gradert-min.jpg);  /* compacted */ 
 }
 #slideshow li:nth-child(2) { 
-  background-image: url(./images/wind-energy-bert-sz.jpg);  /* compacted */
+  background-image: url(./images/wind-energy-constantine-fountos.jpg);  /* compacted */ 
   animation-delay: 10s; 
 }
 #slideshow li:nth-child(3) { 
-  background-image: url(./images/wind-energy-constantine-fountos.jpg);  /* compacted */ 
+  background-image: url(./images/wind-energy-tim-vanderhoydonck.jpg);  /* compacted */ 
   animation-delay: 20s; 
 }
 #slideshow li:nth-child(4) { 
-  background-image: url(./images/wind-energy-tim-vanderhoydonck.jpg);  /* compacted */ 
+  background-image: url(./images/wind-energy-karsten-wurth.jpg); /* compacted */ 
   animation-delay: 30s; 
 }
 #slideshow li:nth-child(5) { 
-  background-image: url(./images/wind-energy-karsten-wurth.jpg); /* compacted */ 
+  background-image: url(./images/wind-energy-philippe-bourhis-min.jpg); /* wind-energy-jason-blackeye-.jpg);  */ 
   animation-delay: 40s; 
 }
 #slideshow li:nth-child(6) { 
-  background-image: url(./images/wind-energy-philippe-bourhis-min.jpg); /* wind-energy-jason-blackeye-.jpg);  */ 
+  background-image: url(./images/wind-energy-anna-jimenez-calaf-min.jpg); /*wind-energy-rawfilm.jpg);  */
   animation-delay: 50s; 
 }
 #slideshow li:nth-child(7) { 
-  background-image: url(./images/wind-energy-anna-jimenez-calaf-min.jpg); /*wind-energy-rawfilm.jpg);  */
+  background-image: url(./images/wind-energy-georgi-petrov.jpg);   
   animation-delay: 60s; 
 }
 
 #slideshow li:nth-child(8) { 
-  background-image: url(./images/wind-energy-georgi-petrov.jpg);   
-  animation-delay: 70s; 
-}
-#slideshow li:nth-child(9) { 
-  background-image: url(./images/wind-energy-jason-blackeye.jpg);  
-  animation-delay: 80s; 
-}
-#slideshow li:nth-child(10) { 
   background-image: url(./images/wind-energy-andrea-boldizsar.jpg);  
-  animation-delay: 90s; 
+  animation-delay: 70s; 
 }
 
 /*Now we can create the keyframes for the animation:*/

@@ -8,7 +8,11 @@ class Footer extends Component {
 
 		return(
 				<footer> 
-					<p className="courtesy visible">Images courtesy of <a href="http://unsplash.com/" target="_blank" rel="noopener noreferrer">Unsplash</a></p>
+					<p className="courtesy visible">Images courtesy of 
+					<a href="http://unsplash.com/" target="_blank" rel="noopener noreferrer"> Unsplash </a>
+					 and 
+					<a href="https://www.pexels.com/photo-license/" target="_blank" rel="noopener noreferrer"> Pexels</a> 
+					</p>
 					<p className="courtesy visible">Icons courtesy of <a href="https://fontawesome.com/?from=io" target="_blank" rel="noopener noreferrer">Font Awesome</a></p>
 					<p className="rights">© 2019 Paulo Cuellas. All rights reserved.</p>
 					<ul>

@@ -68,9 +68,6 @@ class App extends Component {
 			this.setState( state => ({ menuControl:  {image: <i className="fas fa-bars color" ></i>} }));
 		}
 
-		// document.querySelector('.navbar').style.background = navbarBackground;
-		// document.querySelector('footer').style.background = footerBackground;
-
 		document.querySelector('.navbar').setAttribute("style", "background:" + navbarBackground);
 		document.querySelector('footer').setAttribute("style", "background:" + footerBackground);
 	}
