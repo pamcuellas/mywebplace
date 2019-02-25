@@ -116,7 +116,7 @@ class Profile extends Component {
 	render () {
 		
 		return(
-				<div>
+				<div className="content">
 					<div className="title">
 						<p>
 							<span className="word">
@@ -148,10 +148,12 @@ class Profile extends Component {
 							</span>
 				  		</p>
 					</div>
-					<hr></hr>
+					<hr /> 
 					<div className="content-area">
-						<div className="photo">
-							<div className="placeholder"></div>
+						<div className="photo-container">
+							<div className="photo">
+								<div className="placeholder"></div>
+							</div>	
 						</div>	
 
 						<div className="profile">
@@ -160,7 +162,7 @@ class Profile extends Component {
 							</div>
 						</div>
 					</div>
-					<hr></hr>
+					<hr /> 
 				</div>
 			);
 	}
