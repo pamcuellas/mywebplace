@@ -13,7 +13,7 @@ const options = {
   imgSrc2:img02,
   containerName : "placeholder",
   columns:16,
-  margin:1.5
+  margin:1.7
 }
 
 
@@ -45,7 +45,7 @@ class Profile extends Component {
 	  var directionX, directionY;
 	  
 	  var column, blind, blindImg;
-	  var bgImg, rot;
+	  var bgImg; //, rot;
 	  var colL;
 	  var colW = (placeholder.offsetWidth / cols) - margin;
 	  for (var i=0; i < cols; i++)
@@ -83,6 +83,8 @@ class Profile extends Component {
 	                  TweenMax.set(blind, {rotationY: "270"});
 	                  bgImg = img2;
 	                  break;
+	              default:
+	              	break;
 	          }
 	          blindImg.style.width = placeholder.offsetWidth + "px";
 	          blindImg.style.backgroundImage = "url("+bgImg+")";

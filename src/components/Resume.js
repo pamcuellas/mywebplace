@@ -16,7 +16,7 @@ class Resume extends Component {
 	render() { 
 		 return(
 
-			<div>
+			<div className="content">
 				<div className="title">
 					<p>
 						<span className="word">

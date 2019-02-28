@@ -16,7 +16,7 @@ class Projects extends Component {
 
 		return (
 
-				<div>
+				<div className="content">
 					<div className="title">
 						<p>
 							<span className="word">

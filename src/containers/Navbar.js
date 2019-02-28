@@ -11,6 +11,7 @@ class Navbar extends Component {
 						<a className="linkMenu visible" href="#" onClick={ ( ) => onChangePage('Home') }>Home</a>
 						<a className="linkMenu visible" href="#" onClick={ ( ) => onChangePage('Profile') }>Profile</a>
 						<a className="linkMenu visible" href="#" onClick={ ( ) => onChangePage('Projects') }>Projects</a>
+						<a className="linkMenu visible" href="#" onClick={ ( ) => onChangePage('Gallery') }>Gallery</a>
 						<a className="linkMenu visible" href="#" onClick={ ( ) => onChangePage('Resume') }>Resume</a>
 						<a className="linkMenu visible" href="#" onClick={ ( ) => onChangePage('Contact') }>Contact</a>
 					</div>

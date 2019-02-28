@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Navbar from './Navbar';
 import Page from '../containers/Page';
 import Footer from '../containers/Footer';
-import manageNavbar from '../services/manageNavbar'; 
+// import manageNavbar from '../services/manageNavbar'; 
 
 class App extends Component {
 
@@ -32,7 +32,6 @@ class App extends Component {
 
 	handleMenu = (classToRemove, classToAdd, page = this.state.currPage) => {
 
- 		let menuControl			= document.querySelector(".firstmenu i");
  		let linkMenu 			= document.querySelectorAll(".secondmenu .linkMenu");
  		let navbarBackground 	= 'transparent';
  		let footerBackground 	= 'transparent';

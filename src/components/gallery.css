@@ -1,0 +1,599 @@
+
+.gallery {
+	min-width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-flow: wrap;
+	/*align-content: center;*/
+	/*align-items: center;*/
+	/*flex-flow: wrap;*/
+	float: left;
+	background-color: #E43;
+  /*width  : 960px;*/
+  /*margin : 0 auto;*/
+}
+
+.gallery:after{
+  clear   : both;
+  display : table;
+  /*content : '';*/
+}
+
+.bg-items {
+  padding: 30px;
+/*	  width  : 240px;
+  height : 160px;
+*/	  width  : 300px;
+  height : 200px;
+  margin : 30px;
+  background-color: white;
+  float  : left;
+  cursor : pointer;
+  box-shadow : 3px 3px 5px 0px rgba(0,0,0,0.5);
+}
+
+.items {
+/*	  width  : 240px;
+  height : 160px;
+*/	  width  : 300px;
+  height : 200px;
+  position: relative;
+  overflow: hidden;
+  background-color: #102B46;
+  background-size: cover;
+}
+
+.details {
+  background-color : rgba(0,0,0,0.5);
+  width            : 280px;
+  height           : 180px;
+/*	  width            : 220px;
+  height           : 140px;
+*/	  padding          : 20px;
+  top : 0;
+  left: 0;
+  font-family : georgia;
+  color       : #fff;
+  opacity : 0;
+  transition : opacity .8s;
+}
+
+/******** TEXTS ***********/
+/* Author */ 
+.details h3 {
+  margin-bottom : 20px;
+}
+
+/* Description */
+.details p {
+  font-size : 14px;
+  font-style: italic;
+  text-align: center;
+  overflow: visible;
+  white-space: normal;
+  line-height : 20px;
+  max-width: 250px;
+}
+
+/* Date */ 
+.details h6 {
+  text-align : right;
+  margin-top : 40px;
+  max-width: 250px;
+}
+
+
+.items:hover .details {
+  opacity : 1;
+  transition : opacity .2s .3s;
+}
+
+.items div {
+  position : absolute;
+}
+
+
+
+/**************  From this point we have just the effects ************** / 
+
+/* one */
+
+.one {
+  left   : 100%;
+  bottom : 100%;
+  width : inherit;
+  height: inherit;
+  background-color : #e43;
+  transition   : all .3s;
+}
+
+.items:hover .one {
+  transition   : all .3s;
+  left   : 0;
+  bottom : 0;
+}
+
+/* two */
+
+.two {
+  width : inherit;
+  height: inherit;
+  background-color : #e43;
+  transition   : all .3s;
+  left   : 0;
+  bottom : 100%;
+}
+
+.items:hover .two {
+  transform : rotate(180deg);
+  left   : 0;
+  bottom : 0;
+  transition   : all .3s;
+}
+
+/* three */
+
+.three {
+  left : 0;
+  top  : 0;
+  width : inherit;
+  height: inherit;
+  background-color : #e43;
+  transition   : all .3s;
+  transform: scale(0,0);
+}
+
+.items:hover .three {
+  left : 0;
+  top  : 0;
+  transform : scale(1,1);	
+  transition : all .3s;
+}
+
+/* four */
+
+.four {
+  width : inherit;
+  height: inherit;
+  background-color : #e43;
+  transition   : all .3s;
+  left : 0;
+  top  : 0;
+  transform: scale(0,0) rotate(0deg);
+}
+
+.items:hover .four {
+  left : 0;
+  top  : 0;
+  transform: scale(1,1) rotate(1080deg);
+  transition   : all .3s;
+}
+
+/* five */
+
+.tl5 {
+  border-top   : 202px solid #e43;
+  border-right : 302px solid transparent;
+  top  : -202px;
+  left : -302px;
+/*	  border-top   : 161px solid #e43;
+  border-right : 241px solid transparent;
+  top  : -160px;
+  left : -240px;*/
+  transition   : all .3s;			
+}
+
+.br5 {
+  border-bottom : 202px solid #e43;
+  border-left   : 302px solid transparent;
+  bottom : -202px;
+  right  : -302px;
+/*	  border-bottom : 161px solid #e43;
+  border-left   : 241px solid transparent;
+  bottom : -160px;
+  right  : -240px;*/
+  transition   : all .3s;			
+}
+
+.items:hover .tl5 {
+  top  : 0;
+  left : 0;
+  transition   : all .3s;
+}
+
+.items:hover .br5 {
+  bottom : 0;
+  right  : 0;
+  transition   : all .3s;
+}
+
+/* six */
+
+.tl6 {
+  width  : 165px; /* half */
+  height : 105px; /* half */
+  background-color: #e43;
+  top  : -80px;
+  left : -240px;
+  transition   : all .3s;			
+}
+
+.tr6 {
+  width  : 165px;
+  height : 105px;
+  background-color: #e43;
+  top   : -80px;
+  right : -240px;
+  transition   : all .3s;			
+}
+
+.br6 {
+  width  : 165px;
+  height : 105px;
+  background-color: #e43;
+  bottom: -80px;
+  right : -240px;
+  transition   : all .3s;
+}
+
+.bl6 {
+  width  : 165px;
+  height : 105px;
+  background-color: #e43;
+  bottom : -80px;
+  left   : -240px;
+  transition   : all .3s;
+}
+
+.items:hover .tl6 {
+  top  : 0;
+  left : 0;
+  transition   : all .3s;
+}
+
+.items:hover .tr6 {
+  top   : 0;
+  right : 0;
+  transition   : all .3s;
+}
+
+.items:hover .br6 {
+  bottom : 0;
+  right  : 0;
+  transition   : all .3s;
+}
+
+.items:hover .bl6 {
+  bottom : 0;
+  left   : 0;
+  transition   : all .3s;
+}
+
+/* seven */
+
+.seven {
+  width  : 330px;
+  height : 210px;
+  background-color : #e43;
+  opacity : 0;
+  transition   : all .3s;
+}
+
+.items:hover .seven {
+  opacity    : 1;
+  transition : all .3s;
+}
+
+/* eight */
+
+.eight {
+  top           : 32%;
+  left          : 20%;
+  border-right  :  100px solid transparent;
+  border-bottom :  70px  solid #e43;
+  border-left   :  100px solid transparent;
+  transform: rotate(35deg) scale(0,0);
+  transition : all .6s;
+  /*transition : all 5s;*/
+}
+
+.eight:before {
+  border-bottom: 80px solid #e43;
+  border-left  : 30px solid transparent;
+  border-right : 30px solid transparent;
+  position: absolute;
+  height: 0;
+  width: 0;
+  top: -45px;
+  left: -65px;
+  display: block;
+  content: '';
+  transform: rotate(-35deg);			   
+}
+
+.eight:after {
+  position: absolute;
+  display: block;
+  color: #e43;
+  top: 3px;
+  left: -105px;
+  /*left: -10px;*/
+  width: 0px;
+  height: 0px;
+  border-right: 100px solid transparent;
+  border-bottom: 70px solid #e43;
+  border-left: 100px solid transparent;
+  transform: rotate(-70deg);
+  content: '';
+}
+
+.items:hover .eight {
+  /*transform: rotate(35deg) scale(3.5,3.5);*/
+  transform: rotate(35deg) scale(4,4);
+  transition : all 5s;
+  transition : all 0.6s;
+  
+}
+
+/* nine */
+
+.nine {
+  width : 0;
+  height: 0;
+  top   : 50%;
+  left  : 50%;
+  background-color: #e43;
+  border-radius : 50%;
+  transition : all .3s;
+}
+
+.items:hover .nine {
+  width : 400px;
+  height: 300px;
+  top   : -50px;
+  left  : -50px;
+  transition : all .6s;
+  
+}
+
+/* ten */
+
+.ten {
+  width  : inherit;
+  height : 50px;
+  background-color: #e43;
+  left   : 100%;
+}
+
+.ten.i {
+  top : 0;
+  transition : all .2s;
+}
+
+.ten.ii {
+  top : 50px;
+  transition : all .4s;
+}
+
+.ten.iii {
+  top : 100px;
+  transition : all .6s;
+}
+
+.ten.iv {
+  top : 150px;
+  transition : all .8s;
+}
+
+.items:hover .i {
+  left : 0;
+  transition : all .2s;			
+}
+
+.items:hover .ii {
+  left : 0;
+  transition : all .4s;
+}
+
+.items:hover .iii {
+  left : 0;
+  transition : all .6s;
+}
+
+.items:hover .iv {
+  left : 0;
+  transition : all .8s;
+}
+
+/* eleven */
+
+.eleven {
+  width  : inherit;
+  height : 50px;
+  background-color: #e43;
+  transition : all .3s;
+}
+
+.eleven.i {
+  top : 0;
+  left : -100%;
+  
+}
+
+.eleven.ii {
+  top : 50px;
+  left : 100%;
+}
+
+.eleven.iii {
+  top : 100px;
+  left : -100%;
+}
+
+.eleven.iv {
+  left : 100%;
+  top  : 150px;
+}
+
+.items:hover .eleven {
+  left : 0;
+  transition : all .4s ;
+}
+
+/* twelve */
+
+.twelve {
+  width  : inherit;
+  height : 50px;
+  background-color: #e43;
+  transition : all .3s;
+  top : -50px;
+}
+
+.twelve.iv {
+  transition : all .1s;
+}
+
+.twelve.iii {
+  transition : all .1s .1s;
+}
+
+.twelve.ii {
+  transition : all .1s .2s;
+}
+
+.twelve.i {
+  transition : all .1s .3s;
+}
+
+.items:hover .twelve.i {
+  top : 150px;
+  transition : all .2s;
+}
+
+.items:hover .twelve.ii {
+  top : 100px;
+  transition : all .2s .2s ;
+}
+
+.items:hover .twelve.iii {
+  top : 50px;
+  transition : all .2s .4s ;
+}
+
+.items:hover .twelve.iv {
+  top : 0px;
+  transition : all  .2s .6s;
+}
+
+/* thirteen */
+
+.thirteen-r , .thirteen-l{
+  width : 150px;
+  height: inherit;
+  background-color : #e43;
+  top : 0;
+  transition : all .3s;
+}
+
+.thirteen-r {
+  left : 100%;
+}
+
+.thirteen-l {
+  right : 100%;
+}
+
+.items:hover .thirteen-r {
+  transition : all .3s;
+  left : 0;
+}
+
+.items:hover .thirteen-l {
+  transition : all .3s;
+  right : 0;
+}
+
+/* fourteen */
+
+.fourteen-r , .fourteen-l{
+  width : 150px;
+  height: inherit;
+  background-color : #e43;
+  top : 0;
+  transition : all .3s;
+}
+
+.fourteen-r {
+  left : 100%;
+}
+
+.fourteen-l {
+  right : 100%;
+}
+
+.items:hover .fourteen-r {
+  transition : all .3s;
+  left : 50%;
+}
+
+.items:hover .fourteen-l {
+  transition : all .3s;
+  right : 50%;
+}
+
+/* fifteen */
+
+.t {
+  border-style : solid;
+  border-width : 100px 150px 0 150px;			
+  border-color : #e43 transparent transparent transparent;
+  transition   : all .3s;
+  top : -100px;
+}
+
+.r {
+  border-style : solid;
+  border-width : 100px 150px 100px 0;	
+  border-color : transparent #e43 transparent transparent;
+  right : -150px;
+  transition   : all .3s;
+}
+
+.b {
+  border-style : solid;
+  border-width : 0 150px 100px 150px;
+  border-color : transparent transparent #e43 transparent;
+  bottom : -100px;
+  transition   : all .3s;
+}
+
+.l {
+  border-style : solid;
+  border-width : 100px 0 100px 150px;	
+  border-color : transparent transparent transparent #e43;
+  left : -150px;
+  transition   : all .3s;
+}
+
+
+.items:hover .t {
+  top : 0px;
+  transition : all .3s;
+}
+
+.items:hover .r {
+  right : 0px;
+  transition : all .3s;
+}
+
+.items:hover .b {
+  bottom : 0px;
+  transition : all .3s;
+}
+
+.items:hover .l {
+  left : 0px;
+  transition : all .3s;
+}
