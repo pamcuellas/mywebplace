@@ -24,7 +24,7 @@ const ListPicture = props => {
 							}
 						});
 		} else {
-			pictures = <NoPicture />;		
+			pictures = <NoPicture query={props.query}/>;		
 		}
 
 						

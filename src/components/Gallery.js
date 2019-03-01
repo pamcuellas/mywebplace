@@ -1,44 +1,50 @@
 import React, { Component } from 'react';  
-import animaWords from '../services/animaWords';
-import ListPicture from './ListPicture';
-import axios from 'axios';
+import ListPicture 			from './ListPicture';
+import animaWords 			from '../services/animaWords';
+import Search 				from './Search';
+import axios 				from 'axios';
 
 import './gallery.css';
 
-
-
-// import img from '../images/laptop-with-function-Luca-Bravo.jpg'; 
 
 class Gallery extends Component {
 
 	constructor (props) {
 		super(props);
-		this.state = {
-			pictures: []
-		};
+		this.state = { pictures: [],
+						query: 'canada'
+	    };
+		this.getNewPictures = this.getNewPictures.bind(this);
+		this.onSearch		= this.onSearch.bind(this);
 	}
 
 	componentDidMount(){
 		var words = document.querySelectorAll('.word');
 		animaWords(words);
-		this.getNewPictures();
+		const query = this.state.query;
+		this.getNewPictures( query );
+	}
+
+	onSearch(value) {
+		this.getNewPictures(value);
 	}
 
 	componentWillUnmount() {
 		clearTimeout();
 	}
 
-	getNewPictures = ( query = 'canada') => {
-			axios
-			.get(
-				`https://api.unsplash.com/search/photos/?page=1&per_page=30&query=${query}&client_id=5eba06c3d669accb3214df13457098d84b3b0882e770c8c0648aa280c8593e56`
-			)	
-			.then(data => {
-				this.setState({ pictures: data.data.results });
-			})
-			.catch(err => {
-				console.log('Error happened during fetching!', err);
-			});		
+	getNewPictures = (query) => {
+		let page = Math.floor(Math.random() * 4);
+		page = (page === 0) ? 1 : page=page; 	
+		console.log("PAGE = " + page);
+		axios
+		.get(`https://api.unsplash.com/search/photos/?page=${page}&per_page=30&query=${query}&client_id=5eba06c3d669accb3214df13457098d84b3b0882e770c8c0648aa280c8593e56`)	
+		.then(data => {
+			this.setState({ pictures: data.data.results, query: query });
+		})
+		.catch(err => {
+			console.log('Unfortunately we got something wrong! ', err);
+		});		
 	}
 
 	render() { 
@@ -76,9 +82,9 @@ class Gallery extends Component {
 						</span>
 			  		</p>
 				</div>
-				<hr></hr>
+				<Search onSearch={this.onSearch}/>
 				<div className="gallery">
-					<ListPicture data={this.state.pictures} />
+					<ListPicture data={this.state.pictures} query={this.state.query}/>
 				</div>
 			</div>
 		);
