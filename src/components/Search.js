@@ -30,6 +30,7 @@ class Search extends Component {
 					onChange={this.onSearchChange}
 					ref={input => (this.query = input)}
 					name="search"
+					autoComplete="off"
 					placeholder="Type your search here ..."
 				/>
 				<button type="submit" className="search-icon-btn">

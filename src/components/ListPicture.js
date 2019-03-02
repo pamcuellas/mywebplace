@@ -5,28 +5,30 @@ import NoPicture from './NoPicture';
 const ListPicture = props => {
 
 	const results = props.data;
+	let classArray = ["eight","fifteen","nine","twelve","two","three","four","five","six","seven","one","ten","eleven","thirteen","fourteen"];
+	let count = 0;
+	console.log("props.data ", props.data);
+
+
 	let pictures;
-		 if (results.length > 0) {
-
-		 	pictures = results.map( (pic, index) => {
-							let average = pic.height/pic.width;
-							if ( average <= 0.72 && average >= 0.60 ) { 
-								return 	<Picture 
-											url			={pic.urls.small}
-											author		={pic.user.name}
-											description	={(pic.description === null ? "Description not available" : pic.description)}
-											date		={pic.created_at.split("T")[0]}
-											classStyle  ="eight"
-											key			={pic.id}
-											linkUser	={pic.user.links.html}
-											linkPhoto	={pic.links.html}	
-										/>
-							}
-						});
-		} else {
-			pictures = <NoPicture query={props.query}/>;		
-		}
-
+	if (results.length > 0) {
+	 	pictures = results.filter( p => ( p.height/p.width <= 0.72 && p.height/p.width >= 0.60 ) )
+	 					  .map( p => 
+							 	<Picture 
+										url			={p.urls.small}
+										author		={p.user.name}
+										description	={(p.description === null ? "Description not available" : p.description)}
+										date		={p.created_at.split("T")[0]}
+										classStyle  ={classArray[ (count > 14 ? 0 : count++) ]}
+										key			={p.id}
+										linkUser	={p.user.links.html}
+										linkPhoto	={p.links.html}	
+								/>
+							);
+	} else {
+		console.log("GOT NO NO PICTURE");
+		pictures = <NoPicture query={props.query}/>;		
+	}
 						
 		return pictures;
 }

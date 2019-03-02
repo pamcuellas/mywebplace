@@ -3,15 +3,13 @@ import ListPicture 			from './ListPicture';
 import animaWords 			from '../services/animaWords';
 import Search 				from './Search';
 import axios 				from 'axios';
-
 import './gallery.css';
-
 
 class Gallery extends Component {
 
 	constructor (props) {
 		super(props);
-		this.state = { pictures: [],
+		this.state = { pictures: ['starting'],
 						query: 'canada'
 	    };
 		this.getNewPictures = this.getNewPictures.bind(this);
@@ -21,11 +19,13 @@ class Gallery extends Component {
 	componentDidMount(){
 		var words = document.querySelectorAll('.word');
 		animaWords(words);
-		const query = this.state.query;
-		this.getNewPictures( query );
+
+		this.getNewPictures( this.state.query );
+		console.log("**** Gallery componentDidMount");
 	}
 
 	onSearch(value) {
+		console.log("**** Gallery onSearch");
 		this.getNewPictures(value);
 	}
 
@@ -33,12 +33,14 @@ class Gallery extends Component {
 		clearTimeout();
 	}
 
-	getNewPictures = (query) => {
+	getNewPictures = (query = 'moon') => {
+
+		const KEY = process.env.REACT_APP_KEY;
+
 		let page = Math.floor(Math.random() * 4);
-		page = (page === 0) ? 1 : page=page; 	
-		console.log("PAGE = " + page);
+		page = (page === 0) ? 1 : page; 	
 		axios
-		.get(`https://api.unsplash.com/search/photos/?page=${page}&per_page=30&query=${query}&client_id=5eba06c3d669accb3214df13457098d84b3b0882e770c8c0648aa280c8593e56`)	
+		.get(`https://api.unsplash.com/search/photos/?page=${page}&per_page=30&query=${query}&client_id=${KEY}`)	
 		.then(data => {
 			this.setState({ pictures: data.data.results, query: query });
 		})
@@ -48,6 +50,9 @@ class Gallery extends Component {
 	}
 
 	render() { 
+		
+
+		console.log("**** Gallery render()");
 		 return(
 
 			<div className="content">
@@ -84,7 +89,11 @@ class Gallery extends Component {
 				</div>
 				<Search onSearch={this.onSearch}/>
 				<div className="gallery">
-					<ListPicture data={this.state.pictures} query={this.state.query}/>
+				{this.state.pictures[0] !== 'starting' ? 
+					( <ListPicture data={this.state.pictures} /> )
+					: 
+					( <div></div> )
+				}
 				</div>
 			</div>
 		);

@@ -27,11 +27,9 @@ class App extends Component {
 
 	componentDidMount(){
 	 	this.handleMenu("visible", "invisible");
-	 		 	//manageNavbar ();
 	}
 
 	handleMenu = (classToRemove, classToAdd, page = this.state.currPage) => {
-
  		let linkMenu 			= document.querySelectorAll(".secondmenu .linkMenu");
  		let navbarBackground 	= 'transparent';
  		let footerBackground 	= 'transparent';
@@ -40,7 +38,6 @@ class App extends Component {
 		linkMenu.forEach((e, i, a) => {
 			e.classList.remove(classToRemove);
 			e.classList.add( classToAdd);
-			//e.classList.replace(classToRemove, classToAdd);
 		});
 
 		// Hide/Show footer
@@ -58,10 +55,9 @@ class App extends Component {
 		// Change menuControl image, body, navbar and footer backgrounds based on visible/invisible options and page.
 		if (classToAdd === "visible") {
 			this.setState( state => ({ menuControl:  {image: <i className="fas fa-minus" ></i>} }));
-			console.log("TRUE/FALSE page ", page);
 			if (page !== 'Home') {
-		 		navbarBackground	=  '#454549'; /*'#191919'; /* '#f00a36';*/ 
-		 		footerBackground 	=  '#454549'; /*#191919'; /*'#363636'; /* #204056'; */
+		 		navbarBackground	=  '#454549';  
+		 		footerBackground 	=  '#454549';  
 			}
 		} else {
 			this.setState( state => ({ menuControl:  {image: <i className="fas fa-bars color" ></i>} }));
@@ -83,13 +79,12 @@ class App extends Component {
 	}
 
 	onChangePage (page) {
+		console.log("App onChangePage");
 
 		if (page === 'Home' && this.state.currPage !== page) {
 			this.handleMenu('visible', 'invisible', page);
 			document.querySelector('body').style.background = 'black';
-			console.log("TRUE page ", page);
 		} else if (page !== 'Home') {
-			console.log("FALSE page ", page);
 			this.handleMenu('invisible', 'visible', page);
 			document.querySelector('body').style.background = 'white';
 		}		
