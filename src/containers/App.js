@@ -9,7 +9,7 @@ class App extends Component {
 
 	constructor(props) {
 		super(props);
-		const initialState = 'Resume' ;
+		const initialState = 'Home' ;
 		this.state = {
 			currPage: initialState,
 			scrollPosition: 0,
@@ -55,7 +55,6 @@ class App extends Component {
         }
     }
 
-
 	showCookieMessage = () => { 
 		var modal = document.querySelector(".modal");
 	    var closeButton = document.querySelector(".close-button");
@@ -66,6 +65,11 @@ class App extends Component {
 
 	    // Show Cookie Police Message
 	    modal.classList.toggle("show-modal");
+	}
+
+	showCookiePolice = () => {
+		this.toggleModal;
+		alert("showCookiePolice");
 	}
 
 	setBodyVisible = () => {
@@ -135,9 +139,6 @@ class App extends Component {
 		this.setState({currPage: page});
 	};
 
-	showCookiePolice = () => {
-		alert("showCookiePolice");
-	}
 
 	render() {
 		return(
