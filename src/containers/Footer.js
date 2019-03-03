@@ -9,7 +9,7 @@ class Footer extends Component {
 						<a href="http://unsplash.com/" target="_blank" rel="noopener noreferrer"> Unsplash </a>
 					</p>
 					<p className="courtesy visible">Icons courtesy of 
-						<a href="https://fontawesome.com/?from=io" target="_blank" rel="noopener noreferrer">Font Awesome</a>
+						<a href="https://fontawesome.com/?from=io" target="_blank" rel="noopener noreferrer"> Font Awesome</a>
 					</p>
 					<p className="rights">© 2019 Paulo Cuellas. All rights reserved.</p>
 					<ul>

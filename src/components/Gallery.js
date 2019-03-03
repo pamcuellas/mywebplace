@@ -19,13 +19,10 @@ class Gallery extends Component {
 	componentDidMount(){
 		var words = document.querySelectorAll('.word');
 		animaWords(words);
-
 		this.getNewPictures( this.state.query );
-		console.log("**** Gallery componentDidMount");
 	}
 
 	onSearch(value) {
-		console.log("**** Gallery onSearch");
 		this.getNewPictures(value);
 	}
 
@@ -36,7 +33,6 @@ class Gallery extends Component {
 	getNewPictures = (query = 'moon') => {
 
 		const KEY = process.env.REACT_APP_KEY;
-
 		let page = Math.floor(Math.random() * 4);
 		page = (page === 0) ? 1 : page; 	
 		axios
@@ -50,9 +46,7 @@ class Gallery extends Component {
 	}
 
 	render() { 
-		
 
-		console.log("**** Gallery render()");
 		 return(
 
 			<div className="content">
@@ -90,7 +84,7 @@ class Gallery extends Component {
 				<Search onSearch={this.onSearch}/>
 				<div className="gallery">
 				{this.state.pictures[0] !== 'starting' ? 
-					( <ListPicture data={this.state.pictures} /> )
+					( <ListPicture data={this.state.pictures} query={this.state.query}/> )
 					: 
 					( <div></div> )
 				}
