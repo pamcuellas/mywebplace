@@ -68,7 +68,7 @@ class App extends Component {
 	}
 
 	showCookiePolice = () => {
-		this.toggleModal;
+		this.toggleModal();
 		alert("showCookiePolice");
 	}
 
