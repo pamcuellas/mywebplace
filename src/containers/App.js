@@ -2,8 +2,7 @@ import React, { Component } from 'react';
 import Navbar from './Navbar';
 import Page from './Page';
 import Footer from './Footer';
-import PopupCookie from '../components/PopupCookie';
-// import manageNavbar from '../services/manageNavbar'; 
+import PopupCookiePolicyMsg from '../components/PopupCookiePolicyMsg';
 
 class App extends Component {
 
@@ -13,7 +12,7 @@ class App extends Component {
 		this.state = {
 			currPage: initialState,
 			scrollPosition: 0,
-			cookieMessage: true,
+			showCookieMessage: true,
 			menuControl: {
 				image: <i className="fas fa-minus" ></i>
 			}
@@ -24,8 +23,7 @@ class App extends Component {
 		this.onChangePage = this.onChangePage.bind(this);
 		this.windowOnClick= this.windowOnClick.bind(this);
 		this.setBodyVisible = this.setBodyVisible.bind(this);
-		this.showCookiePolice = this.showCookiePolice.bind(this);
-		this.showCookieMessage = this.showCookieMessage.bind(this);
+		this.showCookiePoliceMsg = this.showCookiePoliceMsg.bind(this);
 	}
 
 	componentWillMount(){
@@ -41,11 +39,11 @@ class App extends Component {
     toggleModal = () => {
 
     	console.log("Toggle MODAL");
-
         // Hide Cookie Police message
-        document.querySelector(".modal").classList.remove("show-modal");
+    	var modal = document.querySelector(".modal");
+        modal.classList.remove("show-modal");
         // Set state to stop show Cookie Police message and do not render it anymore.
-        this.setState({cookieMessage: false});
+        this.setState({showCookieMessage: false});
     }
 
     windowOnClick = (event) => {
@@ -55,21 +53,16 @@ class App extends Component {
         }
     }
 
-	showCookieMessage = () => { 
+	showCookiePoliceMsg = () => { 
 		var modal = document.querySelector(".modal");
 	    var closeButton = document.querySelector(".close-button");
 
-	    // Events to close Cookie Police Message
+	    // Events to close Cookie Policy Message
 	    closeButton.addEventListener("click", this.toggleModal);
 	    window.addEventListener("click", this.windowOnClick);	
 
-	    // Show Cookie Police Message
+	    // Show Cookie Policy Message
 	    modal.classList.toggle("show-modal");
-	}
-
-	showCookiePolice = () => {
-		this.toggleModal();
-		alert("showCookiePolice");
 	}
 
 	setBodyVisible = () => {
@@ -87,7 +80,7 @@ class App extends Component {
 			e.classList.add( classToAdd);
 		});
 
-		// Hide/Show footer
+		// Show/hide/ footer
  		const social = document.querySelectorAll(".social");
 		social.forEach((e, i, a) => {
 			e.classList.remove(classToRemove);
@@ -132,9 +125,11 @@ class App extends Component {
 		} else if (page !== 'Home') {
 			this.handleMenu('invisible', 'visible', page);
 			document.querySelector('body').style.background = 'white';
-			if (this.state.cookieMessage) {
-	 			setTimeout(this.showCookieMessage, 3000); 
+			// If did not yet, pop up the Cookie Message. 
+			if (this.state.showCookieMessage) {
+	 			setTimeout(this.showCookiePoliceMsg, 3000); 
 			}
+
 		}		
 		this.setState({currPage: page});
 	};
@@ -149,7 +144,7 @@ class App extends Component {
 							<Navbar onChangePage={this.onChangePage} 
 									onHideMenu={this.onHideMenu} 
 									menuControl={this.state.menuControl}/>
-							{ this.state.cookieMessage && <PopupCookie showCookiePolice={this.showCookiePolice}/> }
+							{ this.state.showCookieMessage && <PopupCookiePolicyMsg /> }
 							<Page currPage={this.state.currPage}/>
 						</div>
 					</div>
