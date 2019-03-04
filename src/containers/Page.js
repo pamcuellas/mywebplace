@@ -5,6 +5,7 @@ import Contact from '../components/Contact';
 import Resume from '../components/Resume';
 import Profile from '../components/Profile';
 import Gallery from '../components/Gallery';
+import ExampleComponent from '../components/ExampleComponent';
 
 
 const Page = ({currPage}) => (
@@ -14,7 +15,8 @@ const Page = ({currPage}) => (
 							(currPage === 'Profile') ? <Profile /> : 
 								(currPage === 'Resume') ? <Resume  /> : 
 									(currPage === 'Contact') ? <Contact /> : 
-										(currPage === 'Gallery') ? <Gallery begin{...true}/> : <Home/> }
+										(currPage === 'Gallery') ? <Gallery /> :
+											(currPage === 'ReCaptcha') ? <ExampleComponent /> : <Home/> }
 					</div>
 
 	);

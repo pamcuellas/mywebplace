@@ -14,6 +14,7 @@ class Navbar extends Component {
 						<a className="linkMenu visible" href="#" onClick={ ( ) => onChangePage('Gallery') }>Gallery</a>
 						<a className="linkMenu visible" href="#" onClick={ ( ) => onChangePage('Resume') }>Resume</a>
 						<a className="linkMenu visible" href="#" onClick={ ( ) => onChangePage('Contact') }>Contact</a>
+						<a className="linkMenu visible" href="#" onClick={ ( ) => onChangePage('ReCaptcha') }>ReCaptcha</a>
 					</div>
 					<div className="firstmenu">
 						<a className="linkMenu" href="#" onClick={ (e) => onHideMenu(e) }>{menuControl.image}</a>

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';  
 import animaWords from '../services/animaWords';
+import { loadReCaptcha } from 'react-recaptcha-google';
 import { ReCaptcha } from 'react-recaptcha-google';
 
 
@@ -14,7 +15,7 @@ class Contact extends Component {
 
 
 	componentDidMount(){
-
+		 loadReCaptcha();
 		if (this.myCaptcha) {
 	        console.log("started, just a second...")
 	        this.myCaptcha.reset();
@@ -25,6 +26,7 @@ class Contact extends Component {
 	}
 
   onLoadRecaptcha() {
+  	console.log("onLoadRecaptcha");
       if (this.myCaptcha) {
           this.myCaptcha.reset();
           //this.myCaptcha.execute();
@@ -33,7 +35,7 @@ class Contact extends Component {
 
   verifyCallback(recaptchaToken) {
     // Here you will get the final recaptchaToken!!!  
-    console.log(recaptchaToken, "<= your recaptcha token")
+    console.log("<= your recaptcha token", recaptchaToken )
   }
 
 	componentWillUnmount() {
@@ -42,7 +44,8 @@ class Contact extends Component {
 
 	render() {  
 
-		const KEY = process.env.REACT_APP_KEY;	
+		//const KEY = process.env.REACT_APP_TST_SITE_KEY;	
+		const KEY = process.env.REACT_APP_HRK_SITE_KEY;	
 
 		return (
 
@@ -83,12 +86,12 @@ class Contact extends Component {
 				<div className="content-content-area">
 					<h3 className="title">ReCaptcha Here</h3>	
       <div>
-        {/* You can replace captchaDemo with any ref word */}
         <ReCaptcha
             ref={(el) => {this.myCaptcha = el;}}
             size="normal"
             render="explicit"
-            sitekey={KEY}
+            theme="dark"
+            sitekey={`${KEY}`}
             onloadCallback={this.onLoadRecaptcha}
             verifyCallback={this.verifyCallback}
         />
@@ -101,12 +104,7 @@ class Contact extends Component {
 
 
 <hr />
-<form action="?" method="POST">
-	<div className="g-recaptcha" data-sitekey={KEY}></div>
-	<input type="email" placeholder="Email" />
-	<a href="#" className="btn">Subscribe</a>
-	<input type="submit" value="Submit" />
-</form>
+
 				</div>
 			</div>
 
@@ -118,6 +116,15 @@ export default Contact;
 
 
 /*
+
+<form action="?" method="POST">
+	<div className="g-recaptcha" data-sitekey={KEY}></div>
+	<input type="email" placeholder="Email" />
+	<a href="#" className="btn">Subscribe</a>
+	<input type="submit" value="Submit" />
+</form>
+
+
 					<form>
 						<input type="email" placeholder="Email" />
 						<a href="#" className="btn">Subscribe</a>
