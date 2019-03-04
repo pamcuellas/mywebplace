@@ -32,7 +32,7 @@ class ExampleComponent extends Component {
         {/* You can replace captchaDemo with any ref word */}
         <ReCaptcha
             ref={(el) => {this.captchaDemo = el;}}
-            size="normal"
+            size="compact"
             render="explicit"
             sitekey={`${KEY}`}
             onloadCallback={this.onLoadRecaptcha}

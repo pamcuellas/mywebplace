@@ -88,7 +88,7 @@ class Contact extends Component {
       <div>
         <ReCaptcha
             ref={(el) => {this.myCaptcha = el;}}
-            size="normal"
+            size="compact"
             render="explicit"
             theme="dark"
             sitekey={`${KEY}`}
