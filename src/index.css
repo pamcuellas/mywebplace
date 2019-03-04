@@ -554,18 +554,18 @@ have an animation named imageAnimation that lasts for 50s (seconds), keeps linea
 Each list item needs a background-image and the last four need an animation-delay (this way they all fire off one after the other in ten second intervals):
 */
 #slideshow li:nth-child(1) { 
-  background-image: url(./images/wind-energy-kai-gradert-min.jpg);  /* compacted */ 
+  background-image: url(./images/wind-energy-kai-gradert-min.jpg);  /* compacted http://images.unsplash.com/photo-1491280108190-30dff9cb47c4);*/ 
 }
 #slideshow li:nth-child(2) { 
   background-image: url(./images/wind-energy-constantine-fountos.jpg);  /* compacted */ 
   animation-delay: 10s; 
 }
 #slideshow li:nth-child(3) { 
-  background-image: url(./images/wind-energy-tim-vanderhoydonck.jpg);  /* compacted */ 
+  background-image: url(./images/wind-energy-tim-vanderhoydonck.jpg);  /* compacted */  
   animation-delay: 20s; 
 }
 #slideshow li:nth-child(4) { 
-  background-image: url(./images/wind-energy-karsten-wurth.jpg); /* compacted */ 
+  background-image: url(./images/wind-energy-karsten-wurth.jpg);  /* compacted https://images.unsplash.com/photo-1466611653911-95081537e5b7);*/ 
   animation-delay: 30s; 
 }
 #slideshow li:nth-child(5) { 

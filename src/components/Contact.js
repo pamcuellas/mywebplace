@@ -1,19 +1,49 @@
 import React, { Component } from 'react';  
 import animaWords from '../services/animaWords';
-// import img from '../images/laptop-with-function-Luca-Bravo.jpg'; 
+import { ReCaptcha } from 'react-recaptcha-google';
+
+
 
 class Contact extends Component { 
 
+	constructor(props, context) {
+		super(props, context);
+	    this.onLoadRecaptcha = this.onLoadRecaptcha.bind(this);
+	    this.verifyCallback = this.verifyCallback.bind(this);
+	}
+
+
 	componentDidMount(){
+
+		if (this.myCaptcha) {
+	        console.log("started, just a second...")
+	        this.myCaptcha.reset();
+	        //this.myCaptcha.execute();
+	    }
 		var words = document.querySelectorAll('.word');
 		animaWords(words);
 	}
+
+  onLoadRecaptcha() {
+      if (this.myCaptcha) {
+          this.myCaptcha.reset();
+          //this.myCaptcha.execute();
+      }
+  }
+
+  verifyCallback(recaptchaToken) {
+    // Here you will get the final recaptchaToken!!!  
+    console.log(recaptchaToken, "<= your recaptcha token")
+  }
 
 	componentWillUnmount() {
 		clearTimeout();
 	}
 
 	render() {  
+
+		const KEY = process.env.REACT_APP_KEY;	
+
 		return (
 
 			<div className="content">
@@ -51,12 +81,32 @@ class Contact extends Component {
 				</div>
 				<hr></hr>
 				<div className="content-content-area">
-					<h3 className="title">Learn More</h3>	
-					<p>SOFIA, Bulgaria -- Hundreds of relatives, friends and colleagues of slain Bulgarian journalist Viktoria Marinova said their goodbyes at a funeral Friday in her hometown, just after German police announced that a suspect has acknowledged attacking her.</p>
-					<form>
-						<input type="email" placeholder="Email" />
-						<a href="#" className="btn">Subscribe</a>
-					</form>
+					<h3 className="title">ReCaptcha Here</h3>	
+      <div>
+        {/* You can replace captchaDemo with any ref word */}
+        <ReCaptcha
+            ref={(el) => {this.myCaptcha = el;}}
+            size="normal"
+            render="explicit"
+            sitekey={KEY}
+            onloadCallback={this.onLoadRecaptcha}
+            verifyCallback={this.verifyCallback}
+        />
+        <code>
+          1. Add <strong>your site key</strong> in the ReCaptcha component. <br/>
+          2. Check <strong>console</strong> to see the token.
+        </code>
+      </div>
+
+
+
+<hr />
+<form action="?" method="POST">
+	<div className="g-recaptcha" data-sitekey={KEY}></div>
+	<input type="email" placeholder="Email" />
+	<a href="#" className="btn">Subscribe</a>
+	<input type="submit" value="Submit" />
+</form>
 				</div>
 			</div>
 
@@ -66,3 +116,10 @@ class Contact extends Component {
 }
 export default Contact;
 
+
+/*
+					<form>
+						<input type="email" placeholder="Email" />
+						<a href="#" className="btn">Subscribe</a>
+					</form>
+*/
