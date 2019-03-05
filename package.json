@@ -23,6 +23,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+  "proxy": "https://www.google.com/recaptcha/api/siteverify",
   "browserslist": [
     ">0.2%",
     "not dead",
