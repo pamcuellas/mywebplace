@@ -39,8 +39,6 @@ class App extends Component {
 	}
 
     toggleModal = () => {
-
-    	console.log("Toggle MODAL");
         // Hide Cookie Police message
     	var modal = document.querySelector(".modal");
         modal.classList.remove("show-modal");

@@ -41,77 +41,54 @@ class Contact extends Component {
 	}
 
 	verifyCallback(recaptchaToken) {
+
 		if (recaptchaToken.length > 0) {
 			// Lets verify token
 			const googleURL = process.env.REACT_APP_GOOGLE_API_URL;
-			// const KEY = process.env.REACT_APP_TST_SECRET_SITE_KEY;
-			const KEY = process.env.REACT_APP_HRK_SECRET_SITE_KEY;
+			const KEY = process.env.REACT_APP_TST_SECRET_SITE_KEY;
+			// const KEY = process.env.REACT_APP_HRK_SECRET_SITE_KEY;
 			console.log("PARAMS " + googleURL + " " + KEY );
 
-			axios({
+			axios(`${googleURL}`,{
 				method: 'POST',
-	            url: `${googleURL}`,
+	            mode: 'no-cors',
+	            headers: {
+	            	Accept: 'application/json',
+	            	"Content-Type": 'application/json'
+	            },
 	            withCredentials: true,
+	            credentials: 'same-origin',
 	            params: {
 	                secret: `${KEY}`,
-	                response: recaptchaToken
-	            },
-	            headers: {
-	            	"Content-Type": "application/x-www-form-urlencoded; charset=utf-8"
-	            }
+	                response: recaptchaToken,
+	                "remoteip":"localhost"
+	            } 
 			})
 			.then( data => {
 					console.log("======================================================================== ", data);
 			})
 			.catch( this.handlingErrors );
 
+/*
+		// Form fields, see IDs above
+	        const params = {
+	                secret: `${KEY}`,
+	                response: recaptchaToken
+	        }
+
+	        const http = new XMLHttpRequest()
+	        http.open('POST', `${googleURL}`)
+	        http.setRequestHeader('Content-type', 'application/json')
+	        http.send(JSON.stringify(params)) // Make sure to stringify
+	        http.onload = function() {
+	            // Do whatever with response
+	            alert('HERE WE GO !', http.responseText)
+	        }
+*/
+/*
+*/
 		} 
 
-
-
-
-/*
-			axios
-			.get(`https://api.unsplash.com/search/photos/?page=${page}&per_page=30&query=${query}&client_id=${KEY}`)	
-			.then(data => {
-				this.setState({ pictures: data.data.results, query: query });
-			})
-			.catch(err => {
-				console.log('Unfortunately we got something wrong! ', err);
-			});		
-*/
-/*
-			axios.post(
-				`${googleURL}`,
-				{
-					data: {
-						secret: `${KEY}`,   // Where postId is the  field name, much better than use https://jsonplaceholder.typicode.com/comments?postId=2 on the URL.
-						response: recaptchaToken
-					},
-					
-					headers: {	
-								contentType: 'application/json', //application/x-www-form-urlencoded',
-								'Access-Control-Allow-Origin': '*',
-								'Access-Control-Allow-Methods': 'POST'
-							}
-				} 
-			)
-			.then( data => {
-					console.log("======================================================================== ", data);
-			})
-			.catch( this.handlingErrors );
-		}
-*/
-
-/*
- $.ajax({
-        type: "POST",
-        url: 'https://www.google.com/recaptcha/api/siteverify',
-        data: {"secret" : "(your-secret-key)", "response" : response, "remoteip":"localhost"},
-        contentType: 'application/x-www-form-urlencoded',
-        success: function(data) { console.log(data); }
-    });
-*/
 	// Here you will get the final recaptchaToken!!!  
 	console.log("<= your recaptcha token", recaptchaToken );
 
@@ -140,8 +117,8 @@ class Contact extends Component {
 
 	render() {  
 
-		// const KEY = process.env.REACT_APP_TST_SITE_KEY;	
-		const KEY = process.env.REACT_APP_HRK_SITE_KEY;	
+		const KEY = process.env.REACT_APP_TST_SITE_KEY;	
+		// const KEY = process.env.REACT_APP_HRK_SITE_KEY;	
 
 		return (
 
@@ -183,7 +160,7 @@ class Contact extends Component {
 				<div>
 					<ReCaptcha
 					ref={(el) => {this.Captcha = el;}}
-					size="compact"
+					size="normal"
 					render="explicit"
 					theme="dark"
 					sitekey={`${KEY}`}
