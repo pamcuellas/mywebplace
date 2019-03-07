@@ -1,9 +1,7 @@
 import React, { Component } from 'react';  
 import animaWords 			from '../services/animaWords';
-import { loadReCaptcha } 	from 'react-recaptcha-google';
-import { ReCaptcha } 		from 'react-recaptcha-google';
-import axios 				from 'axios';
-
+import { loadReCaptcha, ReCaptcha } 	from 'react-recaptcha-google';
+import './contact.css';
 
 
 class Contact extends Component { 
@@ -11,37 +9,47 @@ class Contact extends Component {
 	constructor(props, context) {
 		super(props, context);
 		this.state = {
-			captchaExpired: true,
-			captchaToken:''
+			human: false,
+			token:''
 		}
 	    this.verifyCallback = this.verifyCallback.bind(this);
-	    this.handlingErrors = this.handlingErrors.bind(this);
 	    this.onLoadRecaptcha = this.onLoadRecaptcha.bind(this);
-	    this.recaptchaExpired = this.recaptchaExpired.bind(this);
+	    this.setRecaptchaExpired = this.setRecaptchaExpired.bind(this);
 	}
 
-
 	componentDidMount(){
-		 loadReCaptcha();
+		var words = document.querySelectorAll('.word');
+		animaWords(words);
+		loadReCaptcha();
 		if (this.Captcha) {
 	        console.log("started, just a second...")
 	        this.Captcha.reset();
-	        //this.Captcha.execute();
 	    }
-		var words = document.querySelectorAll('.word');
-		animaWords(words);
 	}
 
 	onLoadRecaptcha() {
 		console.log("onLoadRecaptcha");
 	  if (this.Captcha) {
 	      this.Captcha.reset();
-	      //this.Captcha.execute();
 	  }
 	}
 
 	verifyCallback(recaptchaToken) {
 
+		// Here you will get the final recaptchaToken!!!  
+		console.log("<= your recaptcha token", recaptchaToken );
+
+		if ( recaptchaToken.length > 0 ) { 
+			this.setState({ human: true, token: recaptchaToken });
+		}	else {
+			// Message
+			this.setState({ human: false, token: '' });
+		}
+
+
+
+		/* I TRYED TO VALIDATE THE TOKEN BUT I FACED THE CORS ISSUE AND NOBOY KNOWS HOW TO SOLVE THIS PROBLEM.
+		   MAYBE ON FUTURE. SO I DECIDED TO KEEP IT SIMPLE.
 		if (recaptchaToken.length > 0) {
 			// Lets verify token
 			const googleURL = process.env.REACT_APP_GOOGLE_API_URL;
@@ -68,46 +76,23 @@ class Contact extends Component {
 					console.log("======================================================================== ", data);
 			})
 			.catch( this.handlingErrors );
-
-/*
-		// Form fields, see IDs above
-	        const params = {
-	                secret: `${KEY}`,
-	                response: recaptchaToken
-	        }
-
-	        const http = new XMLHttpRequest()
-	        http.open('POST', `${googleURL}`)
-	        http.setRequestHeader('Content-type', 'application/json')
-	        http.send(JSON.stringify(params)) // Make sure to stringify
-	        http.onload = function() {
-	            // Do whatever with response
-	            alert('HERE WE GO !', http.responseText)
-	        }
-*/
-/*
-*/
-		} 
-
-	// Here you will get the final recaptchaToken!!!  
-	console.log("<= your recaptcha token", recaptchaToken );
-
+		} 		*/
 	}
 
-		/* Axios can distinguish errors */ 
-		handlingErrors = (error) => {
-			if ( error.response ) {
-				console.log("Something was wrong with RESPONSE ==>", error.response.status);
-			} else if ( error.request ) {
-				console.log("Something was wrong with REQUEST ==>", error.request);
-			} else { 
-				console.log("Something was wrong ==>", error.message);
-			}
-		} 
+	/* Axios can distinguish errors 
+	handlingErrors = (error) => {
+		if ( error.response ) {
+			console.log("Something was wrong with RESPONSE ==>", error.response.status);
+		} else if ( error.request ) {
+			console.log("Something was wrong with REQUEST ==>", error.request);
+		} else { 
+			console.log("Something was wrong ==>", error.message);
+		}
+	} */ 
 
 
-
-	recaptchaExpired(){
+	setRecaptchaExpired(){
+		this.setState({ human: false, token: '' });
 		console.log("ReCaptcha Expired!");
 	}
 
@@ -117,8 +102,8 @@ class Contact extends Component {
 
 	render() {  
 
-		const KEY = process.env.REACT_APP_TST_SITE_KEY;	
-		// const KEY = process.env.REACT_APP_HRK_SITE_KEY;	
+		// const KEY = process.env.REACT_APP_TST_SITE_KEY;	
+		const KEY = process.env.REACT_APP_HRK_SITE_KEY;	
 
 		return (
 
@@ -155,25 +140,44 @@ class Contact extends Component {
 						</span>
 					</p>
 				</div>
-				<hr></hr>
-				<h3 className="title">ReCaptcha Here</h3>	
-				<div>
-					<ReCaptcha
-					ref={(el) => {this.Captcha = el;}}
-					size="normal"
-					render="explicit"
-					theme="dark"
-					sitekey={`${KEY}`}
-					onloadCallback={this.onLoadRecaptcha}
-					verifyCallback={this.verifyCallback}
-					expiredCallback={this.recaptchaExpired}
-					/>
-					<code>
-					1. Add <strong>your site key</strong> in the ReCaptcha component. <br/>
-					2. Check <strong>console</strong> to see the token.
-					</code>
+
+				<div className="form-container">
+					<form action="#" className="contact-form">
+
+						<div className="form-element">
+							<input type="text" name="first" placeholder="First Name" /> 
+						</div>
+						<div className="form-element">
+							<input type="text" name="last"  placeholder="Last Name" />
+						</div>
+						<div className="form-element">
+							<input type="text" className="form-control" placeholder="Email" />
+						</div>
+						<div className="form-element">
+							<textarea rows="3" type="text" className="form-control"  placeholder="Drop your message here"></textarea>
+						</div>
+
+						<div className="recaptcha">
+							<div className="recaptcha-inner">
+									<ReCaptcha
+									ref={(el) => {this.Captcha = el;}}
+									size="normal"
+									render="explicit"
+									theme="dark"
+									sitekey={`${KEY}`}
+									onloadCallback={this.onLoadRecaptcha}
+									verifyCallback={this.verifyCallback}
+									expiredCallback={this.setRecaptchaExpired}
+									/>
+							</div>
+						</div>
+						<div className="form-element">
+							<button className="form-btn">Send</button>
+						</div>
+
+					</form>
 				</div>
-				<hr />
+				 
 			</div>
 		);
 	}	

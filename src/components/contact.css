@@ -1,0 +1,131 @@
+/* Fields */
+.form-container .form-element input[type=date], 
+.form-container .form-element input[type=datetime], 
+.form-container .form-element input[type=datetime-local], 
+.form-container .form-element input[type=email], 
+.form-container .form-element input[type=month], 
+.form-container .form-element input[type=number], 
+.form-container .form-element input[type=password], 
+.form-container .form-element input[type=range], 
+.form-container .form-element input[type=search], 
+.form-container .form-element input[type=tel], 
+.form-container .form-element input[type=text], 
+.form-container .form-element input[type=time], 
+.form-container .form-element input[type=url], 
+.form-container .form-element input[type=week], 
+.form-container .form-element select, 
+.form-container .form-element textarea {
+    background-color: #373737;/* Remove background fill */
+    text-transform: uppercase;    /* Make text all uppercase */
+    border-radius: 0;             /* Remove corner curve */
+    border: 2px solid #fff;       /* 2px white border */
+    color: #fff;                  /* White text */
+    height: 40px;                 /* Increase input height */
+    text-align: center;
+    font-size: 15px;
+    width: 40%;
+    min-width: 250px;
+}
+.form-container .form-element textarea {
+  height: 80px;  
+}
+
+/* Button */
+.form-container .form-element input[type=submit], 
+.form-container .form-element button[type=submit], 
+.form-container .form-element .form-btn {
+   text-transform: uppercase;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   color: white;
+   background: #1A1A1A;/* #444;*/
+   font-weight: normal;
+   width: 30%;
+   margin-top: 10px;
+}
+
+
+.contact-form{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #717171;
+    line-height: 80px;
+    background-color: #373737;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #717171;
+   opacity:  1;
+   line-height: 80px;
+   background-color: #373737;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #717171;
+   opacity:  1;
+   line-height: 80px;
+  background-color: #373737;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    #717171;
+   line-height: 80px;
+  background-color: #373737;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+   color:    #717171;
+   line-height: 80px;
+  background-color: #373737;
+}
+
+.form-container {
+  background-color: #FFF;
+  width: 100%;
+  min-height: 455px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.contact-form {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border: solid 2px #191919;
+  background-color: #454549;
+}
+
+.recaptcha {
+  margin: 0 auto;
+  display: table;
+
+    text-align: center;
+    border-radius: 2px;
+    background: #f9f9f9;
+    border-style: solid;
+    border-color: #37474f;
+    border-width: 1px;
+    border-bottom-width: 1px;
+}
+
+.recaptcha-inner {
+  margin: 0 auto;
+  display: table;
+  -moz-transform:scale(1.0);
+  -ms-transform:scale(1.0); 
+  -o-transform:scale(1.0); 
+  -moz-transform-origin:0; 
+  -ms-transform-origin:0;
+  -o-transform-origin:0;
+  -webkit-transform:scale(1.0);
+  transform:scale(1.0);
+  -webkit-transform-origin:0 0;
+  transform-origin:0;
+  border: 0.5px solid #fff;
+  padding-top: 2.5px;
+  padding-left: 2.5px;
+}
+
