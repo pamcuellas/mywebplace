@@ -108,13 +108,9 @@ font-face {
   transition: all 0.5s ease-out;  
   transition: color 0.5s ease-out;
   font-family: 'Montserrat', sans-serif;
-  /*font-family: 'Prompt', serif;*/
-  /*font-family: 'GraublauWeb';*/
   letter-spacing: 0.10em;
   color: white;
   text-transform: uppercase;
- /* text-decoration-line: underline;
-  text-underline-position: under;*/
   font-size: 0.8em;
 }
 
@@ -289,10 +285,14 @@ footer a i  {
 .content {
   display: flex; 
   width: 100%;
+  height: 100%;
   text-align: center;
   flex-direction: column;
   align-items: center;
   /*margin-left: -18%; */
+  overflow: auto;
+  min-height: 92.5vh;
+/*  padding-bottom: 25px;*/
   }
 
 .content-area {
@@ -392,7 +392,6 @@ footer a i  {
     }
     .rights {
       margin-left: 7px;
-      margin-top: 7px;
     }
 
 }
@@ -422,13 +421,13 @@ footer a i  {
     }
     .rights {
       font-size: 0.6em;
+      margin-top: 0px;
+
     }
     footer ul li {
       font-size: 0.6em;
     }
-    footer ul {
-      margin-top: 3px;
-    }
+
 
 }
   

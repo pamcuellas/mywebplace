@@ -83,7 +83,7 @@ class Gallery extends Component {
 				</div>
 				<Search onSearch={this.onSearch}/>
 				<div className="gallery">
-				{this.state.pictures[0] !== 'starting' ? 
+				{this.state.pictures[0] !== 'starting' ? /* To solve the problem of render ListPicture twice */ 
 					( <ListPicture data={this.state.pictures} query={this.state.query}/> )
 					: 
 					( <div></div> )

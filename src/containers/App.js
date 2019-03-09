@@ -127,7 +127,7 @@ class App extends Component {
 			document.querySelector('body').style.background = 'white';
 			// If did not yet, pop up the Cookie Message. 
 			if (this.state.showCookieMessage) {
-	 			setTimeout(this.showCookiePoliceMsg, 3000); 
+	 			setTimeout(this.showCookiePoliceMsg, 10000); 
 			}
 
 		}		

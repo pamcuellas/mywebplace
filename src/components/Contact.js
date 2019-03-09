@@ -10,11 +10,31 @@ class Contact extends Component {
 		super(props, context);
 		this.state = {
 			human: false,
-			token:''
+			token:'',
+				first: '',
+				last: '',
+				email: '',
+				message: ''
 		}
+		this.onSubmit = this.onSubmit.bind(this);
+	    this.handleChange = this.handleChange.bind(this);
 	    this.verifyCallback = this.verifyCallback.bind(this);
 	    this.onLoadRecaptcha = this.onLoadRecaptcha.bind(this);
 	    this.setRecaptchaExpired = this.setRecaptchaExpired.bind(this);
+	}
+
+
+	handleChange(e) {
+		this.setState({ [e.target.name]: e.target.value  });
+	}
+
+	onSubmit(e) {
+		e.preventDefault();
+
+		// Verify reCaptcha.
+		if (!this.state.human) {
+			alert("Please hit the reCaptcha check box before send your message.")
+		}
 	}
 
 	componentDidMount(){
@@ -46,50 +66,7 @@ class Contact extends Component {
 			this.setState({ human: false, token: '' });
 		}
 
-
-
-		/* I TRYED TO VALIDATE THE TOKEN BUT I FACED THE CORS ISSUE AND NOBOY KNOWS HOW TO SOLVE THIS PROBLEM.
-		   MAYBE ON FUTURE. SO I DECIDED TO KEEP IT SIMPLE.
-		if (recaptchaToken.length > 0) {
-			// Lets verify token
-			const googleURL = process.env.REACT_APP_GOOGLE_API_URL;
-			const KEY = process.env.REACT_APP_TST_SECRET_SITE_KEY;
-			// const KEY = process.env.REACT_APP_HRK_SECRET_SITE_KEY;
-			console.log("PARAMS " + googleURL + " " + KEY );
-
-			axios(`${googleURL}`,{
-				method: 'POST',
-	            mode: 'no-cors',
-	            headers: {
-	            	Accept: 'application/json',
-	            	"Content-Type": 'application/json'
-	            },
-	            withCredentials: true,
-	            credentials: 'same-origin',
-	            params: {
-	                secret: `${KEY}`,
-	                response: recaptchaToken,
-	                "remoteip":"localhost"
-	            } 
-			})
-			.then( data => {
-					console.log("======================================================================== ", data);
-			})
-			.catch( this.handlingErrors );
-		} 		*/
 	}
-
-	/* Axios can distinguish errors 
-	handlingErrors = (error) => {
-		if ( error.response ) {
-			console.log("Something was wrong with RESPONSE ==>", error.response.status);
-		} else if ( error.request ) {
-			console.log("Something was wrong with REQUEST ==>", error.request);
-		} else { 
-			console.log("Something was wrong ==>", error.message);
-		}
-	} */ 
-
 
 	setRecaptchaExpired(){
 		this.setState({ human: false, token: '' });
@@ -142,19 +119,21 @@ class Contact extends Component {
 				</div>
 
 				<div className="form-container">
-					<form action="#" className="contact-form">
+					<form className="contact-form" onSubmit={this.onSubmit}>
 
 						<div className="form-element">
-							<input type="text" name="first" placeholder="First Name" /> 
+							<input type="text"  name="first" onChange={ (e) => this.handleChange(e)} placeholder="First Name *" autoComplete='off'required /> 
 						</div>
 						<div className="form-element">
-							<input type="text" name="last"  placeholder="Last Name" />
+							<input type="text"  name="last"  onChange={ (e) => this.handleChange(e)} placeholder="Last Name *" autoComplete='off'required />
 						</div>
 						<div className="form-element">
-							<input type="text" className="form-control" placeholder="Email" />
+							<input type="email" name="email" onChange={ (e) => this.handleChange(e)} placeholder="Email *" autoComplete='off'required />
 						</div>
 						<div className="form-element">
-							<textarea rows="3" type="text" className="form-control"  placeholder="Drop your message here"></textarea>
+							<textarea rows="3" type="text" onChange={ (e) => this.handleChange(e)}  placeholder="Drop your message here *" 
+								required name="message">
+							</textarea>
 						</div>
 
 						<div className="recaptcha">
@@ -186,18 +165,46 @@ class Contact extends Component {
 export default Contact;
 
 
-/*
+		/* I TRYED TO VALIDATE THE TOKEN BUT I FACED THE CORS ISSUE AND NOBOY KNOWS HOW TO SOLVE THIS PROBLEM.
+		   MAYBE ON FUTURE. SO I DECIDED TO KEEP IT SIMPLE.
+		if (recaptchaToken.length > 0) {
+			// Lets verify token
+			const googleURL = process.env.REACT_APP_GOOGLE_API_URL;
+			const KEY = process.env.REACT_APP_TST_SECRET_SITE_KEY;
+			// const KEY = process.env.REACT_APP_HRK_SECRET_SITE_KEY;
+			console.log("PARAMS " + googleURL + " " + KEY );
 
-<form action="?" method="POST">
-	<div className="g-recaptcha" data-sitekey={KEY}></div>
-	<input type="email" placeholder="Email" />
-	<a href="#" className="btn">Subscribe</a>
-	<input type="submit" value="Submit" />
-</form>
+			axios(`${googleURL}`,{
+				method: 'POST',
+	            mode: 'no-cors',
+	            headers: {
+	            	Accept: 'application/json',
+	            	"Content-Type": 'application/json'
+	            },
+	            withCredentials: true,
+	            credentials: 'same-origin',
+	            params: {
+	                secret: `${KEY}`,
+	                response: recaptchaToken,
+	                "remoteip":"localhost"
+	            } 
+			})
+			.then( data => {
+					console.log("======================================================================== ", data);
+			})
+			.catch( this.handlingErrors );
+		} 		*/
+	
+
+	/* Axios can distinguish errors 
+	handlingErrors = (error) => {
+		if ( error.response ) {
+			console.log("Something was wrong with RESPONSE ==>", error.response.status);
+		} else if ( error.request ) {
+			console.log("Something was wrong with REQUEST ==>", error.request);
+		} else { 
+			console.log("Something was wrong ==>", error.message);
+		}
+	} */ 
 
 
-					<form>
-						<input type="email" placeholder="Email" />
-						<a href="#" className="btn">Subscribe</a>
-					</form>
-*/
