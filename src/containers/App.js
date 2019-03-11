@@ -108,7 +108,7 @@ class App extends Component {
 	}
 
 	onHideMenu(e) {
-		// Hide/Show Navbar and Footer.
+		// Hide/Show Navbar.
 		if (e.target.className.includes('fa-minus')) {
 			// Hide
  			this.handleMenu("visible", "invisible");
@@ -121,11 +121,11 @@ class App extends Component {
 	onChangePage (page) {
 		if (page === 'Home' && this.state.currPage !== page) {
 			this.handleMenu('visible', 'invisible', page);
-			document.querySelector('body').style.background = 'black';
+			document.querySelector('body').style.background = '#000';
 		} else if (page !== 'Home') {
 			this.handleMenu('invisible', 'visible', page);
-			document.querySelector('body').style.background = 'white';
-			// If did not yet, pop up the Cookie Message. 
+			document.querySelector('body').style.background = '#FFF';
+			//Pop up the Cookie Message, if did not yet. 
 			if (this.state.showCookieMessage) {
 	 			setTimeout(this.showCookiePoliceMsg, 10000); 
 			}
@@ -139,7 +139,6 @@ class App extends Component {
 		return(
 			
 				<div className="app">
-					<div className="container">	
 						<div className="main">	
 							<Navbar onChangePage={this.onChangePage} 
 									onHideMenu={this.onHideMenu} 
@@ -147,7 +146,6 @@ class App extends Component {
 							{ this.state.showCookieMessage && <PopupCookiePolicyMsg /> }
 							<Page currPage={this.state.currPage}/>
 						</div>
-					</div>
 					<Footer />
 				</div>
 			

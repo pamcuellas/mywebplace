@@ -1,6 +1,7 @@
 import React, { Component } from 'react';  
 import animaWords 			from '../services/animaWords';
 import { loadReCaptcha, ReCaptcha } 	from 'react-recaptcha-google';
+import axios from 'axios';
 import './contact.css';
 
 
@@ -11,18 +12,18 @@ class Contact extends Component {
 		this.state = {
 			human: false,
 			token:'',
-				first: '',
-				last: '',
-				email: '',
-				message: ''
+			firstname: '',
+			lastname: '',
+			email: '',
+			message: '' 
 		}
 		this.onSubmit = this.onSubmit.bind(this);
 	    this.handleChange = this.handleChange.bind(this);
+	    this.createContact = this.createContact.bind(this);
 	    this.verifyCallback = this.verifyCallback.bind(this);
 	    this.onLoadRecaptcha = this.onLoadRecaptcha.bind(this);
 	    this.setRecaptchaExpired = this.setRecaptchaExpired.bind(this);
 	}
-
 
 	handleChange(e) {
 		this.setState({ [e.target.name]: e.target.value  });
@@ -31,11 +32,50 @@ class Contact extends Component {
 	onSubmit(e) {
 		e.preventDefault();
 
+		const msg = document.querySelector(".msg-returned");				
+
 		// Verify reCaptcha.
 		if (!this.state.human) {
-			alert("Please hit the reCaptcha check box before send your message.")
+			msg.textContent = "Please hit the reCaptcha check box above before send your message."; 
+		} else {
+			this.createContact(msg);
 		}
 	}
+
+
+	createContact(msg) { 
+
+		const REST_URL = process.env.REACT_APP_PAMZCAPI_CONTACT;
+		axios(REST_URL,{
+			method: 'POST',
+	        headers: {
+	        	Accept: 'application/json',
+	        	"Content-Type": 'application/json'
+	        },
+	        data: {
+	            firstname: this.state.firstname,
+	            lastname: this.state.lastname,
+	            email: this.state.email,
+	            message: this.state.message,
+	            ip: 'testing'
+	        } 
+		})
+		.then( data => {
+			msg.textContent = "Thank you! Your message has been successfully created. We will contact you as soon as possible." ;
+			console.log("data.data.created_at", data.data.created_at);
+			console.log("data.status", data.status);
+			console.log("data.statusText", data.statusText);
+			console.log("FULL DATA OBJECT ", data);
+			console.log("_id created", data.data._id);
+		})
+		.catch( error => {
+			console.log("FULL ERROR  ==>", error);
+			console.log("Sorry, something was wrong ==>", error.message);
+			msg.textContent = "Sorry, something was wrong ==> " + error.message ;
+		});
+
+	}
+
 
 	componentDidMount(){
 		var words = document.querySelectorAll('.word');
@@ -55,17 +95,14 @@ class Contact extends Component {
 	}
 
 	verifyCallback(recaptchaToken) {
-
 		// Here you will get the final recaptchaToken!!!  
 		console.log("<= your recaptcha token", recaptchaToken );
-
 		if ( recaptchaToken.length > 0 ) { 
 			this.setState({ human: true, token: recaptchaToken });
 		}	else {
 			// Message
 			this.setState({ human: false, token: '' });
 		}
-
 	}
 
 	setRecaptchaExpired(){
@@ -122,10 +159,10 @@ class Contact extends Component {
 					<form className="contact-form" onSubmit={this.onSubmit}>
 
 						<div className="form-element">
-							<input type="text"  name="first" onChange={ (e) => this.handleChange(e)} placeholder="First Name *" autoComplete='off'required /> 
+							<input type="text"  name="firstname" onChange={ (e) => this.handleChange(e)} placeholder="First Name *" autoComplete='off'required /> 
 						</div>
 						<div className="form-element">
-							<input type="text"  name="last"  onChange={ (e) => this.handleChange(e)} placeholder="Last Name *" autoComplete='off'required />
+							<input type="text"  name="lastname"  onChange={ (e) => this.handleChange(e)} placeholder="Last Name *" autoComplete='off'required />
 						</div>
 						<div className="form-element">
 							<input type="email" name="email" onChange={ (e) => this.handleChange(e)} placeholder="Email *" autoComplete='off'required />
@@ -153,7 +190,7 @@ class Contact extends Component {
 						<div className="form-element">
 							<button className="form-btn">Send</button>
 						</div>
-
+						<h1 className="msg-returned"></h1>
 					</form>
 				</div>
 				 
