@@ -3,7 +3,7 @@ import Navbar 				from './Navbar';
 import Page 				from './Page';
 import Footer 				from './Footer';
 import PopupCookiePolicyMsg from '../components/PopupCookiePolicyMsg';
-import { loadReCaptcha } 	from 'react-recaptcha-google';
+// import { loadReCaptcha } 	from 'react-recaptcha-google';
 import { createReq } 		from "../services/api";
 
 class App extends Component {
@@ -25,7 +25,6 @@ class App extends Component {
 		this.onChangePage = this.onChangePage.bind(this);
 		this.windowOnClick= this.windowOnClick.bind(this);
 		this.setBodyVisible = this.setBodyVisible.bind(this);
-		this.PolicyAccepted = this.PolicyAccepted.bind(this);
 		this.showCookiePoliceMsg = this.showCookiePoliceMsg.bind(this);
 	}
 
@@ -35,7 +34,7 @@ class App extends Component {
 	}
 
 	componentDidMount(){
-		loadReCaptcha();
+		// loadReCaptcha();
 	 	this.handleMenu("visible", "invisible");
 	 	setTimeout(this.setBodyVisible, 130); 
 		createReq( this.state.currPage ); 	 	
@@ -133,11 +132,11 @@ class App extends Component {
 			if (this.state.showCookieMessage) {
 	 			setTimeout(this.showCookiePoliceMsg, 10000); 
 			}
+
 		}		
 		this.setState({currPage: page});
 		createReq( page ); 
-	}
-
+	};
 	render() {
 		return(
 			
