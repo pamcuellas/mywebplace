@@ -46,7 +46,7 @@ class Search extends Component {
 	render() {
 
 		// const KEY = process.env.REACT_APP_TST_SITE_KEY;	
-		const KEY = process.env.REACT_APP_HRK_SITE_KEY;	
+		const KEY = process.env.REACT_APP_HRK_SITE_KEYI;	
 		return (
 			<form className="search" onSubmit={this.handleSubmit}>
 				<input className="search-input"

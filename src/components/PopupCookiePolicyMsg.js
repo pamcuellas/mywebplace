@@ -4,14 +4,6 @@ import './popupCookiePolicyMsg.css';
 
 class PopupCookie extends Component {
 
-	constructor(props) {
-		super(props);
-	}
-
-	// handleClick() {
-	//  	createReq( 'PolicyVisualized' ); 	
-	// }
-
 	render() {
 
 	return ( 
