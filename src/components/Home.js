@@ -1,19 +1,6 @@
 import React, { Component } from 'react';
 
-//import img from '../images/cellphone-tyler-lastovich.jpg'; 
-// <div className="content background-image" style={{backgroundImage: 'url(' + img +')'}}>
-
 class Home extends Component {
-
-	componentDidMount(){
-		// var words = document.querySelectorAll('.word');
-		// animaWords(words);
-	}
-
-	componentWillUnmount() {
-		// clearTimeout();
-	}
-
 	render () {
 		return(
 				<div className="slide">
