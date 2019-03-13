@@ -1,0 +1,58 @@
+/**************  MENUS/Navbar  ****************/ 
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width:100%;
+  height: 50px;
+  top: 0;
+  position: fixed;
+  z-index: 1001;
+}
+
+.navbar .firstmenu span {
+  /*text-decoration-line: none;*/
+  font-size: 25px;
+}
+
+.secondmenu {
+  margin-left: 20px;
+  font-size: 15px;
+}
+
+.navbar .fa-bars {
+  transition: all 0.4s ease-out;  
+  transition: color 0.4s ease-out;
+}
+
+.navbar .fa-bars:hover {
+  color: #FFFFFF;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3)
+}
+
+.linkMenu {
+  text-decoration: none;
+  margin-right: 20px;
+  margin-left: 5px;
+  display: inline-flex;
+  transition: all 0.5s ease-out;  
+  transition: color 0.5s ease-out;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0.10em;
+  color: white;
+  text-transform: uppercase;
+  font-size: 0.8em;
+}
+
+.linkMenu:hover 
+{
+  cursor: pointer;
+  color: #000000;
+  text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.3);
+  font-weight: bolder;
+}
+
+.linkMenu > i {
+  margin-right: 4px;
+}

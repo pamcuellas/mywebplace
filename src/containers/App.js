@@ -3,7 +3,6 @@ import Navbar 				from './Navbar';
 import Page 				from './Page';
 import Footer 				from './Footer';
 import PopupCookiePolicyMsg from '../components/PopupCookiePolicyMsg';
-// import { loadReCaptcha } 	from 'react-recaptcha-google';
 import { createReq } 		from "../services/api";
 
 class App extends Component {
@@ -38,18 +37,23 @@ class App extends Component {
 	 	this.handleMenu("visible", "invisible");
 	 	setTimeout(this.setBodyVisible, 130); 
 		createReq( this.state.currPage ); 	 	
-
 	}
 
     toggleModal = () => {
+    	console.log("toggleModal")	
         // Hide Cookie Police message
     	var modal = document.querySelector(".modal");
         modal.classList.remove("show-modal");
+
         // Set state to stop show Cookie Police message and do not render it anymore.
         this.setState({showCookieMessage: false});
+        // Stop listeners
+        window.removeEventListener("click", this.windowOnClick);
+        // document.querySelector(".close-button").removeEventListener("click", this.toggleModal);
     }
 
     windowOnClick = (event) => {
+    	console.log("windowOnClick")	
     	var modal = document.querySelector(".modal");
         if (event.target === modal) {
             this.toggleModal();
@@ -57,6 +61,7 @@ class App extends Component {
     }
 
 	showCookiePoliceMsg = () => { 
+    	console.log("showCookiePoliceMsg");
 		var modal = document.querySelector(".modal");
 	    var closeButton = document.querySelector(".close-button");
 
@@ -130,7 +135,7 @@ class App extends Component {
 			document.querySelector('body').style.background = '#FFF';
 			//Pop up the Cookie Message, if did not yet. 
 			if (this.state.showCookieMessage) {
-	 			setTimeout(this.showCookiePoliceMsg, 10000); 
+	 			setTimeout(this.showCookiePoliceMsg, 3000); 
 			}
 
 		}		

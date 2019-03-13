@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import { createReq } 		from "../services/api";
-import './popupCookiePolicyMsg.css';
+import '../css/popupCookiePolicyMsg.css';
 
 class PopupCookie extends Component {
 

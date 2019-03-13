@@ -7,8 +7,7 @@ const ListPicture = props => {
 	const results = props.data;
 	let classArray = ["eight","fifteen","nine","twelve","two","three","four","five","six","seven","one","ten","eleven","thirteen","fourteen"];
 	let count = 0;
-	console.log("props.data ", props.data);
-
+	//console.log("props.data ", props.data);
 
 	let pictures;
 	if (results.length > 0) {

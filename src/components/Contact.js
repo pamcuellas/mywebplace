@@ -3,7 +3,7 @@ import animaWords 			from '../services/animaWords';
 import { apiCall } 			from "../services/api";
 import { loadReCaptcha, ReCaptcha } 	from 'react-recaptcha-google';
 
-import './contact.css';
+import '../css/contact.css';
 
 class Contact extends Component { 
 
@@ -89,8 +89,8 @@ class Contact extends Component {
 	}
 
 	render() {  
-		// const KEY = process.env.REACT_APP_TST_SITE_KEY;	
-		const KEY = process.env.REACT_APP_HRK_SITE_KEY;	
+		const KEY = process.env.REACT_APP_TST_SITE_KEY;	
+		// const KEY = process.env.REACT_APP_HRK_SITE_KEY;	
 		return (
 			<div className="content">
 				<div className="title">

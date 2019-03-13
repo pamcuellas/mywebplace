@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import '../css/navbar.css';
 
 class Navbar extends Component {
 	render(){
@@ -8,15 +9,15 @@ class Navbar extends Component {
 		return( 
 				<div className="navbar">
 					<div className="secondmenu">
-						<a className="linkMenu visible" href="#" onClick={ ( ) => onChangePage('Home') }>Home</a>
-						<a className="linkMenu visible" href="#" onClick={ ( ) => onChangePage('Profile') }>Profile</a>
-						<a className="linkMenu visible" href="#" onClick={ ( ) => onChangePage('Projects') }>Projects</a>
-						<a className="linkMenu visible" href="#" onClick={ ( ) => onChangePage('Gallery') }>Gallery</a>
-						<a className="linkMenu visible" href="#" onClick={ ( ) => onChangePage('Resume') }>Resume</a>
-						<a className="linkMenu visible" href="#" onClick={ ( ) => onChangePage('Contact') }>Contact</a>
+						<span className="linkMenu visible" onClick={ ( ) => onChangePage('Home') }>Home</span>
+						<span className="linkMenu visible" onClick={ ( ) => onChangePage('Profile') }>Profile</span>
+						<span className="linkMenu visible" onClick={ ( ) => onChangePage('Projects') }>Projects</span>
+						<span className="linkMenu visible" onClick={ ( ) => onChangePage('Gallery') }>Gallery</span>
+						<span className="linkMenu visible" onClick={ ( ) => onChangePage('Resume') }>Resume</span>
+						<span className="linkMenu visible" onClick={ ( ) => onChangePage('Contact') }>Contact</span>
 					</div>
 					<div className="firstmenu">
-						<a className="linkMenu" href="#" onClick={ (e) => onHideMenu(e) }>{menuControl.image}</a>
+						<span className="linkMenu" onClick={ (e) => onHideMenu(e) }>{menuControl.image}</span>
 					</div>
 				</div>
 		);

@@ -3,7 +3,7 @@ import ListPicture 			from './ListPicture';
 import animaWords 			from '../services/animaWords';
 import Search 				from './Search';
 import { apiCall } 			from "../services/api";
-import './gallery.css';
+import '../css/gallery.css';
 
 class Gallery extends Component {
 
