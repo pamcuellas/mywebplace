@@ -4,6 +4,7 @@ import { TweenMax } from "gsap/TweenMax";
 import { Back } from 'gsap';
 import img01 from '../images/MyGrayFace.jpg'; 
 import img02 from '../images/MyFace-min.jpg'; 
+import '../css/profile.css';
 
 const options = {
   imgSrc1:img01,

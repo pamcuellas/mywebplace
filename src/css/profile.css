@@ -1,0 +1,62 @@
+.profile{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.personaldata {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 20%; 
+  font-size: 1.5em;
+  color: #474747;
+
+}
+
+.photo{
+  position: relative;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /*width: 450px;*/
+  /*height: 350px;*/
+  width:428px;
+  height:344px;
+  background-color: #454549;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.photo .placeholder{
+  display:inline-block;
+  /*width:400px;*/
+  /*height:300px;*/
+  width:378px;
+  height:294px;
+  box-sizing:border-box;
+  position:relative;
+}
+
+.photo .placeholder:hover{
+  cursor: pointer;
+}
+
+.column, .blind, .blindImg{
+  position:absolute;
+  top:0;
+  height:100%;
+  box-sizing:border-box;
+}
+
+.blind{
+  overflow:hidden;
+}
+
+.blindImg{
+  width:100%;
+  background-size:cover;
+  border-radius: 3px;
+  border: 1px solid #2c3e50;
+}

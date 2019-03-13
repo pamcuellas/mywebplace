@@ -89,8 +89,8 @@ class Contact extends Component {
 	}
 
 	render() {  
-		const KEY = process.env.REACT_APP_TST_SITE_KEY;	
-		// const KEY = process.env.REACT_APP_HRK_SITE_KEY;	
+		// const KEY = process.env.REACT_APP_TST_SITE_KEY;	
+		const KEY = process.env.REACT_APP_HRK_SITE_KEY;	
 		return (
 			<div className="content">
 				<div className="title">
