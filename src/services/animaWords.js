@@ -7,12 +7,9 @@ let animaWords = ( words ) => {
 		'#c0392b',    
 		'#16a085',    		
     '#2c3e50',     
-		'grey',        
-		'pink',        
-		'red',         
-		'aqua',        
-		'aquamarine',  
-		'black'        
+		'#ff1493', // PINK        
+		'#cb3365', // RED        
+		'#0b1bff'  // BLUE       
 	];
 
 	var currentWord   = 0;

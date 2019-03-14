@@ -128,6 +128,9 @@ class App extends Component {
 	}
 
 	onChangePage (page) {
+
+
+
 		if (page === 'Home' && this.state.currPage !== page) {
 			this.handleMenu('visible', 'invisible', page);
 			document.querySelector('body').style.background = '#000';
@@ -138,7 +141,9 @@ class App extends Component {
 			if (this.state.showCookieMessage) {
 	 			setTimeout(this.showCookiePoliceMsg, 3000); 
 			}
-
+			if (page === 'Contact') {
+				document.querySelector('body').style.background = '#262626';
+			}
 		}		
 		this.setState({currPage: page});
 		createReq( page ); 

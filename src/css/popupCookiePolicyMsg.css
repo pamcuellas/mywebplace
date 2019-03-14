@@ -18,7 +18,7 @@
 
 .modal h1, .popup-cookie {
     letter-spacing: 0.1rem;
-    font-size: 1rem;
+    font-size: .7rem;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     color: #FFF;
@@ -30,15 +30,15 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    height: 10rem;
+    height: 8rem;
 
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 74%;
+    left: .5%;
+    /*transform: translate(-50%, -50%);*/
     background-color: #1F1F1F;
     padding: 1rem 1.5rem;
-    width: 22.5rem;
-    font-size: 1rem;
+    width: 18rem;
+    font-size: .7rem;
     border-radius: 0.5rem;
     border: solid 0.2rem #fd5c63;
 }
@@ -51,19 +51,19 @@
 }
 
 .close-button span{
-    font-size: 1.2rem;    
+    font-size: .9rem;    
     margin-left: 0.5rem;    
     color: #FFF;
 }
 
 .close-button i {
-    font-size: 2rem;
+    font-size: 1.7rem;
     color: #fd5c63;
 }
 
 .close-button i:hover {
     cursor: pointer;
-    color: #4ff4a2;
+    color: #5adbeb;
     transition: all 0.6s ease-out;
 }
 
