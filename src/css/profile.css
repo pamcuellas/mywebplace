@@ -20,10 +20,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /*width: 450px;*/
-  /*height: 350px;*/
-  width:428px;
-  height:344px;
+  width:419px;
+  height:337px;
   background-color: #454549;
   margin-top: 15px;
   margin-bottom: 15px;
@@ -31,10 +29,8 @@
 
 .photo .placeholder{
   display:inline-block;
-  /*width:400px;*/
-  /*height:300px;*/
-  width:378px;
-  height:294px;
+  width:369px;
+  height:287px;
   box-sizing:border-box;
   position:relative;
 }

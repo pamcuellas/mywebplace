@@ -239,6 +239,7 @@ footer a i  {
       margin-left: unset;
       margin-top: 7px;
     }
+    /* Social Media */
     footer ul {
       margin-right: 0;
       margin-top: 3px;
@@ -282,8 +283,10 @@ footer a i  {
       margin-top: 0px;
       padding-bottom: 10px;
     }
-
-
+    /* Social Media */
+    footer ul li {
+      margin-bottom: 3px;
+    }
 
     footer ul li {
       font-size: 0.6em;
@@ -293,7 +296,7 @@ footer a i  {
 }
   
 /* =======================================================*/
-/*                      LANGING PAGE                      */
+/*                      SLIDE SHOW                      */
 /* =======================================================*/
 
 ul {
