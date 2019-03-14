@@ -1,8 +1,8 @@
 import React, { Component } from 'react';  
 import animaWords 			from '../services/animaWords';
 import { apiCall } 			from "../services/api";
-import { loadReCaptcha, ReCaptcha } 	from 'react-recaptcha-google';
-
+// import { loadReCaptcha, ReCaptcha } from 'react-recaptcha-google';
+import { ReCaptcha } from 'react-recaptcha-google';
 import '../css/contact.css';
 
 class Contact extends Component { 
@@ -30,9 +30,7 @@ class Contact extends Component {
 
 	onSubmit(e) {
 		e.preventDefault();
-
 		const msg = document.querySelector(".msg-returned");				
-
 		// Verify reCaptcha.
 		if (!this.state.human) {
 			msg.textContent = "Please hit the reCaptcha check box above before send your message."; 
@@ -59,7 +57,6 @@ class Contact extends Component {
 	componentDidMount(){
 		var words = document.querySelectorAll('.word');
 		animaWords(words);
-		loadReCaptcha();
 		if (this.Captcha) {
 	        this.Captcha.reset();
 	    }

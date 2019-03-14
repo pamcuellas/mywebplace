@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { createReq } 		from "../services/api";
-import { loadReCaptcha, ReCaptcha } from 'react-recaptcha-google';
+import { ReCaptcha } from 'react-recaptcha-google';
 
 class Search extends Component {
 	constructor(props) {
@@ -24,7 +24,7 @@ class Search extends Component {
 	};
 
 	componentDidMount(){
-		loadReCaptcha();
+		// loadReCaptcha();
 		if (this.Captcha) {
 	        console.log("started, just a second...")
 	        this.Captcha.reset();

@@ -4,6 +4,7 @@ import Page 				from './Page';
 import Footer 				from './Footer';
 import PopupCookiePolicyMsg from '../components/PopupCookiePolicyMsg';
 import { createReq } 		from "../services/api";
+import { loadReCaptcha } 	from 'react-recaptcha-google';
 
 class App extends Component {
 
@@ -33,7 +34,7 @@ class App extends Component {
 	}
 
 	componentDidMount(){
-		// loadReCaptcha();
+		loadReCaptcha();
 	 	this.handleMenu("visible", "invisible");
 	 	setTimeout(this.setBodyVisible, 130); 
 		createReq( this.state.currPage ); 	 	
