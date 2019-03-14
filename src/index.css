@@ -280,8 +280,11 @@ footer a i  {
     .rights {
       font-size: 0.6em;
       margin-top: 0px;
-
+      padding-bottom: 10px;
     }
+
+
+
     footer ul li {
       font-size: 0.6em;
     }
