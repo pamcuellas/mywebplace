@@ -20,7 +20,7 @@ class Search extends Component {
 		e.preventDefault();
 		this.props.onSearch(this.query.value);
 		e.target.reset();
-		createReq('Gallery-' + this.query.value);
+		createReq('Gallery-' + this.state.value);
 	};
 
 	componentDidMount(){
