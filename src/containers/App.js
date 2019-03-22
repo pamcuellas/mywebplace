@@ -15,6 +15,9 @@ class App extends Component {
 			currPage: initialState,
 			scrollPosition: 0,
 			showCookieMessage: true,
+			timeoutSetted: false,
+			selMenuColor: '#0067c7',
+			unselMenuColor: '#FFFFFF',
 			menuControl: {
 				image: <i className="fas fa-minus" ></i>
 			}
@@ -38,6 +41,7 @@ class App extends Component {
 	 	this.handleMenu("visible", "invisible");
 	 	setTimeout(this.setBodyVisible, 130); 
 		createReq( this.state.currPage ); 	 	
+		document.querySelector(".linkMenu").style.color = this.state.selMenuColor;
 	}
 
     toggleModal = () => {
@@ -45,16 +49,14 @@ class App extends Component {
         // Hide Cookie Police message
     	var modal = document.querySelector(".modal");
         modal.classList.remove("show-modal");
-
-        // Set state to stop show Cookie Police message and do not render it anymore.
-        this.setState({showCookieMessage: false});
-        // Stop listeners
-        window.removeEventListener("click", this.windowOnClick);
-        // document.querySelector(".close-button").removeEventListener("click", this.toggleModal);
+		// Stop window listener. Maybe this is not the right place to do this due to this function
+		// was called inside the window listenner.
+		window.removeEventListener("click", this.windowOnClick);
+		this.setState({ showCookieMessage: false});
     }
 
     windowOnClick = (event) => {
-    	console.log("windowOnClick")	
+		console.log("windowOnClick")	
     	var modal = document.querySelector(".modal");
         if (event.target === modal) {
             this.toggleModal();
@@ -62,14 +64,12 @@ class App extends Component {
     }
 
 	showCookiePoliceMsg = () => { 
-    	console.log("showCookiePoliceMsg");
+		console.log("showCookiePoliceMsg");
 		var modal = document.querySelector(".modal");
 	    var closeButton = document.querySelector(".close-button");
-
 	    // Events to close Cookie Policy Message
 	    closeButton.addEventListener("click", this.toggleModal);
 	    window.addEventListener("click", this.windowOnClick);	
-
 	    // Show Cookie Policy Message
 	    modal.classList.toggle("show-modal");
 	}
@@ -79,14 +79,15 @@ class App extends Component {
 	}
 
 	handleMenu = (classToRemove, classToAdd, page = this.state.currPage) => {
- 		let linkMenu 			= document.querySelectorAll(".secondmenu .linkMenu");
  		let navbarBackground 	= 'transparent';
  		let footerBackground 	= 'transparent';
 
  		// Show/hide navbar
+ 		const linkMenu = document.querySelectorAll(".secondmenu .linkMenu");
 		linkMenu.forEach((e, i, a) => {
 			e.classList.remove(classToRemove);
 			e.classList.add( classToAdd);
+			if (this.state.currPage !== page) e.style.color = this.state.unselMenuColor;
 		});
 
 		// Show/hide/ footer
@@ -127,9 +128,7 @@ class App extends Component {
  		}
 	}
 
-	onChangePage (page) {
-
-
+	onChangePage (e, page) {
 
 		if (page === 'Home' && this.state.currPage !== page) {
 			this.handleMenu('visible', 'invisible', page);
@@ -137,15 +136,19 @@ class App extends Component {
 		} else if (page !== 'Home') {
 			this.handleMenu('invisible', 'visible', page);
 			document.querySelector('body').style.background = '#FFF';
-			//Pop up the Cookie Message, if did not yet. 
-			if (this.state.showCookieMessage) {
-	 			setTimeout(this.showCookiePoliceMsg, 3000); 
+			// Show Cookie Police Message if did not yet.
+			if (!this.state.timeoutSetted) {
+				//Pop up the Cookie Message after sometime. 
+				setTimeout(this.showCookiePoliceMsg, 3000); 
+				this.setState({timeoutSetted: true});
 			}
+	
 			if (page === 'Contact') {
 				document.querySelector('body').style.background = '#262626';
 			}
 		}		
 		this.setState({currPage: page});
+		e.target.style.color = this.state.selMenuColor;
 		createReq( page ); 
 	};
 	render() {

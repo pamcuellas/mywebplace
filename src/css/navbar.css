@@ -12,13 +12,11 @@
 }
 
 .navbar .firstmenu span {
-  /*text-decoration-line: none;*/
   font-size: 25px;
 }
 
 .secondmenu {
   margin-left: 20px;
-  font-size: 15px;
 }
 
 .navbar .fa-bars {
@@ -39,20 +37,24 @@
   transition: all 0.5s ease-out;  
   transition: color 0.5s ease-out;
   font-family: 'Montserrat', sans-serif;
-  letter-spacing: 0.10em;
-  color: white;
+  letter-spacing: 0.15em;
+  color: #FFFFFF;
   text-transform: uppercase;
-  font-size: 0.8em;
+  font-size: 0.7rem;
 }
 
 .linkMenu:hover 
 {
   cursor: pointer;
-  color: #000000;
+  /* color: #000000; */
   text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.3);
-  font-weight: bolder;
 }
 
 .linkMenu > i {
   margin-right: 4px;
 }
+
+.color {
+  color: #000000;
+}
+
