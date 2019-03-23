@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sketch Project</title>
+    
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            position: absolute;
+            display: flex;
+            /* align-content: center; */
+            flex-direction: row;
+            justify-content: space-between; 
+            align-items: center; /* Align vertically */
+            min-height: 100%;
+            min-width: 98%;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .circle {
+            display: flex;
+            justify-content: center;  /* TO CENTRALIZE THE CONTENT INSIDE THE CONTAINER */
+            align-items: center;
+            border: 15px solid #9a12b3;
+            border-top-color: #0B9665;
+            border-bottom-color: #171F96;
+            border-radius: 50%;
+            animation-name: spin;	
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-duration: 3s;
+            animation-delay: 0s;
+        }
+
+        .levelzero {
+            height: 420px;
+            width: 420px;
+        }
+
+        .levelone {
+            height: 340px;
+            width: 340px;
+        }
+
+        .leveltwo {
+            height: 260px;
+            width: 260px;
+        }
+
+        .levelthree {
+            height: 180px;
+            width: 180px;
+        }
+
+        .source {
+            width: 20%;
+            background: purple;
+            padding-bottom: 20%;
+            float: left;
+            margin: 1.66%;
+            border-radius: 15%;
+            transition: background 0.6s;
+            -webkit-transition: background 0.6s;
+            -moz-transition: background 0.6s;
+        }
+
+
+        .extraction {
+            width: 20%;
+            background: purple;
+            padding-bottom: 20%;
+            float: left;
+            margin: 1.66%;
+            border-radius: 15%;
+            transition: background 0.6s;
+            -webkit-transition: background 0.6s;
+            -moz-transition: background 0.6s;
+        }
+
+
+
+    </style>
+
+
+</head>
+<body>
+        
+    <div class="container">
+        <div class="source">
+        </div>
+        <div class="extraction">
+        </div>
+    
+        <div class="levelzero circle">
+            <div class="levelone circle">
+                <div class="leveltwo circle">
+                    <div class="levelthree circle">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

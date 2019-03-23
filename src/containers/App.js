@@ -16,7 +16,7 @@ class App extends Component {
 			scrollPosition: 0,
 			showCookieMessage: true,
 			timeoutSetted: false,
-			selMenuColor: '#0067c7',
+			selMenuColor: '#e08181',
 			unselMenuColor: '#FFFFFF',
 			menuControl: {
 				image: <i className="fas fa-minus" ></i>
@@ -153,7 +153,6 @@ class App extends Component {
 	};
 	render() {
 		return(
-			
 				<div className="app">
 						<div className="main">	
 							<Navbar onChangePage={this.onChangePage} 
@@ -164,10 +163,8 @@ class App extends Component {
 						</div>
 					<Footer />
 				</div>
-			
 			);
 	}
-
 }
 
 export default App;
