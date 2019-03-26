@@ -13,13 +13,83 @@
             padding: 0;
         }
 
+/************* DATABASE *********************/
+.database {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 18%;
+    height: 55vh;
+    /* max-height: 20%; */
+    /* min-height: 60px;
+    min-width: 180px; */
+}
+
+.circle-top {
+    border-radius: 50%;
+    z-index: 1000;
+}
+
+.circle-base {
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+.common {
+    height: 25%;
+    width: 100%;
+    min-height: 65px;
+    min-width: 120px; 
+    border: white 2px solid;
+    background-color: blue;
+    animation-name: changecolor;	
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    animation-delay: 0s;
+}
+
+
+.position-zero {
+    z-index: 1000;
+    transform: translateY(60px);  
+}
+
+.position-one {
+    z-index: 999;
+    transform: translateY(15px);  
+}
+.position-two {
+    z-index: 998;
+    transform: translateY(-30px);  
+}
+.position-three {
+    z-index: 997;
+    transform: translateY(-75px);  
+}
+
+
+
+@keyframes changecolor {
+            0% {
+                background-color: blue;
+            }
+            100% {
+                background-color: green;
+            }
+        }
+
+
+
+/************* END DATABASE *********************/
+
+
         .container {
             position: absolute;
             display: flex;
-            /* align-content: center; */
             flex-direction: row;
             justify-content: space-between; 
-            align-items: center; /* Align vertically */
+            align-items: center; 
             min-height: 100%;
             min-width: 98%;
             margin: 0;
@@ -62,18 +132,47 @@
         }
 
         .source {
+            display: flex;
+            justify-content: center;
+            position: relative;
             width: 20%;
             background: purple;
             padding-bottom: 20%;
             float: left;
             margin: 1.66%;
             border-radius: 15%;
-            transition: background 0.6s;
-            -webkit-transition: background 0.6s;
-            -moz-transition: background 0.6s;
         }
 
+        .fill {
+            width: 5px;
+            height: 5px;
+            background: purple;
+            border-radius: 50%;
+            transition: all 1.5s linear;
+            -webkit-transition: all 1.5s linear;
+            -moz-transition: all 1.5s linear;
+            animation-name: position;	
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-duration: 6s;
+            animation-delay: 0s;
 
+        }
+
+        @keyframes position {
+            0% {
+                /* transform: translateX(0px);  */
+                width: 95px;
+                height: 95px;
+            }
+            100% {
+                /* transform: translateX(3px);       */
+                width: 185px;
+                height: 185px;
+            }
+        }
+
+    
         .extraction {
             width: 20%;
             background: purple;
@@ -86,29 +185,354 @@
             -moz-transition: background 0.6s;
         }
 
+        .root {
+            margin-top: 5%;
+            animation-name: path;
+            animation-timing-function: linear;
+            animation-iteration-count: 1;
+            animation-duration: 8s;
+        }
 
+        @keyframes path {
+            0% {
+                transform: translateX(600px); 
+            }
+            100% {
+                transform: translateX(0px);      
+            }
+        }
+
+
+/**********************************************/
+
+        #arrowAnim {
+        width: 10vw;
+        height: 10vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1001;
+        }
+
+        .arrow {
+        width: 1vw;
+        height: 1vw;
+        border: 0.5vw solid;
+        border-color: black transparent transparent black;
+        transform: rotate(135deg);
+        }
+
+        .arrowSliding {
+        position: absolute;
+        -webkit-animation: slide 4s linear infinite; 
+                animation: slide 4s linear infinite;
+        }
+
+        .delay1 {
+            opacity: 0;
+            -webkit-animation-delay: 0.6s; 
+            animation-delay: 0.6s;
+        }
+        .delay2 {
+            opacity: 0;
+            -webkit-animation-delay: 1.2s; 
+            animation-delay: 1.2s;
+        }
+        .delay3 {
+            opacity: 0;
+            -webkit-animation-delay: 1.8s; 
+            animation-delay: 1.8s;
+        }
+        .delay4 {
+            opacity: 0;
+            -webkit-animation-delay: 2.4s; 
+            animation-delay: 2.4s;
+        }
+
+        @-webkit-keyframes slide {
+            0% { opacity:0; transform: translateX(0vw); }  
+            20% { opacity:1; transform: translateX(15vw); }   
+            80% { opacity:1; transform: translateX(30vw); }  
+            100% { opacity:0; transform: translateX(45vw); } 
+        }
+        @keyframes slide {
+            0% { opacity:0; transform: translateX(0vw); }  
+            20% { opacity:1; transform: translateX(15vw); }   
+            80% { opacity:1; transform: translateX(30vw); }  
+            100% { opacity:0; transform: translateX(45vw); } 
+        }
+
+
+/**********************************************/
+    /* TRY USING THIS LIKE A ARROW ROTATE -45 or 135 Degrees */    
+    #triangle-bottomleft {
+      width: 0;
+      height: 0;
+      border-bottom: 100px solid red;
+      border-right: 100px solid transparent;
+    }
+
+    .wall {
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }    
+
+
+    .arrow {
+        width: 1vw;
+        height: 1vw;
+        border: 0.5vw solid;
+        border-color: black transparent transparent black;
+        transform: rotate(135deg);
+        }
+
+
+
+
+    /************************* *****************/
+
+    @-webkit-keyframes slide {
+        0% { opacity:0; transform: translateX(0vw); }  
+        20% { opacity:1; transform: translateX(15vw); }   
+        80% { opacity:1; transform: translateX(30vw); }  
+        100% { opacity:0; transform: translateX(45vw); } 
+    }
+    @keyframes slide {
+        0% { opacity:0; transform: translateX(0vw); }  
+        20% { opacity:1; transform: translateX(20vw); }   
+        80% { opacity:1; transform: translateX(55vw); }  
+        100% { opacity:0; transform: translateX(75vw); } 
+    }
+
+    .move-wall {
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        /* margin-right: 30px;
+        margin-left: 30px; */
+        animation: slide 7s linear infinite;
+        z-index: -1;
+    }
+
+    .cs {
+        -webkit-animation-delay: 0s; 
+        animation-delay: 0s;
+        top: 8vh;
+        color:green;
+    }
+    .sm {
+        -webkit-animation-delay: 1s; 
+        animation-delay: 1s;
+        top: 12vh;
+        color: blue;
+    }
+    .pay {
+        -webkit-animation-delay: 2s; 
+        animation-delay: 2s;
+        top: 16vh;
+        color: purple;
+    }
+    .b2c {
+        -webkit-animation-delay: 3s; 
+        animation-delay: 3s;
+        top: 20vh;
+        color: red;
+    }
+    /* .ads {
+        -webkit-animation-delay: 6s; 
+        animation-delay: 6s;
+        top: 19vh;
+        color:green;
+    } */
+    .ec {
+        -webkit-animation-delay: 18s; 
+        animation-delay: 4s;
+        top: 24vh;
+        color: red;
+    }
+
+    .leads {
+        -webkit-animation-delay: 5s; 
+        animation-delay: 5s;
+        top: 28vh;
+        color:green;
+    }
+
+    .camp {
+        -webkit-animation-delay: 5s; 
+        color:green;
+        animation-delay: 6s;
+        top: 32vh;
+    }
+
+    .lala {
+        -webkit-animation-delay: 2.5s; 
+        animation-delay: 2.5s;
+        top: 8vh;
+        color:green;
+    }
+
+    .lele {
+        -webkit-animation-delay: 3.5s; 
+        animation-delay: 3.5s;
+        top: 12vh;
+        color:gray;
+    }
+
+    .lili {
+        -webkit-animation-delay: 4.5s; 
+        animation-delay: 4.5s;
+        top: 16vh;
+        color:brown;
+    }
+
+    .ads {
+        -webkit-animation-delay: 5.5s; 
+        animation-delay: 5.5s;
+        top: 20vh;
+        color:green;
+        font-weight: bolder;
+    }
+
+    .lolo {
+        -webkit-animation-delay: 6.5s; 
+        animation-delay: 6.5s;
+        top: 24vh;
+        color:yellowgreen;
+    }
+
+    .lulu {
+        -webkit-animation-delay: 7.5s; 
+        animation-delay: 7.5s;
+        top: 28vh;
+        color: teal;
+    }
+
+    .papa {
+        -webkit-animation-delay: 8.5s; 
+        animation-delay: 8.5s;
+        top: 32vh;
+        color: midnightblue;
+    }
+
+
+    .any-data {
+        animation: blink 1s linear infinite;
+    }
+
+    @keyframes blink{
+        0%{opacity: 0;}
+        20%{opacity: 1;}
+        80%{opacity: 1;}
+        100%{opacity: 0;}
+    }
+
+
+    .behind-wall {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        font-size: 1.3vw;
+    }
+
+
+    .newarrow {
+        width: 0.7vw;
+        height: 0.7vw;
+        border: 0.3vw solid;
+        border-color: black transparent transparent black;
+        transform: rotate(135deg);
+        z-index: -1;
+        }
 
     </style>
-
-
 </head>
 <body>
-        
+
+
+
     <div class="container">
         <div class="source">
-        </div>
-        <div class="extraction">
-        </div>
-    
-        <div class="levelzero circle">
-            <div class="levelone circle">
-                <div class="leveltwo circle">
-                    <div class="levelthree circle">
+            
+            <span class="wall"></span>
+            <div class="move-wall cs">
+                <span class="behind-wall" >Customer Service<div class="newarrow"></div></span>
+            </div>    
+            <div class="move-wall sm">
+                <span class="behind-wall">Social Media<div class="newarrow"></div></span>
+            </div>    
+            <div class="move-wall pay">
+                <span class="behind-wall">Payments<div class="newarrow"></div></span>
+            </div>    
+            <div class="move-wall b2c">
+                    <span class="behind-wall">B2C<div class="newarrow"></div></span>
+            </div>    
+            <div class="move-wall ec">
+                    <span class="behind-wall">E-Commerce<div class="newarrow"></div></span>
+            </div>    
+            <div class="move-wall leads">
+                    <span class="behind-wall">Leads<div class="newarrow"></div></span>
+            </div>    
+            <div class="move-wall ads">
+                    <span class="behind-wall any-data">Any data source</span><div class="newarrow"></div>
+            </div>    
+            <div class="move-wall camp">
+                    <span class="behind-wall">Campaign<div class="newarrow"></div></span>
+            </div>    
+            <div class="move-wall lala">
+                    <span class="behind-wall">Lala<div class="newarrow"></div></span>
+            </div>    
+            <div class="move-wall lele">
+                    <span class="behind-wall">Lele<div class="newarrow"></div></span>
+            </div>    
+            <div class="move-wall lili">
+                    <span class="behind-wall">Lili<div class="newarrow"></div></span>
+            </div>    
+            <div class="move-wall lolo">
+                    <span class="behind-wall">Lolo<div class="newarrow"></div></span>
+            </div>    
+            <div class="move-wall lulu">
+                    <span class="behind-wall">Lulu<div class="newarrow"></div></span>
+            </div>    
+            <div class="move-wall papa">
+                    <span class="behind-wall">Papa<div class="newarrow"></div></span>
+            </div>    
+
+<!-- 
+            <div id="arrowAnim">
+                    <div class="arrowSliding">
+                      <div class="arrow"></div>
                     </div>
-                </div>
-            </div>
+                    <div class="arrowSliding delay1">
+                      <div class="arrow"></div>
+                    </div>
+                    <div class="arrowSliding delay2">
+                      <div class="arrow"></div>
+                    </div>
+                    <div class="arrowSliding delay3">
+                        <div class="arrow"></div>
+                    </div>
+            </div> -->
         </div>
+
+
+        <div class="database">
+            <div class="circle-top  common position-zero"></div>
+            <div class="circle-base common position-one"></div>
+            <div class="circle-base common position-two"></div>
+            <div class="circle-base common position-three"></div>
+        </div>
+
     </div>
+
+
+    <script>
+        // let customerService = document.querySelector(".customerService");
+
+
+    </script>
 
 </body>
 </html>

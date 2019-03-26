@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    
+body {
+  overflow-x: hidden;  
+  padding: 20px;
+}
+
+.area {
+  width: 300px;
+  height: 200px;
+  position: relative;
+  border: 1px solid black;
+  overflow: hidden;
+}
+
+.car {
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: moveAcross 4s linear infinite;
+  /*animation-play-state: paused;*/
+}
+.car-1 {
+  fill: red;
+  animation-delay: -1s;
+  animation-duration: 10s;
+}
+.car-2 {
+  fill: blue;
+  top: 10px;
+  animation-delay: -2s;
+  animation-duration: 6s;
+}
+.car-3 {
+  fill: green;
+  top: 20px;
+  animation-delay: -3s;
+  animation-duration: 8s;
+}
+
+@keyframes moveAcross {
+  0% {
+    left: -300px;
+  }
+  100% {
+    left: 110%;
+  }
+}    
+    </style>
+
+
+</head>
+<body>
+    
+
+        <div class="area">
+                <svg style="display: none;">
+                <symbol viewBox="-3.456 0 96 99.818" id="car">
+                  <desc>car</desc>
+                    <path d="M16.87,54.115c-3.729,0-6.752,3.022-6.752,6.753c0,3.729,3.023,6.752,6.752,6.752   c3.729,0,6.752-3.022,6.752-6.752C23.622,57.137,20.598,54.115,16.87,54.115z M16.87,64.756c-2.035,0-3.683-1.649-3.683-3.683   c0-2.035,1.648-3.684,3.683-3.684c2.034,0,3.684,1.648,3.684,3.684C20.553,63.106,18.904,64.756,16.87,64.756z"/>
+                    <path d="M86.031,44.906c-4.911,0-22.099-1.842-22.099-1.842L54.724,30.15c0,0-46.039-4.741-55.043,30.259h6.856   c0-5,4.626-10.333,10.333-10.333c5.708,0,10.333,5.333,10.334,10.333h32.125c0.002-5,4.626-10.333,10.333-10.333   c5.708,0,10.333,5.333,10.334,10.333h4.398l4.912-12.458C89.306,47.951,90.943,44.906,86.031,44.906z M24.646,37.54   c10.64-5.116,29.465-4.092,29.465-4.092l6.957,9.617C61.068,43.064,14.004,42.656,24.646,37.54z"/>
+                    <path d="M69.662,54.115c-3.729,0-6.752,3.022-6.752,6.753c0,3.729,3.023,6.752,6.752,6.752s6.753-3.022,6.753-6.752   C76.415,57.137,73.39,54.115,69.662,54.115z M69.662,64.756c-2.035,0-3.683-1.649-3.683-3.683c0-2.035,1.647-3.684,3.683-3.684   s3.684,1.648,3.684,3.684C73.345,63.106,71.697,64.756,69.662,64.756z"/>
+                </symbol>
+                </svg>
+                
+                <div class="area">
+                  <svg class="car car-1">
+                    <use xlink:href="#car" />
+                  </svg>
+                  <svg class="car car-2">
+                    <use xlink:href="#car" />
+                  </svg>
+                  <svg class="car car-3">
+                    <use xlink:href="#car" />
+                  </svg>
+                </div>
+                
+
+
+
+</body>
+</html>
