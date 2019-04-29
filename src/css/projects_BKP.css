@@ -93,6 +93,15 @@
     color: #ffffff;
 }
 
+.projects-container .extraload {
+    font-size: 6em;
+    opacity: 0.5;
+    z-index: -2;
+    font-weight: bolder;
+    letter-spacing: 0.3em;
+}
+
+
 
 .source .sources ul{
     margin-top: 0.7em;
@@ -277,55 +286,3 @@
         transform: rotate(135deg);
         z-index: -1;
         }
-
-/************************ Words Circle ******************/ 
-
-.circlecontainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    width: 20%;
-    min-width: 20%;
-    background: transparent;
-    padding-bottom: 20.5%;
-    border-radius: 15%;
-}
-
-.wordscircle {
-    color: black;
-    position: absolute;
-}
-
-.wordscircle p {
-    font-family: "Roboto", sans-serif;
-    font-weight: bolder;
-}
-
-/* Open+Sans|Quicksand|Great+Vibes|Open+Sans:600|Muli|Source+Sans+Pro|Raleway|Roboto:100|Montserrat  */ 
-
-.projects-container .extraload {
-    position: fixed;
-    font-size: 3.5em;
-    opacity: 0.5;
-    z-index: 3;
-    font-weight: bolder;
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%)
-}    
-
-
-@keyframes spin{
-    0%{
-        transform: rotate(0deg);
-    }
-    100% {
-        transform:  rotate(360deg);
-    }
-}
-

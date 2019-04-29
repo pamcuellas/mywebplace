@@ -11,7 +11,7 @@ export function apiCall( method, path, data ) {
 		return axios[method.toLowerCase()](path, data)
 			.then(res => { 								// Where "data" comes from? The idea here is that when we get back information from AXIOS 
 				//console.log("Here is the res.data ==>", res.data)
-				return resolve (res.data);				// It always comes in in a certain object. In this case it is going to come in an object called 
+				return resolve (res.data);				// It always comes in a certain object. In this case it is going to come in an object called 
 			}).catch(err => {							// "response" and a sub object called data when something goes wrong inside of data we have the 
 				return reject(err); // sub object called error.
 			});

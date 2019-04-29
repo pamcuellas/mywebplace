@@ -152,12 +152,15 @@ class Profile extends Component {
 							</div>	
 						</div>	
 						<div className="profile">
-							<div className="personaldata">
-								<span>Hi there! I'm Paulo Cuellas Database Developer living in Toronto.</span>
-							</div>
+							<h3>Hi there! I'm Paulo Cuellas Database Developer living in Toronto.</h3>
+						</div>
+						<hr /> 
+						<div className="personaldata">
+							<h4>A bit about me</h4>
+							<p>The most part of my career I worked for small companies on projects for big companies like <a href="https://www.nestle.com/"  target="_blank" rel="noopener noreferrer">Nestlé</a>, <a href="https://online.citi.com/US/login.do"  target="_blank" rel="noopener noreferrer">Citibank</a>, <a href="https://www.whirlpool.com/"  target="_blank" rel="noopener noreferrer">Whrilpool</a>, <a href="https://www.santander.com/csgs/Satellite/CFWCSancomQP01/es_ES/Corporativo.html"  target="_blank" rel="noopener noreferrer">Santander</a>, <a href="https://mercedes-benz.com.br/"  target="_blank" rel="noopener noreferrer">Mercedes Benz</a>, <a href="http://www.embratur.gov.br/"  target="_blank" rel="noopener noreferrer">Embratur</a>, <a href="https://www.telefonica.com/en/home"  target="_blank" rel="noopener noreferrer">Global Village Telecom (bought by Telefonica)</a>, and <a href="https://www.jeep.com.br/"  target="_blank" rel="noopener noreferrer">Jeepe</a>.
+							</p>
 						</div>
 					</div>
-					<hr /> 
 				</div>
 			);
 	}

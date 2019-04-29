@@ -25,7 +25,6 @@ const ListPicture = props => {
 								/>
 							);
 	} else {
-		console.log("GOT NO NO PICTURE");
 		pictures = <NoPicture query={props.query}/>;		
 	}
 						

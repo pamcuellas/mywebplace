@@ -1,13 +1,11 @@
 import React, { Component } from 'react';  
 import animaWords from '../services/animaWords';
 import '../css/projects.css';
-import wordsCircle from '../services/wordsCircle';
 class Projects extends Component { 
 
 	componentDidMount(){
 		var words = document.querySelectorAll('.word');
 		animaWords(words);
-		wordsCircle(" Cleansing Standardizing Deduplication ", 10, 0);  
 	}
 
 	componentWillUnmount() {
@@ -66,6 +64,7 @@ class Projects extends Component {
 										<li>HTML/Other file formats</li>
 									</ul>
 								</div>
+
 								<span className="wall"></span>
 								<div className="move-wall cs">
 									<span className="behind-wall" >Customer Service<div className="newarrow"></div></span>
@@ -111,14 +110,7 @@ class Projects extends Component {
 								</div>    
 							</div>
 
-							<div className="circlecontainer">
-								<span className="extraload">E T L</span>
-								<div className="wordscircle">
-								</div>
-							</div>
-							
-
-							{/* <span className="extraload">ETL</span> */}
+							<span className="extraload">ETL</span>
 
 							<div className="database">
 								<div className="circle-top  common position-zero"></div>

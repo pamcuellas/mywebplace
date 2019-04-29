@@ -1,5 +1,7 @@
 import React from 'react';
 const Picture = props => {
+	let strDescription = props.description;
+	strDescription = strDescription.length > 150 ? strDescription.substring(0, 150) + ' ...' : strDescription;
 	if (props.classStyle === "fifteen") {
 		return ( 
 			<div className="bg-items" key={props.id}>
@@ -10,7 +12,7 @@ const Picture = props => {
 					<div className="l"></div>
 					<div className="details">
 						<h3>Photo by <a href={`${props.linkUser}`} target="_blank" rel="noopener noreferrer">{props.author}.</a></h3>
-						<p><a href={`${props.linkPhoto}`} target="_blank" rel="noopener noreferrer">{props.description}.</a></p>
+						<p><a href={`${props.linkPhoto}`} target="_blank" rel="noopener noreferrer">{strDescription}.</a></p>
 						<p>Click the links to see on  <a href="http://unsplash.com/" target="_blank" rel="noopener noreferrer"> Unsplash </a>.</p>
 						<h6>{props.date}</h6>
 					</div>
@@ -25,7 +27,7 @@ const Picture = props => {
 					<div className="br5"></div>
 					<div className="details">
 						<h3>Photo by <a href={`${props.linkUser}`} target="_blank" rel="noopener noreferrer">{props.author}.</a></h3>
-						<p><a href={`${props.linkPhoto}`} target="_blank" rel="noopener noreferrer">{props.description}.</a></p>
+						<p><a href={`${props.linkPhoto}`} target="_blank" rel="noopener noreferrer">{strDescription}.</a></p>
 						<p>Click the links to see on  <a href="http://unsplash.com/" target="_blank" rel="noopener noreferrer"> Unsplash </a>.</p>
 						<h6>{props.date}</h6>
 					</div>
@@ -42,7 +44,7 @@ const Picture = props => {
 					<div className="br6"></div>
 					<div className="details">
 						<h3>Photo by <a href={`${props.linkUser}`} target="_blank" rel="noopener noreferrer">{props.author}.</a></h3>
-						<p><a href={`${props.linkPhoto}`} target="_blank" rel="noopener noreferrer">{props.description}.</a></p>
+						<p><a href={`${props.linkPhoto}`} target="_blank" rel="noopener noreferrer">{strDescription}.</a></p>
 						<p>Click the links to see on  <a href="http://unsplash.com/" target="_blank" rel="noopener noreferrer"> Unsplash </a>.</p>
 						<h6>{props.date}</h6>
 					</div>
@@ -59,7 +61,7 @@ const Picture = props => {
 					<div className="ten iv"></div>
 					<div className="details">
 						<h3>Photo by <a href={`${props.linkUser}`} target="_blank" rel="noopener noreferrer">{props.author}.</a></h3>
-						<p><a href={`${props.linkPhoto}`} target="_blank" rel="noopener noreferrer">{props.description}.</a></p>
+						<p><a href={`${props.linkPhoto}`} target="_blank" rel="noopener noreferrer">{strDescription}.</a></p>
 						<p>Click the links to see on  <a href="http://unsplash.com/" target="_blank" rel="noopener noreferrer"> Unsplash </a>.</p>
 						<h6>{props.date}</h6>
 					</div>
@@ -76,7 +78,7 @@ const Picture = props => {
 				<div className="eleven iv"></div>
 					<div className="details">
 						<h3>Photo by <a href={`${props.linkUser}`} target="_blank" rel="noopener noreferrer">{props.author}.</a></h3>
-						<p><a href={`${props.linkPhoto}`} target="_blank" rel="noopener noreferrer">{props.description}.</a></p>
+						<p><a href={`${props.linkPhoto}`} target="_blank" rel="noopener noreferrer">{strDescription}.</a></p>
 						<p>Click the links to see on  <a href="http://unsplash.com/" target="_blank" rel="noopener noreferrer"> Unsplash </a>.</p>
 						<h6>{props.date}</h6>
 					</div>
@@ -93,7 +95,7 @@ const Picture = props => {
 					<div className="twelve iv"></div>
 					<div className="details">
 						<h3>Photo by <a href={`${props.linkUser}`} target="_blank" rel="noopener noreferrer">{props.author}.</a></h3>
-						<p><a href={`${props.linkPhoto}`} target="_blank" rel="noopener noreferrer">{props.description}.</a></p>
+						<p><a href={`${props.linkPhoto}`} target="_blank" rel="noopener noreferrer">{strDescription}.</a></p>
 						<p>Click the links to see on  <a href="http://unsplash.com/" target="_blank" rel="noopener noreferrer"> Unsplash </a>.</p>
 						<h6>{props.date}</h6>
 					</div>
@@ -108,7 +110,7 @@ const Picture = props => {
 					<div className="thirteen-r"></div>
 					<div className="details">
 						<h3>Photo by <a href={`${props.linkUser}`} target="_blank" rel="noopener noreferrer">{props.author}.</a></h3>
-						<p><a href={`${props.linkPhoto}`} target="_blank" rel="noopener noreferrer">{props.description}.</a></p>
+						<p><a href={`${props.linkPhoto}`} target="_blank" rel="noopener noreferrer">{strDescription}.</a></p>
 						<p>Click the links to see on  <a href="http://unsplash.com/" target="_blank" rel="noopener noreferrer"> Unsplash </a>.</p>
 						<h6>{props.date}</h6>
 					</div>
@@ -123,7 +125,7 @@ const Picture = props => {
 					<div className="fourteen-r"></div>
 					<div className="details">
 						<h3>Photo by <a href={`${props.linkUser}`} target="_blank" rel="noopener noreferrer">{props.author}.</a></h3>
-						<p><a href={`${props.linkPhoto}`} target="_blank" rel="noopener noreferrer">{props.description}.</a></p>
+						<p><a href={`${props.linkPhoto}`} target="_blank" rel="noopener noreferrer">{strDescription}.</a></p>
 						<p>Click the links to see on  <a href="http://unsplash.com/" target="_blank" rel="noopener noreferrer"> Unsplash </a>.</p>
 						<h6>{props.date}</h6>
 					</div>
@@ -137,7 +139,7 @@ const Picture = props => {
 				<div className={`${props.classStyle}`}></div>
 				<div className="details">
 					<h3>Photo by <a href={`${props.linkUser}`} target="_blank" rel="noopener noreferrer">{props.author}.</a></h3>
-					<p><a href={`${props.linkPhoto}`} target="_blank" rel="noopener noreferrer">{props.description}.</a></p>
+					<p><a href={`${props.linkPhoto}`} target="_blank" rel="noopener noreferrer">{strDescription}.</a></p>
 					<p>Click the links to see on  <a href="http://unsplash.com/" target="_blank" rel="noopener noreferrer"> Unsplash </a>.</p>
 					<h6>{props.date}</h6>
 				</div>
