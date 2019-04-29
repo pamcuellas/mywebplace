@@ -57,15 +57,19 @@ class Projects extends Component {
 						<div className="projects-container">
 							<div className="source">
 
-								<div className="sources">
+								<div className="new-circle"></div>
+								<div className="data-text">
 									<h4>Data Sources</h4>
 									<ul>
 										<li>Databases</li>
 										<li>Web services</li>
 										<li>Flat files</li>
-										<li>HTML/Other file formats</li>
+										<li>XML, HTML, etc</li>
 									</ul>
 								</div>
+
+								{/* <div className="sources">
+								</div> */}
 								<span className="wall"></span>
 								<div className="move-wall cs">
 									<span className="behind-wall" >Customer Service<div className="newarrow"></div></span>

@@ -10,8 +10,6 @@ let wordsCircle = (words, radius, classIndex) => {
                         top:0;
                         left:50%;
                         transform:translate(-50%, -50%);
-                        
-                        font-size: 1em;
                         position:absolute;
                         transform:rotate(${origin}deg);
                         animation-name:spin;	

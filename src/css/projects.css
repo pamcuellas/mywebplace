@@ -29,6 +29,7 @@
     border-bottom-left-radius: 50%;
     border-bottom-right-radius: 50%;
 }
+
 .common {
     height: 25%;
     width: 100%;
@@ -73,39 +74,61 @@
 .source {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     position: relative;
-    width: 20%;
-    min-width: 20%;
-    background: purple;
-    padding-bottom: 20%;
-    border-radius: 15%;
+    min-width: 17%;
+    background: purple; 
+    padding-bottom: 17%;
+    border-radius: 50%;
+    border: 2vh solid #9a12b3;
 }
 
-.source .sources {
+.new-circle {
+    width: 100%;
+    padding-bottom: 100%;
+    border-radius: 50%;
+    border: 2vh solid #9a12b3;
+    border-top-color: #0B9665;
+    border-bottom-color: #171F96;
+    animation-name: spin;	
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 15s;
+    animation-delay: 0s;
+    margin: 0;
+    position: absolute;
+    top: -2vh;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+.data-text {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+} 
+
+.data-text h4{
+    font-size: 1.1em;
+}
+
+.data-text ul{
+    margin-top: 0.5em;
+    list-style: circle;
+    list-style-type: square;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    /* align-content: center;
-    align-items: center; */
-    position:  absolute;
-    margin-top: 1.3em; 
-    color: #ffffff;
+    justify-content: space-between; 
+    align-items: baseline;
+    margin-left: 1em;
 }
 
-
-.source .sources ul{
-    margin-top: 0.7em;
-    list-style: outside;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
-}
-
-.source .sources li {
+.data-text li {
     font-size: 0.7em;
-    margin-top: 0.7em;
 }
 
 
@@ -164,7 +187,6 @@
     .cs {
         -webkit-animation-delay: 0s; 
         animation-delay: 0s;
-        color:#d11960;
         margin: 0;
         position: absolute;
         top: 35%;
@@ -177,78 +199,70 @@
         animation-delay: 1s;
         margin: 0;
         position: absolute;
-        top: 60%;
+        top: 57.5%;
         left: 50%;
         margin-right: -50%;
         transform: translate(-50%, -50%);
-        color: blue;
     }
     .pay {
         -webkit-animation-delay: 2s; 
         animation-delay: 2s;
         margin: 0;
         position: absolute;
-        top: 45%;
+        top: 35%;
         left: 50%;
         margin-right: -50%;
         transform: translate(-50%, -50%);
-        color: purple;
     }
     .crm {
         -webkit-animation-delay: 3s; 
         animation-delay: 3s;
         margin: 0;
         position: absolute;
-        top: 55%;
+        top: 57.5%;
         left: 60%;
         margin-right: -50%;
         transform: translate(-50%, -50%);
-        color: #6a67ce;
     }
     .ec {
         -webkit-animation-delay: 18s; 
         animation-delay: 4s;
         margin: 0;
         position: absolute;
-        top: 45%;
+        top: 35%;
         left: 50%;
         margin-right: -50%;
         transform: translate(-50%, -50%);
-        color: red;
     }
     .leads {
         -webkit-animation-delay: 5s; 
         animation-delay: 5s;
         margin: 0;
         position: absolute;
-        top: 55%;
+        top: 57.5%;
         left: 50%;
         margin-right: -50%;
         transform: translate(-50%, -50%);
-        color:#ff4f81;
     }
 
     .camp {
         -webkit-animation-delay: 6s; 
-        color:#a626aa;
         animation-delay: 6s;
         margin: 0;
         position: absolute;
-        top: 45%;
+        top: 35%;
         left: 50%;
         margin-right: -50%;
         transform: translate(-50%, -50%);
     }
 
     .ads {
-        -webkit-animation-delay: 8s; 
-        animation-delay: 8s;
-        color:green;
-        font-weight: bolder;
+        -webkit-animation-delay: 7.5s; 
+        animation-delay: 7.5s;
         margin: 0;
         position: absolute;
-        top: 55%;
-        left: 30%;
+        top: 57.5%;
+        left: 70%;
         margin-right: -50%;
         transform: translate(-50%, -50%);
     }
@@ -263,6 +277,7 @@
         justify-content: center;
         font-size: 1.3vw;
         font-weight: bold;
+        color: #ff1493;
     }
 
 
@@ -270,7 +285,7 @@
         width: 0.8vw;
         height: 0.8vw;
         border: 0.4vw solid;
-        border-color: black transparent transparent black;
+        border-color: black transparent transparent red;
         transform: rotate(135deg);
         z-index: -1;
         }
@@ -298,16 +313,21 @@
 .wordscircle p {
     font-family: "Great+Vibes", sans-serif;
     font-weight: bolder;
+    color: blue;
+    font-size: 1em;
+    opacity: 0.6;
+    z-index: -10;
 }
 
 /* Open+Sans|Quicksand|Great+Vibes|Open+Sans:600|Muli|Source+Sans+Pro|Raleway|Roboto:100|Montserrat  */ 
 
 .projects-container .extraload {
     position: fixed;
-    font-size: 4em;
-    opacity: 0.5;
-    z-index: 3;
+    font-size: 4.5em;
     font-weight: bolder;
+    text-shadow: 1px 1px 1px #000, 5px 5px 10px blue;
+    opacity: 0.5;
+    z-index: -5;
     margin: 0;
     position: absolute;
     top: 50%;
@@ -325,4 +345,69 @@
         transform:  rotate(360deg);
     }
 }
+
+
+
+/* @MEDIA */ 
+@media screen and (max-width: 630px) {
+
+    .data-text ul{
+        visibility: hidden;
+    }    
+    .data-text h4 {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .wordscircle p {
+        font-size: 0.6em;
+    }
+    
+    /* Open+Sans|Quicksand|Great+Vibes|Open+Sans:600|Muli|Source+Sans+Pro|Raleway|Roboto:100|Montserrat  */ 
+
+    .projects-container .extraload {
+        font-size: 2.5em;
+    }        
+
+    .common {
+        height: 10%;
+        width: 100%;
+        /* min-height: 65px;
+        min-width: 120px; 
+        border: white 2px solid;
+        background-color: blue;
+        animation-name: changecolor;	
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-duration: 3s;
+        animation-delay: 0s; */
+    }
+/*     
+    .position-zero {
+        z-index: 1000;
+        transform: translateY(60px);  
+    }
+    .position-one {
+        z-index: 999;
+        transform: translateY(15px);  
+    }
+    .position-two {
+        z-index: 998;
+        transform: translateY(-30px);  
+    }
+    .position-three {
+        z-index: 997;
+        transform: translateY(-75px);  
+    }
+     */
+
+
+
+
+}
+
 
