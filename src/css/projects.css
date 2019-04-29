@@ -164,90 +164,94 @@
     .cs {
         -webkit-animation-delay: 0s; 
         animation-delay: 0s;
-        top: 8vh;
         color:#d11960;
+        margin: 0;
+        position: absolute;
+        top: 35%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
     }
     .sm {
         -webkit-animation-delay: 1s; 
         animation-delay: 1s;
-        top: 12vh;
+        margin: 0;
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
         color: blue;
     }
     .pay {
         -webkit-animation-delay: 2s; 
         animation-delay: 2s;
-        top: 16vh;
+        margin: 0;
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
         color: purple;
     }
     .crm {
         -webkit-animation-delay: 3s; 
         animation-delay: 3s;
-        top: 20vh;
+        margin: 0;
+        position: absolute;
+        top: 55%;
+        left: 60%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
         color: #6a67ce;
     }
     .ec {
         -webkit-animation-delay: 18s; 
         animation-delay: 4s;
-        top: 24vh;
+        margin: 0;
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
         color: red;
     }
     .leads {
         -webkit-animation-delay: 5s; 
         animation-delay: 5s;
-        top: 28vh;
+        margin: 0;
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
         color:#ff4f81;
     }
 
     .camp {
-        -webkit-animation-delay: 5s; 
+        -webkit-animation-delay: 6s; 
         color:#a626aa;
         animation-delay: 6s;
-        top: 32vh;
-    }
-
-    .hrm {
-        -webkit-animation-delay: 2.5s; 
-        animation-delay: 2.5s;
-        top: 8vh;
-        color:#003a70;
-    }
-
-    .census {
-        -webkit-animation-delay: 3.5s; 
-        animation-delay: 3.5s;
-        top: 12vh;
-        color:gray;
-    }
-
-    .partners {
-        -webkit-animation-delay: 4.5s; 
-        animation-delay: 4.5s;
-        top: 16vh;
-        color:brown;
+        margin: 0;
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
     }
 
     .ads {
-        -webkit-animation-delay: 6s; 
-        animation-delay: 6.5s;
-        top: 20vh;
+        -webkit-animation-delay: 8s; 
+        animation-delay: 8s;
         color:green;
         font-weight: bolder;
+        margin: 0;
+        position: absolute;
+        top: 55%;
+        left: 30%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
     }
-
-    .erp {
-        -webkit-animation-delay: 6.5s; 
-        animation-delay: 6.5s;
-        top: 24vh;
-        color:yellowgreen;
-    }
-
-    .surveys {
-        -webkit-animation-delay: 8.5s; 
-        animation-delay: 8.5s;
-        top: 32vh;
-        color: midnightblue;
-    }
-
 
     .any-data {
         animation: blink 1s linear infinite;
@@ -257,15 +261,15 @@
         display: flex;
         flex-direction: row;
         justify-content: center;
-        font-size: 1.1vw;
+        font-size: 1.3vw;
         font-weight: bold;
     }
 
 
     .newarrow {
-        width: 0.7vw;
-        height: 0.7vw;
-        border: 0.3vw solid;
+        width: 0.8vw;
+        height: 0.8vw;
+        border: 0.4vw solid;
         border-color: black transparent transparent black;
         transform: rotate(135deg);
         z-index: -1;
@@ -300,7 +304,7 @@
 
 .projects-container .extraload {
     position: fixed;
-    font-size: 3.5em;
+    font-size: 4em;
     opacity: 0.5;
     z-index: 3;
     font-weight: bolder;
