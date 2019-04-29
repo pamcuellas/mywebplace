@@ -179,7 +179,7 @@
         top: 16vh;
         color: purple;
     }
-    .b2c {
+    .crm {
         -webkit-animation-delay: 3s; 
         animation-delay: 3s;
         top: 20vh;
@@ -227,8 +227,8 @@
     }
 
     .ads {
-        -webkit-animation-delay: 5.5s; 
-        animation-delay: 5.5s;
+        -webkit-animation-delay: 6s; 
+        animation-delay: 6.5s;
         top: 20vh;
         color:green;
         font-weight: bolder;
@@ -239,13 +239,6 @@
         animation-delay: 6.5s;
         top: 24vh;
         color:yellowgreen;
-    }
-
-    .crm {
-        -webkit-animation-delay: 7.5s; 
-        animation-delay: 7.5s;
-        top: 28vh;
-        color: teal;
     }
 
     .surveys {
@@ -299,7 +292,7 @@
 }
 
 .wordscircle p {
-    font-family: "Roboto", sans-serif;
+    font-family: "Great+Vibes", sans-serif;
     font-weight: bolder;
 }
 

@@ -76,8 +76,8 @@ class Projects extends Component {
 								<div className="move-wall pay">
 									<span className="behind-wall">Payments<div className="newarrow"></div></span>
 								</div>    
-								<div className="move-wall b2c">
-										<span className="behind-wall">B2C<div className="newarrow"></div></span>
+								<div className="move-wall crm">
+										<span className="behind-wall">CRM<div className="newarrow"></div></span>
 								</div>    
 								<div className="move-wall ec">
 										<span className="behind-wall">E-Commerce<div className="newarrow"></div></span>
@@ -90,24 +90,6 @@ class Projects extends Component {
 								</div>    
 								<div className="move-wall camp">
 										<span className="behind-wall">Campaigns<div className="newarrow"></div></span>
-								</div>    
-								<div className="move-wall hrm">
-										<span className="behind-wall">HRM<div className="newarrow"></div></span>
-								</div>    
-								<div className="move-wall census">
-										<span className="behind-wall">Census<div className="newarrow"></div></span>
-								</div>    
-								<div className="move-wall partners">
-										<span className="behind-wall">Partners<div className="newarrow"></div></span>
-								</div>    
-								<div className="move-wall erp">
-										<span className="behind-wall">ERP<div className="newarrow"></div></span>
-								</div>    
-								<div className="move-wall crm">
-										<span className="behind-wall">CRM<div className="newarrow"></div></span>
-								</div>    
-								<div className="move-wall surveys">
-										<span className="behind-wall">Surveys<div className="newarrow"></div></span>
 								</div>    
 							</div>
 
