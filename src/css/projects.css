@@ -33,8 +33,8 @@
 .common {
     height: 25%;
     width: 100%;
-    min-height: 65px;
-    min-width: 120px; 
+    min-height: 55px;
+    min-width: 83px; 
     border: white 2px solid;
     background-color: blue;
     animation-name: changecolor;	
@@ -355,12 +355,14 @@
         visibility: hidden;
     }    
     .data-text h4 {
+        font-size: 0.7em;
         margin: 0;
         position: absolute;
         top: 50%;
         left: 50%;
         margin-right: -50%;
         transform: translate(-50%, -50%);
+        font-size: 
     }
 
     .wordscircle p {
@@ -370,12 +372,14 @@
     /* Open+Sans|Quicksand|Great+Vibes|Open+Sans:600|Muli|Source+Sans+Pro|Raleway|Roboto:100|Montserrat  */ 
 
     .projects-container .extraload {
-        font-size: 2.5em;
+        font-size: 2em;
     }        
 
     .common {
         height: 10%;
         width: 100%;
+        border: white 2.5px solid;
+
         /* min-height: 65px;
         min-width: 120px; 
         border: white 2px solid;
