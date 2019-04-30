@@ -1,8 +1,8 @@
 .photo-container {
-  position: relative;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  flex-wrap: wrap;
   align-items: center;
   max-width: 80%;
 }
@@ -13,13 +13,14 @@
   justify-content: space-between;
   padding-bottom: 0.7em;
   opacity: 1;
-  max-width: 40%;
+  max-width: 60%;
+  min-width: 50%; 
 }
 
 .introduction span {
-  font-size: 1.4em;
+  font-size: 1.5em;
   color: #333333;
-  text-align: left;
+  text-align: center;
 }
 
 
