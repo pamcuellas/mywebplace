@@ -150,10 +150,11 @@ class Profile extends Component {
 							<div className="photo">
 								<div className="placeholder"></div>
 							</div>	
+							<div className="introduction">
+								<span>Hi there! I'm Paulo Cuellas a IT professional living in Toronto.</span>
+							</div>
+
 						</div>	
-						<div className="profile">
-							<h3>Hi there! I'm Paulo Cuellas Database Developer living in Toronto.</h3>
-						</div>
 						<hr /> 
 						<div className="personaldata">
 							<h4>A bit about me</h4>

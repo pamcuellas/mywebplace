@@ -1,10 +1,27 @@
-.profile{
+.photo-container {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 80%;
+}
+
+.introduction{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding-bottom: 0.7em;
   opacity: 1;
+  max-width: 40%;
 }
+
+.introduction span {
+  font-size: 1.4em;
+  color: #333333;
+  text-align: left;
+}
+
 
 .personaldata {
   display: flex;
@@ -17,10 +34,6 @@
   padding-top:  1.0em;
 }
 
-.profile h3 {
-  font-size: 1.4em;
-  color: #333333;
-}
 
 .personaldata h4 {
   font-size: 1.em;
@@ -45,8 +58,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width:419px;
-  height:337px;
+  width:379px;
+  height:305px;
   background-color: #454549;
   margin-top: 15px;
   margin-bottom: 15px;
@@ -54,8 +67,8 @@
 
 .photo .placeholder{
   display:inline-block;
-  width:369px;
-  height:287px;
+  width:280px;
+  height:218px;
   box-sizing:border-box;
   position:relative;
 }
@@ -81,3 +94,27 @@
   border-radius: 3px;
   border: 1px solid #2c3e50;
 }
+
+
+/*
+.photo{
+  position: relative;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width:419px;
+  height:337px;
+  background-color: #454549;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.photo .placeholder{
+  display:inline-block;
+  width:369px;
+  height:287px;
+  box-sizing:border-box;
+  position:relative;
+}
+*/
