@@ -3,10 +3,10 @@
     position: relative;
     display: flex;
     flex-direction: row;
-    justify-content: space-between; 
+    justify-content: space-around; 
     align-items: center; 
     min-height: 100%;
-    min-width: 98%;
+    min-width: 100%;
     margin: 0;
     padding: 0;
 }
@@ -37,11 +37,6 @@
     min-width: 83px; 
     border: white 2px solid;
     background-color: #267a88;
-    /* animation-name: changecolor;	
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-duration: 3s;
-    animation-delay: 0s; */
 }
 
 .position-zero {
@@ -141,17 +136,16 @@
 
     @-webkit-keyframes slide {
         0% { opacity:0; transform: translateX(0vw); }  
-        20% { opacity:1; transform: translateX(15vw); }   
-        80% { opacity:1; transform: translateX(30vw); }  
-        100% { opacity:0; transform: translateX(45vw); } 
+        20% { opacity:1; transform: translateX(10vw); }   
+        80% { opacity:1; transform: translateX(50vw); }  
+        100% { opacity:0; transform: translateX(60vw); } 
     }
     @keyframes slide {
         0% { opacity:0; transform: translateX(0vw); }  
-        20% { opacity:1; transform: translateX(20vw); }   
-        80% { opacity:1; transform: translateX(55vw); }  
-        100% { opacity:0; transform: translateX(75vw); } 
+        20% { opacity:1; transform: translateX(10vw); }   
+        80% { opacity:1; transform: translateX(50vw); }  
+        100% { opacity:0; transform: translateX(60vw); } 
     }
-
     
     @-webkit-keyframes blink{
         0%{opacity: 0;}
@@ -364,9 +358,9 @@
     }        
 
     .common {
-        height: 21%;
+        height: 22%;
         width: 100%;
-        border: white 2.6px solid;
+        border: white 2.7px solid;
     }
 
 }

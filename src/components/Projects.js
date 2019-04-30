@@ -100,9 +100,6 @@ class Projects extends Component {
 								<div className="wordscircle">
 								</div>
 							</div>
-							
-
-							{/* <span className="extraload">ETL</span> */}
 
 							<div className="database">
 								<div className="circle-top  common position-zero"></div>
