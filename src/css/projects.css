@@ -104,6 +104,7 @@
 
 .data-text h4{
     font-size: 1.1em;
+    color: #ffffff;
 }
 
 .data-text ul{
@@ -119,6 +120,7 @@
 
 .data-text li {
     font-size: 0.7em;
+    color: #ffffff;
 }
 
 
@@ -376,11 +378,11 @@
     }
 
     .wordscircle p {
-        font-size: 0.7em;
+        font-size: 0.6em;
     }
 
     .projects-container .extraload {
-        font-size: 2em;
+        font-size: 1.8em;
     }        
 
     .common {
@@ -392,27 +394,5 @@
     .behind-wall {
         font-size: 0.55em;
     }
-
-    /* .cs {
-        visibility: hidden;
-    } */
-    /* .new-circle {
-        border: 2vh solid #9a12b3;
-        border-top-color: #0B9665;
-        border-bottom-color: #171F96;
-        animation-name: spin;	
-        animation-timing-function: linear;
-        animation-iteration-count: infinite;
-        animation-duration: 15s;
-        animation-delay: 0s;
-        margin: 0;
-        position: absolute;
-        top: -2vh;
-        margin-right: -50%;
-        transform: translate(-50%, -50%)
-    } */
-    
-
-
 
 }
