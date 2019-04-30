@@ -27,19 +27,16 @@ class App extends Component {
 		this.toggleModal = this.toggleModal.bind(this);
 		this.onChangePage = this.onChangePage.bind(this);
 		this.windowOnClick= this.windowOnClick.bind(this);
-		this.setBodyVisible = this.setBodyVisible.bind(this);
 		this.showCookiePoliceMsg = this.showCookiePoliceMsg.bind(this);
 	}
 
 	componentWillMount(){
-	 	document.querySelector('body').style.visibility = 'hidden';
 		document.querySelector('body').style.background = '#000';
 	}
 
 	componentDidMount(){
 		loadReCaptcha();
 	 	this.handleMenu("visible", "invisible");
-	 	setTimeout(this.setBodyVisible, 50000); 
 		createReq( this.state.currPage ); 	 	
 		document.querySelector(".linkMenu").style.color = this.state.selMenuColor;
 	}
@@ -72,10 +69,6 @@ class App extends Component {
 	    window.addEventListener("click", this.windowOnClick);	
 	    // Show Cookie Policy Message
 	    modal.classList.toggle("show-modal");
-	}
-
-	setBodyVisible = () => {
-		document.querySelector('body').style.visibility = 'visible';
 	}
 
 	handleMenu = (classToRemove, classToAdd, page = this.state.currPage) => {
