@@ -75,9 +75,6 @@ class Projects extends Component {
 								<div className="move-wall sm">
 									<span className="behind-wall">Social Media<div className="newarrow"></div></span>
 								</div>    
-								{/* <div className="move-wall pay">
-									<span className="behind-wall">Payments<div className="newarrow"></div></span>
-								</div>     */}
 								<div className="move-wall crm">
 										<span className="behind-wall">CRM<div className="newarrow"></div></span>
 								</div>    
@@ -96,9 +93,8 @@ class Projects extends Component {
 							</div>
 
 							<div className="circlecontainer">
+								<div className="wordscircle"></div>
 								<span className="extraload">E T L</span>
-								<div className="wordscircle">
-								</div>
 							</div>
 
 							<div className="database">

@@ -55,7 +55,7 @@ class Search extends Component {
 					ref={input => (this.query = input)}
 					name="search"
 					autoComplete="off"
-					placeholder="Type your search here ..."
+					placeholder="Do you like photos? Search some here ..."
 				/>
 				<button type="submit" className="search-icon-btn">
 					<i className="fas fa-search"></i>

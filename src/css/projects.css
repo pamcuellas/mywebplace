@@ -249,7 +249,7 @@
         flex-direction: row;
         justify-content: center;
         font-size: 1.3vw;
-        /* font-weight: bold; */
+        font-weight: 600;
         color: #ff1493;
     }
 
@@ -273,7 +273,7 @@
     width: 20%;
     min-width: 20%;
     background: transparent;
-    padding-bottom: 20.5%;
+    padding-bottom: 20%;
     border-radius: 15%;
 }
 
@@ -291,20 +291,22 @@
     z-index: -10;
 }
 
+/* .wordscircle span {
+} */
+
 /* Open+Sans|Quicksand|Great+Vibes|Open+Sans:600|Muli|Source+Sans+Pro|Raleway|Roboto:100|Montserrat  */ 
 
-.projects-container .extraload {
-    position: fixed;
-    text-align: right;
+.circlecontainer .extraload {
     font-size: 4.5em;
+    vertical-align: top;
     font-weight: bolder;
     text-shadow: 1px 1px 1px #000, 5px 5px 10px blue;
     opacity: 0.5;
     z-index: -5;
-    margin: 0;
     position: absolute;
-    top: 50%;
-    left: 50%;
+    margin: 0;
+    top: 49%;
+    left: 48%;
     margin-right: -50%;
     transform: translate(-50%, -50%)
 }    
@@ -355,9 +357,14 @@
         font-size: 3em;
     }        
 
+    .database {
+        height: 50vh;
+    }
+
+
     .common {
-        height: 22%;
-        width: 100%;
+        /* height: 22%;
+        width: 100%; */
         border: white 2.7px solid;
     }
 
@@ -386,10 +393,11 @@
     .projects-container .extraload {
         font-size: 1.8em;
     }        
-    .common {
-        height: 11%;
-        width: 100%;
+
+    .database {
+        height: 40vh;
     }
+    
     .behind-wall {
         font-size: 0.6em;
     }
@@ -401,6 +409,19 @@
         border-color: black transparent transparent red;
     }
 
+}
 
+
+
+@media screen and (max-width: 450px) {
+
+    .database {
+        height: 35vh;
+    }
+    
+    /* .common {
+        height: 10%;
+        width: 100%;
+    } */
 
 }
