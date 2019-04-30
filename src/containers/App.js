@@ -39,7 +39,7 @@ class App extends Component {
 	componentDidMount(){
 		loadReCaptcha();
 	 	this.handleMenu("visible", "invisible");
-	 	setTimeout(this.setBodyVisible, 10000); 
+	 	setTimeout(this.setBodyVisible, 50000); 
 		createReq( this.state.currPage ); 	 	
 		document.querySelector(".linkMenu").style.color = this.state.selMenuColor;
 	}

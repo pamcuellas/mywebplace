@@ -68,8 +68,6 @@ class Projects extends Component {
 									</ul>
 								</div>
 
-								{/* <div className="sources">
-								</div> */}
 								<span className="wall"></span>
 								<div className="move-wall cs">
 									<span className="behind-wall" >Customer Service<div className="newarrow"></div></span>
