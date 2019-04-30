@@ -366,7 +366,7 @@
     .common {
         height: 20%;
         width: 100%;
-        border: white 1px solid;
+        border: white 2.5px solid;
     }
 
 }
@@ -388,7 +388,6 @@
     .common {
         height: 10%;
         width: 100%;
-        border: white 2.5px solid; 
     }
 
     .behind-wall {
