@@ -151,7 +151,7 @@ class Profile extends Component {
 								<div className="placeholder"></div>
 							</div>	
 							<div className="introduction">
-								<span>Hi there! I'm Paulo Cuellas a IT professional living in Toronto.</span>
+								<span>Hi there! I'm Paulo Cuellas an IT professional living in Toronto.</span>
 							</div>
 
 						</div>	

@@ -6,7 +6,7 @@
 	flex-flow: wrap;
 	float: left;
   background-color: #E43;
-  width: 70%;
+  width: 65%;
 }
 
 .photo-container {
@@ -16,21 +16,21 @@
   flex-wrap: wrap;
   align-items: center;
   width: 90%; 
+  margin-top: 3%;
 }
 
 .introduction{
-  padding-bottom: 0.7em;
+  /* padding-bottom: 0.7em; */
   opacity: 1;
-  /* width: 50%; */
-  flex-basis: 250px; /* When resizing the windows browser, this will be the point to wrap */
+  /* flex-basis: 250px; When resizing the windows browser, this will be the point to wrap */
   flex-grow: 1;
   flex-shrink: 1;
+  width: 40%;
 }
 
 .introduction span {
-  font-size: 1.3em;
+  font-size: 1.2em;
   color: #FFFFFF;
-  text-align: center;
 }
 
 .personaldata {
@@ -70,17 +70,13 @@
   align-items: center;
   width:379px;
   height:305px;
-  /* background-color: #454549; */
   box-shadow : 3px 3px 5px 0px rgba(0,0,0,0.5);
-
   padding: 10px;
   margin-top: 25px;
   margin-bottom: 25px;
   margin-left: 25px;
   margin-right: 25px;
   background-color: white;
-
-
 }
 
 .photo .placeholder{
@@ -125,7 +121,13 @@
   .photo-container {
     width: 100%; 
   }
-  
+
+  .photo {
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 5px;
+  }
+
   .introduction{
     width: 70%; 
     margin-left: 15px;
