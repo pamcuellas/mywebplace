@@ -10,8 +10,8 @@ const options = {
   imgSrc1:img01,
   imgSrc2:img02,
   containerName : "placeholder",
-  columns:16,
-  margin:1.7
+  columns:14,
+  margin:1.2
 }
 
 class Profile extends Component {
@@ -144,8 +144,8 @@ class Profile extends Component {
 							</span>
 				  		</p>
 					</div>
-					<hr /> 
-					<div className="content-area">
+					{/* <hr />  */}
+					<div className="profile-area ">
 						<div className="photo-container">
 							<div className="photo">
 								<div className="placeholder"></div>
@@ -155,7 +155,7 @@ class Profile extends Component {
 							</div>
 
 						</div>	
-						<hr /> 
+						{/* <hr />  */}
 						<div className="personaldata">
 							<h4>A bit about me</h4>
 							<p>The most part of my career I worked for small companies on projects for big companies like <a href="https://www.nestle.com/"  target="_blank" rel="noopener noreferrer">Nestlé</a>, <a href="https://online.citi.com/US/login.do"  target="_blank" rel="noopener noreferrer">Citibank</a>, <a href="https://www.whirlpool.com/"  target="_blank" rel="noopener noreferrer">Whrilpool</a>, <a href="https://www.santander.com/csgs/Satellite/CFWCSancomQP01/es_ES/Corporativo.html"  target="_blank" rel="noopener noreferrer">Santander</a>, <a href="https://mercedes-benz.com.br/"  target="_blank" rel="noopener noreferrer">Mercedes Benz</a>, <a href="http://www.embratur.gov.br/"  target="_blank" rel="noopener noreferrer">Embratur</a>, <a href="https://www.telefonica.com/en/home"  target="_blank" rel="noopener noreferrer">Global Village Telecom (bought by Telefonica)</a>, and <a href="https://www.jeep.com.br/"  target="_blank" rel="noopener noreferrer">Jeepe</a>.
