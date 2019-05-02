@@ -399,24 +399,24 @@
 
 @media screen and (max-width: 450px) {
     .source {
-        margin-left: 3px;
+        margin-left: 5px;
     }
-    .database {
-        height: 35vh;
-        margin-right: 12px;
-    }
-
     .behind-wall {
         font-size: 8px;
         font-weight: normal;
     }
 
     .newarrow {
-        margin-top: 3px;
+        margin-top: 3.5px;
     }
 
-    .circlecontainer .extraload {
-        font-weight: normal;
+    .circlecontainer  {
+        margin-right: 18px;
+    }
+
+    .database {
+        height: 35vh;
+        margin-right: 15px;
     }
 
 }
