@@ -377,11 +377,14 @@
     .wordscircle p {
         font-size: 0.6em;
     }
+    .projects-container{
+        justify-content: space-between; 
+    }        
     .projects-container .extraload {
         font-size: 1.8em;
     }        
     .database {
-        height: 40vh;
+        height: 40vh; 
     }
     .behind-wall {
         font-size: 0.6em;
@@ -395,7 +398,11 @@
 }
 
 @media screen and (max-width: 450px) {
+    .source {
+        margin-left: 5px;
+    }
     .database {
         height: 35vh;
+        margin-right: 7px;
     }
 }
