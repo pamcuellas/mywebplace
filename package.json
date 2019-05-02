@@ -4,25 +4,32 @@
   "private": true,
   "dependencies": {
     "axios": "^0.18.0",
-    "dotenv": "^6.2.0",
-    "gsap": "^2.1.1",
-    "react": "^16.7.0",
-    "react-dom": "^16.7.0",
+    "dotenv": "^7.0.0",
+    "gsap": "^2.1.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
     "react-recaptcha-google": "^1.1.1",
-    "react-scripts": "^2.1.5"
+    "react-scripts": "3.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "heroku-postbuild": "echo Skip build on Heroku"
+    "eject": "react-scripts eject"
   },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ],
-  "heroku-run-build-script": true
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
 }
