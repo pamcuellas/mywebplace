@@ -4,7 +4,7 @@ import { TweenMax } from "gsap/TweenMax";
 import { Back } from 'gsap';
 import img01 from '../images/MyGrayFace.jpg'; 
 import img02 from '../images/MyFace-min.jpg'; 
-import '../css/profile.css';
+import '../css/about.css';
 
 const options = {
   imgSrc1:img01,
@@ -14,7 +14,7 @@ const options = {
   margin:1.2
 }
 
-class Profile extends Component {
+class About extends Component {
 	constructor(props){
 		super(props);
 		this.VenetianBlinds = this.VenetianBlinds.bind(this);
@@ -116,36 +116,30 @@ class Profile extends Component {
 					<div className="title">
 						<p>
 							<span className="word">
-								<span className="letter">P</span>
-								<span className="letter">r</span>
+								<span className="letter">A</span>
+								<span className="letter">b</span>
 								<span className="letter">o</span>
-								<span className="letter">f</span>
-								<span className="letter">i</span>
-								<span className="letter">l</span>
-								<span className="letter">e</span>
+								<span className="letter">u</span>
+								<span className="letter">t</span>
 							</span>
 							<span className="word">
-								<span className="letter">P</span>
-								<span className="letter">r</span>
+								<span className="letter">A</span>
+								<span className="letter">b</span>
 								<span className="letter">o</span>
-								<span className="letter">f</span>
-								<span className="letter">i</span>
-								<span className="letter">l</span>
-								<span className="letter">e</span>
+								<span className="letter">u</span>
+								<span className="letter">t</span>
 							</span>
 							<span className="word">
-								<span className="letter">P</span>
-								<span className="letter">r</span>
+								<span className="letter">A</span>
+								<span className="letter">b</span>
 								<span className="letter">o</span>
-								<span className="letter">f</span>
-								<span className="letter">i</span>
-								<span className="letter">l</span>
-								<span className="letter">e</span>
+								<span className="letter">u</span>
+								<span className="letter">t</span>
 							</span>
 				  		</p>
 					</div>
 					{/* <hr />  */}
-					<div className="profile-area ">
+					<div className="about-area ">
 						<div className="photo-container">
 							<div className="photo">
 								<div className="placeholder"></div>
@@ -158,6 +152,12 @@ class Profile extends Component {
 						{/* <hr />  */}
 						<div className="personaldata">
 							<h4>A bit about me</h4>
+							<p><span id="data">Data</span> is one of the most valuable assets for companies and due to this reason, technologies which surround it have been improving more and more.  
+This scenario demands IT professionals be passionate about technology and be concerned to remain updated acquiring new bits of knowledge constantly. 
+That is the way I describe myself. The problem: too many things to learn; The motivation: so exciting.</p>
+							<p className="Obama-speech">"There is no matter how much you have done or how successful you have been. There is always more to do, always more to learn and always more to achieve."<br />
+							<a className="Obama-signature" href="https://www.youtube.com/watch?v=Qbel5MhtDq4" target="_blank" rel="noopener noreferrer">- Barack Obama commencement speech at ASU 2009</a></p>
+									
 							<p>The most part of my career I worked for small companies on projects for big companies like <a href="https://www.nestle.com/"  target="_blank" rel="noopener noreferrer">Nestlé</a>, <a href="https://online.citi.com/US/login.do"  target="_blank" rel="noopener noreferrer">Citibank</a>, <a href="https://www.whirlpool.com/"  target="_blank" rel="noopener noreferrer">Whrilpool</a>, <a href="https://www.santander.com/csgs/Satellite/CFWCSancomQP01/es_ES/Corporativo.html"  target="_blank" rel="noopener noreferrer">Santander</a>, <a href="https://mercedes-benz.com.br/"  target="_blank" rel="noopener noreferrer">Mercedes Benz</a>, <a href="http://www.embratur.gov.br/"  target="_blank" rel="noopener noreferrer">Embratur</a>, <a href="https://www.telefonica.com/en/home"  target="_blank" rel="noopener noreferrer">Global Village Telecom (bought by Telefonica)</a>, and <a href="https://www.jeep.com.br/"  target="_blank" rel="noopener noreferrer">Jeepe</a>.
 							</p>
 						</div>
@@ -167,6 +167,6 @@ class Profile extends Component {
 	}
 }
 
-export default Profile;
+export default About;
 
 
