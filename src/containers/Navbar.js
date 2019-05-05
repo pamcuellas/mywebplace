@@ -13,8 +13,8 @@ class Navbar extends Component {
 						<span className="linkMenu visible" onClick={ (e) => onChangePage(e, 'About') }>About</span>
 						<span className="linkMenu visible" onClick={ (e) => onChangePage(e, 'Projects') }>Projects</span>
 						<span className="linkMenu visible" onClick={ (e) => onChangePage(e, 'Gallery') }>Gallery</span>
-						<span className="linkMenu visible" onClick={ (e) => onChangePage(e, 'Resume') }>Resume</span>
 						<span className="linkMenu visible" onClick={ (e) => onChangePage(e, 'Contact') }>Contact</span>
+						<span className="linkMenu visible" onClick={ (e) => onChangePage(e, 'Webinfo') }>WebInfo</span>
 					</div>
 					<div className="firstmenu">
 						<span className="linkMenu" onClick={ (e) => onHideMenu(e) }>{menuControl.image}</span>

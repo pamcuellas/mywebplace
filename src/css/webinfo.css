@@ -1,0 +1,90 @@
+
+.website {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-flow: wrap;
+	float: left;
+    background-color: #E43;
+    width: 65%;
+}
+
+.website-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 80%;
+    color: #FFFFFF;
+    text-align: justify;
+    margin-bottom: 2em;
+    margin-top: 2em;
+  }
+
+  
+.website-text p {
+    width: 100%;
+    font-size: 0.7em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.website-text .text-2 {
+    display: flex;
+    flex-direction: column;
+}
+.website-text .text-2 p {
+    width: unset;
+    align-self: center;
+}
+
+.website-text .text-3 p {
+    margin-bottom: 0.9%;
+    align-self: center;
+    width: unset;
+}
+
+.website-text a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.website-text .text-1,
+.website-text .text-2,
+.website-text .text-3,
+.website-text .text-4 {
+    width: 100%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.website-text .text-3 {
+    display: flex;
+    flex-direction: column;
+}
+.website-text .text-3 .images {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-flow: wrap;
+    align-self: center;
+    background-color: #FFFFFF;
+}
+
+.website-text .text-3 .images img {
+    margin: 3%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+
+.website-text ul li {
+    color: #FFFFFF;
+    font-size: 0.6em;
+} 
+
+.website-text ul {
+    list-style-type: disc;
+    margin-left: 6.5em;
+}
