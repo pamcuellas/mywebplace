@@ -63,13 +63,13 @@ class Webinfo extends Component {
 					<div className="website-text">
 						<div className="text-1">
 						<p>This website is hosted at 
-								<a href="https://www.digitalocean.com/" target="_blank" rel="noopener noreferrer"> DigitalOcean </a> 
+								<a href="https://www.digitalocean.com/" target="_blank" rel="noopener noreferrer"> Digital Ocean </a> 
 								using Ubuntu, Nginx, PM2, and SSL Certificate from 
 								<a href="https://letsencrypt.org/" target="_blank" rel="noopener noreferrer"> Let's Encrypt Authority X3 </a>.
 							</p>
 						</div>
 						<div className="text-2">
-							<p>Yeah, I am proud! It is an <strong style={{color:"green"}}>+A</strong> classification website at SSL Labs, check it 
+							<p>Yeah, I am proud! It is classified as a <strong className="a-plus">+A</strong> website at SSL Labs, check it 
 								<a href="https://www.ssllabs.com/ssltest/analyze.html?d=pamzc.com" target="_blank" rel="noopener noreferrer"> here</a>.	
 							</p>
 						</div>

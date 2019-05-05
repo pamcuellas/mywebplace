@@ -48,6 +48,15 @@
     color: #FFFFFF;
     font-family: 'Montserrat', sans-serif;
 }
+.website-text a:hover {
+    /* text-shadow: purple; */
+    /* border-radius: 15%;
+    box-shadow : 3px 3px 5px 0px rgba(0,0,0,0.5); */
+    color: #262626;
+    opacity: 0.8;
+    font-weight: bolder;
+    transition-duration: 0.7s;
+}
 
 .website-text .text-1,
 .website-text .text-2,
@@ -79,6 +88,10 @@
     margin-bottom: 5%;
 }
 
+.website-text .text-2 .a-plus {
+    color: #71DC71;
+    font-size: 1.2em;
+}
 
 .website-text ul li {
     color: #FFFFFF;
@@ -121,8 +134,5 @@
         margin-bottom: 2em;
         margin-top: 1em;
       }
-
-
-
 }
   
