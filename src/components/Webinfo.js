@@ -63,13 +63,13 @@ class Webinfo extends Component {
 					<div className="website-text">
 						<div className="text-1">
 						<p>This website is hosted at 
-								<a href="https://www.digitalocean.com/" target="_blank" rel="noopener noreferrer"> Digital Ocean </a> 
+								<a href="https://www.digitalocean.com/" target="_blank" rel="noopener noreferrer"> DigitalOcean </a> 
 								using Ubuntu, Nginx, PM2, and SSL Certificate from 
 								<a href="https://letsencrypt.org/" target="_blank" rel="noopener noreferrer"> Let's Encrypt Authority X3 </a>.
 							</p>
 						</div>
 						<div className="text-2">
-							<p>Yeah, I am proud! It is classified as a <strong className="a-plus">+A</strong> website at SSL Labs, check it 
+							<p>Yeah, I am proud! It is classified as an <strong className="a-plus">A+</strong> website at SSL Labs, check it 
 								<a href="https://www.ssllabs.com/ssltest/analyze.html?d=pamzc.com" target="_blank" rel="noopener noreferrer"> here</a>.	
 							</p>
 						</div>
@@ -86,7 +86,9 @@ class Webinfo extends Component {
 							</div>
 						</div>
 						<div className="text-4">
-							<p>Especial thanks to Unsplash that makes possible appreciate a bunch of beautiful and attractive photos at Gallery menu above.</p>
+							<p>Especial thanks to 
+								<a href="https://www.unsplash.com/" target="_blank" rel="noopener noreferrer"> Unsplash </a>
+								that makes possible appreciate a bunch of beautiful and attractive photos at Gallery menu above.</p>
 							<p>Also thanks to:</p>
 							<ul>
 								<li><a href="https://www.heroku.com/" target="_blank" rel="noopener noreferrer">Heroku</a></li>

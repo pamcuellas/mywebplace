@@ -19,7 +19,6 @@ class Home extends Component {
 					<header className="slide-header">
 						<h1>Welcome!</h1>
 						<h1>This is Paulo Cuellas' web place.</h1>
-						<h1>It's nice to see you here.</h1>
 					</header>
 				</div>
 			);

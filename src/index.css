@@ -161,12 +161,15 @@ ul {
   z-index: 5;
 }
 
-/* Header Styles using flex-box*/
 .slide-header {
-  padding-top: 80px;
-  position: relative;
   overflow: hidden;
-  margin-top: 100px;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%) 
+
+
 }
 
 .slide-header h1 {
