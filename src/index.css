@@ -109,7 +109,6 @@ ul {
 .letter {
   display: inline-block;
   position: relative;
-  /* float: left; */
   transform: translateZ(25px);
   transform-origin: 50% 50% 25px;
 }
@@ -127,7 +126,7 @@ ul {
   transform: rotateX(0deg);
   transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
-
+/* 
 .wisteria {
   color: #8e44ad;
 }
@@ -146,7 +145,7 @@ ul {
 
 .midnight {
   color: #2c3e50;
-}
+} */
 
   
 /* =======================================================*/

@@ -58,7 +58,6 @@ class Webinfo extends Component {
 						</span>
 			  		</p>
 				</div>
-				{/* <hr></hr> */}
 				<div className="website">
 					<div className="website-text">
 						<div className="text-1">
@@ -89,7 +88,7 @@ class Webinfo extends Component {
 							<p>Especial thanks to 
 								<a href="https://www.unsplash.com/" target="_blank" rel="noopener noreferrer"> Unsplash </a>
 								that makes possible appreciate a bunch of beautiful and attractive photos at Gallery menu above.</p>
-							<p>Also thanks to:</p>
+							<p>Thanks also to:</p>
 							<ul>
 								<li><a href="https://www.heroku.com/" target="_blank" rel="noopener noreferrer">Heroku</a></li>
 								<li><a href="https://developer.mozilla.org/" target="_blank" rel="noopener noreferrer">MDN</a></li>
@@ -101,35 +100,6 @@ class Webinfo extends Component {
 							</ul>	
 						</div>
 					</div>
-{/* 
-
-					<ul className="grid">
-						<li>
-							<i className="fa fa-compass fa-4x"></i>
-							<h4>Guide Trips</h4>
-							<p>Image released of suspect after fire deliberately set at North York hotel: police.</p>
-						</li>
-						<li>
-							<i className="fa fa-camera-retro fa-4x"></i>
-							<h4>Photo Trips</h4>
-							<p>Man, 26, pronounced dead after daylight shooting in Downsview 2.</p>
-						</li>
-						<li>
-							<i className="fa fa-bicycle fa-4x"></i>
-							<h4>Biking Trips</h4>
-							<p>Heading abroad? Here's what you need to know in the legal cannabis era 1.</p>
-						</li>
-						<li>
-							<i className="fa fa-flag-checkered fa-4x"></i>
-							<h4>Racing Trips</h4>
-							<p>Facebook says hackers accessed data from 29 million accounts as part of the security breach disclosed two weeks ago, fewer than the 50 million it initially believed were affected.</p>
-						</li>
-					</ul>
-					<ul>
-						<li> Lets write some text here to full this page.</li>
-						<li> Lets write some text here to full this page.</li>
-						<li> This is the last line in this page .</li>
-					</ul> */}
 				</div>
 			</div>
 		);
