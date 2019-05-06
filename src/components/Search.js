@@ -26,7 +26,7 @@ class Search extends Component {
 	componentDidMount(){
 		// loadReCaptcha();
 		if (this.Captcha) {
-	        console.log("started, just a second...")
+	        // console.log("started, just a second...")
 	        this.Captcha.reset();
 	        this.Captcha.execute();
 	    }

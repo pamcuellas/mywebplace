@@ -42,7 +42,7 @@ class App extends Component {
 	}
 
     toggleModal = () => {
-    	console.log("toggleModal")	
+    	// console.log("toggleModal")	
         // Hide Cookie Police message
     	var modal = document.querySelector(".modal");
         modal.classList.remove("show-modal");
@@ -53,7 +53,6 @@ class App extends Component {
     }
 
     windowOnClick = (event) => {
-		console.log("windowOnClick")	
     	var modal = document.querySelector(".modal");
         if (event.target === modal) {
             this.toggleModal();
@@ -61,7 +60,6 @@ class App extends Component {
     }
 
 	showCookiePoliceMsg = () => { 
-		console.log("showCookiePoliceMsg");
 		var modal = document.querySelector(".modal");
 	    var closeButton = document.querySelector(".close-button");
 	    // Events to close Cookie Policy Message
@@ -74,7 +72,7 @@ class App extends Component {
 	handleMenu = (classToRemove, classToAdd, page = this.state.currPage) => {
  		let navbarBackground 	= 'transparent';
  		let footerBackground 	= 'transparent';
-
+		let contentMinHeight	= '90.5vh';
  		// Show/hide navbar
  		const linkMenu = document.querySelectorAll(".secondmenu .linkMenu");
 		linkMenu.forEach((e, i, a) => {
@@ -100,14 +98,15 @@ class App extends Component {
 			this.setState( state => ({ menuControl:  {image: <i className="fas fa-minus" ></i>} }));
 			if (page !== 'Home') {
 		 		navbarBackground	=  '#454549';  
-		 		footerBackground 	=  '#454549';  
+				footerBackground 	=  '#454549';  
+				contentMinHeight    =  '92.5vh';
 			}
 		} else {
 			this.setState( state => ({ menuControl:  {image: <i className="fas fa-bars color" ></i>} }));
 		}
-
 		document.querySelector('.navbar').setAttribute("style", "background:" + navbarBackground);
 		document.querySelector('footer').setAttribute("style", "background:" + footerBackground);
+		document.querySelector('.content').setAttribute("style", "min-height:" + contentMinHeight);
 	}
 
 	onHideMenu(e) {

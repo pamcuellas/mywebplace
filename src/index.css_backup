@@ -51,8 +51,9 @@ ul {
 }
 
 .main {
-  padding-bottom: 50px;
   overflow: auto;
+  padding-bottom: 50px;
+  min-height: 100%;
 }
 
 
@@ -60,12 +61,14 @@ ul {
 .content {
   display: flex; 
   width: 100%;
+  height: 100%;
   text-align: center;
   flex-direction: column;
   align-items: center;
+  /*margin-left: -18%; */
   overflow: auto;
-  min-height: 90.5vh; 
- /* padding-bottom: 50px; */
+  min-height: 90vh; /* 92.5vh; */ 
+/*  padding-bottom: 25px;*/
   }
 
 .content-area {
@@ -148,13 +151,15 @@ ul {
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%) 
+
+
 }
 
 .slide-header h1 {
   visibility: hidden;
   margin-top: 3%;
   z-index: 1002;
-  font-size: 200%; /* The size here can break the page size */
+  /*font-size: 3rem;*/
   color: #F4E6FA;
   text-align: center;
   letter-spacing: .11em;

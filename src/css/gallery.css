@@ -91,7 +91,8 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 /***** GALLERY *****/
 
 .gallery {
-	display: flex;
+  display: flex;
+  width: 100%;
 	flex-direction: row;
 	justify-content: center;
 	flex-flow: wrap;
