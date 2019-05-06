@@ -49,12 +49,10 @@
     font-family: 'Montserrat', sans-serif;
 }
 .website-text a:hover {
-    /* text-shadow: purple; */
-    /* border-radius: 15%;
-    box-shadow : 3px 3px 5px 0px rgba(0,0,0,0.5); */
-    color: #262626;
-    opacity: 0.8;
-    font-weight: bolder;
+    /* color: #262626; */
+    color: black;
+    opacity: 0.7;
+    /* font-weight: bolder; */
     transition-duration: 0.7s;
 }
 
