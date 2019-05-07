@@ -72,7 +72,7 @@ class App extends Component {
 	handleMenu = (classToRemove, classToAdd, page = this.state.currPage) => {
  		let navbarBackground 	= 'transparent';
  		let footerBackground 	= 'transparent';
-		let contentMinHeight	= '90.5vh';
+		// let contentMinHeight	= '90.5vh';
  		// Show/hide navbar
  		const linkMenu = document.querySelectorAll(".secondmenu .linkMenu");
 		linkMenu.forEach((e, i, a) => {
@@ -99,14 +99,14 @@ class App extends Component {
 			if (page !== 'Home') {
 		 		navbarBackground	=  '#454549';  
 				footerBackground 	=  '#454549';  
-				contentMinHeight    =  '92.5vh';
+				// contentMinHeight    =  '92.5vh';
 			}
 		} else {
 			this.setState( state => ({ menuControl:  {image: <i className="fas fa-bars color" ></i>} }));
 		}
 		document.querySelector('.navbar').setAttribute("style", "background:" + navbarBackground);
 		document.querySelector('footer').setAttribute("style", "background:" + footerBackground);
-		document.querySelector('.content').setAttribute("style", "min-height:" + contentMinHeight);
+		// document.querySelector('.content').setAttribute("style", "min-height:" + contentMinHeight);
 	}
 
 	onHideMenu(e) {

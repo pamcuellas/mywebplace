@@ -64,7 +64,7 @@ ul {
   flex-direction: column;
   align-items: center;
   overflow: auto;
-  min-height: 90.5vh; 
+  min-height: 92.5vh; 
  /* padding-bottom: 50px; */
   }
 
@@ -332,5 +332,14 @@ the following rule in our landing.css:*/
     opacity: 1;
 }
 
+/* MEDIA */ 
+@media screen and (max-width: 510px) {
+  .word {
+    top: 12.5%;
+  }
 
+  .slide-header h1 {
+    font-size: 30px;
+  }
+}
 
