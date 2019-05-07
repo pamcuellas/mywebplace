@@ -154,7 +154,7 @@ ul {
   visibility: hidden;
   margin-top: 3%;
   z-index: 1002;
-  font-size: 200%; /* The size here can break the page size */
+  font-size: 50px; /* The size here can break the page size */
   color: #F4E6FA;
   text-align: center;
   letter-spacing: .11em;
@@ -162,9 +162,7 @@ ul {
   text-shadow: 2px 2px 2px rgba(255, 0, 255, 0.6);
   animation: showup 25s ease-in 5s infinite both running;
   -webkit-animation: showup 25s ease-in 5s infinite both running;
-
 }
-
 
 @-webkit-keyframes showup {
   0% {
