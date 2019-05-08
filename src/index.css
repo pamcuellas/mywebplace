@@ -13,7 +13,7 @@ body {
   color: #a6a6a6;
   font-family: 'Prompt', serif;
   font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
-  line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px)/(1600 - 300)));
+  /* line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px)/(1600 - 300))); */
 }
 
 hr {
