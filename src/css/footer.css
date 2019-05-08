@@ -77,12 +77,12 @@ footer {
   
   
 /* @MEDIA */ 
-@media screen and (max-width: 880px) {
+@media screen and (max-width: 650px) {
     footer p:not(.rights) {
-      font-size: 0.45em;
+      font-size: 0.35em;
     }
     footer .rights {
-      font-size: 0.5em;
+      font-size: 0.4em;
     }
 }
 
