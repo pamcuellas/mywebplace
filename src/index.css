@@ -346,6 +346,10 @@ the following rule in our landing.css:*/
   .word {
     top: 35%;
   }
+
+  .slide-header {
+    top: 60%;
+  }
   .slide-header h1 {
     font-size: 30px;
   }
