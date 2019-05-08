@@ -335,7 +335,7 @@ the following rule in our landing.css:*/
 /* MEDIA */ 
 @media screen and (max-width: 510px) {
   .word {
-    top: 12.5%;
+    top: 13.5%;
   }
   .slide-header h1 {
     font-size: 30px;
@@ -350,6 +350,3 @@ the following rule in our landing.css:*/
     font-size: 30px;
   }
 }
-
-
-
