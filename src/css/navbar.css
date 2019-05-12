@@ -62,7 +62,7 @@
   color: #000000;
 }
 
-@media screen and (max-width: 530px) {
+@media screen and (max-width: 610px) { /* 530px) { */
   .secondmenu {
     display: flex;
     justify-content: space-around;
@@ -71,6 +71,14 @@
   .linkMenu {
     margin-top: 3px;
     margin-bottom: 3px;
+    /* font-size: 1em; */
   }
 
+}
+
+@media screen and (max-width: 410px) { 
+  .secondmenu span {
+    width: 5em;
+    align-items: center;
+  }
 }

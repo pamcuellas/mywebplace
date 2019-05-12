@@ -140,9 +140,15 @@
 
 }
 
+
+.skills-container h4 {
+  font-size: 1.em;
+  color: #FFFFFF;
+  font-weight: 100;
+}
+
 .skills-container .th, 
 .skills-container .td {
-  /* font-family: 'Montserrat', sans-serif; */
   color: white;
   width: 7em;
   margin: 0.6em 0.15em 0.6em 0.15em;
@@ -165,7 +171,7 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 30%;
+  width: 25%;
 }
 
 /*
@@ -208,7 +214,7 @@
   }
 
   .skills-container .td img {
-    width: 25%;
+    width: 30%;
   }
   .skills-container .th {
     font-weight: 100;

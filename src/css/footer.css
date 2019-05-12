@@ -13,13 +13,12 @@ footer {
   }
   
   /* Courtesy */
-  footer p:not(.rights) {
+    footer .courtesy {
     text-transform: uppercase;
     font-weight: 100;
-    font-size: 0.6rem;
+    font-size: 0.65rem;
     opacity: 0.9; 
     align-self: center;
-    margin-left: 20px;
     color: #f9f9f9;
     font-family: 'Montserrat', sans-serif;
     letter-spacing: 0.13em;
@@ -28,28 +27,27 @@ footer {
     color: white;
     text-decoration: none; 
     letter-spacing: 0.1em;
-    color: #FFFFFF; /* #d8d8d8; 909090;*/ 
+    color: #FFFFFF;  
     font-family: 'Montserrat', sans-serif;
     transition: all 0.5s ease-out;  
     transition: color 0.5s ease-out;
   }
   footer p a:hover {
     color: #000000;
-    text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.3)
+    text-shadow: 1px 1px 1px #000000;  
   }
   
     /* social */
   footer .social-media {
     display: flex;
-    margin-right: 15px;
-    
+    flex-direction: row;
+    justify-content: space-between;
+    width: 15%;
   }
   footer .social-media span {
-    padding-left: 7px;
     font-size: 0.45em;
     visibility: hidden;
   }
-
 
   footer .fab{
     margin-top: 0.5em;
@@ -63,52 +61,51 @@ footer {
   }
   
   footer a i  {
-    margin: 0; 
-    padding: 0; 
-    width: 30px; 
     height: 30px;
   }
   
   footer .rights {
     font-family: 'Montserrat', sans-serif;
     font-size: 0.7rem;
-    text-transform: none;
   }
   
   
 /* @MEDIA */ 
-@media screen and (max-width: 650px) {
-    footer p:not(.rights) {
-      font-size: 0.35em;
-    }
-    footer .rights {
-      font-size: 0.4em;
-    }
+@media screen and (max-width: 810px) {
+  footer .courtesy,
+  footer .rights {
+      font-size: 8px;
+  }
 }
 
-@media screen and (max-width: 510px) {
-    footer .contact-form {
+@media screen and (max-width: 650px) {
+    .contact-form {
       width: 100%;
-    }
-    footer .courtesy {
-      margin-top: 0.8em;
     }
     footer {
       display: flex;  
       justify-content: space-around ;  
-      flex-flow: row; 
-      flex-wrap: wrap;
+      flex-flow: row wrap; 
+    }
+
+    footer .courtesy{
+      margin-top: 0.5em;
+      flex-basis: 45%;
+    }
+    footer .rights{
+      flex-basis: 40%;
     }
     footer .social-media {
-      margin: 0;
-      padding: 0;
+      flex-basis: 40%;
+      justify-content: space-around;
+    }    
+    footer p {
+     text-align: center; 
     }
+
     footer .social-media span {
       padding: 0;
       margin-top: 0.5em;
     }
-    footer .fab{
-      margin-top: 0.3em;
-      height: 1.5em;
-    }  
+
 }

@@ -97,6 +97,7 @@ class Webinfo extends Component {
 								<li><a href="https://www.colorhexa.com" target="_blank" rel="noopener noreferrer">ColorHexa</a></li>
 								<li><a href="https://www.google.com/recaptcha/" target="_blank" rel="noopener noreferrer">Google reCaptcha</a></li>
 								<li><a href="https://www.shareicon.net/" target="_blank" rel="noopener noreferrer">SHAREICON.net</a></li>
+								<li><a href="https://fontawesome.com/" target="_blank" rel="noopener noreferrer">Font Awesome</a></li>
 							</ul>	
 						</div>
 					</div>
