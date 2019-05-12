@@ -88,15 +88,19 @@ footer {
       flex-flow: row wrap; 
     }
 
+    footer .courtesy,
+    footer .rights {
+        font-size: 0.5em;
+    }
+  
     footer .courtesy{
-      margin-top: 0.5em;
       flex-basis: 45%;
     }
     footer .rights{
-      flex-basis: 40%;
+      flex-basis: 45%;
     }
     footer .social-media {
-      flex-basis: 40%;
+      flex-basis: 45%;
       justify-content: space-around;
     }    
     footer p {
@@ -105,7 +109,11 @@ footer {
 
     footer .social-media span {
       padding: 0;
-      margin-top: 0.5em;
     }
-
+    footer a i {
+      height: 0;
+    }
+    footer .fab{
+      margin-top: 0;
+    }  
 }
