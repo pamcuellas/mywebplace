@@ -4,6 +4,9 @@ import { TweenMax } from "gsap/TweenMax";
 import { Back } from 'gsap';
 import img01 from '../images/MyGrayFace.jpg'; 
 import img02 from '../images/MyFace-min.jpg'; 
+import tickedYes from '../images/combinedblue.png';
+import tickedNo from '../images/combinedred.png';
+
 import '../css/about.css';
 
 const options = {
@@ -160,15 +163,66 @@ class About extends Component {
 						</div>	
 						{/* <hr />  */}
 						<div className="personaldata">
-							<h4>I am a Database Developer...</h4>
+							<h4>I am a Database Developer</h4>
 							<p><span id="data">Data</span> is one of the most valuable assets for companies and due to this reason, technologies which surround it have been improving more and more.  
 This scenario demands IT professionals be passionate about technology and be concerned to remain updated acquiring new bits of knowledge constantly. 
 That is the way I describe myself. The problem: too many things to learn; The motivation: so exciting.</p>
 							<p className="Obama-speech"><q></q>There is no matter how much you have done or how successful you have been. There is always more to do, always more to learn and always more to achieve."<br />
 							<a className="Obama-signature" href="https://www.youtube.com/watch?v=Qbel5MhtDq4" target="_blank" rel="noopener noreferrer">- Barack Obama commencement speech at ASU 2009</a></p>
 									
-							<p>The most part of my career I worked for small companies on projects for big companies like <a href="https://www.nestle.com/"  target="_blank" rel="noopener noreferrer">Nestlé</a>, <a href="https://online.citi.com/US/login.do"  target="_blank" rel="noopener noreferrer">Citibank</a>, <a href="https://www.whirlpool.com/"  target="_blank" rel="noopener noreferrer">Whrilpool</a>, <a href="https://www.santander.com/csgs/Satellite/CFWCSancomQP01/es_ES/Corporativo.html"  target="_blank" rel="noopener noreferrer">Santander</a>, <a href="https://mercedes-benz.com.br/"  target="_blank" rel="noopener noreferrer">Mercedes Benz</a>, <a href="http://www.embratur.gov.br/"  target="_blank" rel="noopener noreferrer">Embratur</a>, <a href="https://www.telefonica.com/en/home"  target="_blank" rel="noopener noreferrer">Global Village Telecom (bought by Telefonica)</a>, and <a href="https://www.jeep.com.br/"  target="_blank" rel="noopener noreferrer">Jeepe</a>.
+							<p>Over the last ten years I have been working designing, creating, updating, and performing maintenance in databases.
 							</p>
+						</div>
+					</div>
+
+
+					<div className="skills-container"> 
+						<h4>Database Skills</h4>
+						<div className="table">
+							<div className="thead">
+								<div className="tr tr-title">
+									<div className="th">Skill</div>
+									<div className="th">Beginner</div>
+									<div className="th">Elementary</div>
+									<div className="th">Intermediate</div>
+									<div className="th">Advanced</div>
+									<div className="th">Expert</div>
+								</div>
+							</div>
+							<div className="tbody">
+								<div className="tr">
+									<div className="td">Oracle</div>
+									<div className="td"><img src={tickedYes} alt="Ticked" /></div>
+									<div className="td"><img src={tickedYes} alt="Ticked" /></div>
+									<div className="td"><img src={tickedYes} alt="Ticked" /></div>
+									<div className="td"><img src={tickedYes} alt="Ticked" /></div>
+									<div className="td"><img src={tickedNo} alt="Ticked" /></div>
+								</div>
+								<div className="tr">
+									<div className="td">Oracle</div>
+									<div className="td"><img src={tickedYes} alt="Ticked" /></div>
+									<div className="td"><img src={tickedYes} alt="Ticked" /></div>
+									<div className="td"><img src={tickedYes} alt="Ticked" /></div>
+									<div className="td"><img src={tickedYes} alt="Ticked" /></div>
+									<div className="td"><img src={tickedNo} alt="Ticked" /></div>
+								</div>
+								<div className="tr">
+									<div className="td">Oracle</div>
+									<div className="td"><img src={tickedYes} alt="Ticked" /></div>
+									<div className="td"><img src={tickedYes} alt="Ticked" /></div>
+									<div className="td"><img src={tickedYes} alt="Ticked" /></div>
+									<div className="td"><img src={tickedYes} alt="Ticked" /></div>
+									<div className="td"><img src={tickedNo} alt="Ticked" /></div>
+								</div>
+								<div className="tr">
+									<div className="td">Oracle</div>
+									<div className="td"><img src={tickedYes} alt="Ticked" /></div>
+									<div className="td"><img src={tickedYes} alt="Ticked" /></div>
+									<div className="td"><img src={tickedYes} alt="Ticked" /></div>
+									<div className="td"><img src={tickedYes} alt="Ticked" /></div>
+									<div className="td"><img src={tickedNo} alt="Ticked" /></div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
