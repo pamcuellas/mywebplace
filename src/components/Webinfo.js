@@ -3,10 +3,10 @@ import animaWords from '../services/animaWords';
 import '../css/webinfo.css';
 import node  from '../images/Nodejs64.png';
 import react from '../images/React64.png'; 
-import json from '../images/json.png'; 
+import json  from '../images/json.png'; 
 import mongo from '../images/Mongodb64.png'; 
-import html from '../images/html5hexa.png'; 
-import css from '../images/css3hexa.png'; 
+import html  from '../images/html5hexa.png'; 
+import css   from '../images/css3hexa.png'; 
 import vanjs from '../images/javascript.png'; 
 
 class Webinfo extends Component {
@@ -75,11 +75,11 @@ class Webinfo extends Component {
 						<div className="text-3">
 							<p>The main resources used to develop this website were:</p>
 							<div className="images">
-								<img className="node" src={node} alt="Node.js"></img>
+								<img className="node"  src={node}  alt="Node.js"></img>
 								<img className="react" src={react} alt="React"></img>
-								<img className="html" src={html} alt="HTML"></img>
-								<img className="css" src={css} alt="CSS"></img>
-								<img className="json" src={json} alt="JSON"></img>
+								<img className="html"  src={html}  alt="HTML"></img>
+								<img className="css"   src={css}   alt="CSS"></img>
+								<img className="json"  src={json}  alt="JSON"></img>
 								<img className="vanjs" src={vanjs} alt="Vanilla JS"></img>
 								<img className="mongo" src={mongo} alt="MongoDB"></img>
 							</div>

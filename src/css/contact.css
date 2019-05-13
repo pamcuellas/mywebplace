@@ -18,9 +18,9 @@
   display: table;
   text-align: center;
   border-radius: 2px;
-  background: #a4a4a4; /*#f9f9f9;*/
+  background: #a4a4a4;  
   border-style: solid;
-  border-color: #a4a4a4; /* #37474f; */ 
+  border-color: #a4a4a4;  
   border-width: 1px;
   border-bottom-width: 1px;
 }
@@ -28,16 +28,16 @@
 .form-container .recaptcha-inner {
   margin: 0 auto;
   display: table;
+  transform:scale(1.0);
   -moz-transform:scale(1.0);
   -ms-transform:scale(1.0); 
   -o-transform:scale(1.0); 
+  -webkit-transform:scale(1.0);
+  transform-origin:0;
   -moz-transform-origin:0; 
   -ms-transform-origin:0;
   -o-transform-origin:0;
-  -webkit-transform:scale(1.0);
-  transform:scale(1.0);
   -webkit-transform-origin:0 0;
-  transform-origin:0;
   border: 0.5px solid #fff;
   padding-top: 2.5px;
   padding-left: 2.5px;
@@ -60,11 +60,11 @@
 .form-container .form-element input[type=week], 
 .form-container .form-element select, 
 .form-container .form-element textarea {
-    background-color: #373737;/* Remove background fill */
+    background-color: #373737;  /* Remove background fill */
     text-transform: uppercase;    /* Make text all uppercase */
     border-radius: 0;             /* Remove corner curve */
-    border: 2px solid #a4a4a4;       /* 2px white border */
-    color: #fff;                  /* White text */
+    border: 2px solid #a4a4a4;  /* 2px white border */
+    color: #fff;                /* White text */
     height: 40px;                 /* Increase input height */
     text-align: center;
     font-size: 15px;
@@ -95,11 +95,11 @@
 }
 
 .form-container .form-element .form-btn:hover {
-   color: white;
-   background: #1A1A1A;/* #444;*/
-
+  color: white;
+  background: #1A1A1A; 
+  width: 31%;
   border: 2px solid #707070;
-  box-shadow: 5px 5px 3px 1px rgba(13, 13, 13, .9); /* rgba(40, 40, 40, .9); */
+  box-shadow: 5px 5px 3px 1px rgba(13, 13, 13, .9); 
   letter-spacing: 0.10em;
   cursor: pointer;
 

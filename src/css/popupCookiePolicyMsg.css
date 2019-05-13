@@ -7,6 +7,11 @@
     z-index: 9999;
     visibility: hidden;
     transform: scale(1.1);
+    -webkit-transform: scale(1.1);	 
+    -moz-transform: scale(1.1);	
+    -ms-transform: scale(1.1);		 
+    -o-transform: scale(1.1);		 
+
     transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
 }
 
@@ -32,9 +37,6 @@
     align-items: center;
     height: 8rem;
     bottom: 0;
-    /* top: 74%; */
-    /* left: .5%; */
-    /*transform: translate(-50%, -50%);*/
     background-color: #1F1F1F;
     padding: 1rem 1.5rem;
     width: 18rem;
@@ -76,5 +78,9 @@
     opacity: 1;
     visibility: visible;
     transform: scale(1.0);
+    -webkit-transform: scale(1.0);	 
+    -moz-transform: scale(1.0);	
+    -ms-transform: scale(1.0);		 
+    -o-transform: scale(1.0);		 
     transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
 }

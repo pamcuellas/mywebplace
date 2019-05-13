@@ -65,7 +65,6 @@ ul {
   align-items: center;
   overflow: auto;
   min-height: 92.5vh; 
- /* padding-bottom: 50px; */
   }
 
 .content-area {
@@ -102,26 +101,50 @@ ul {
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);	 
+  -moz-transform: translate(-50%, -50%);	
+  -ms-transform: translate(-50%, -50%);		 
+  -o-transform: translate(-50%, -50%);		 
 }
 
 .letter {
   display: inline-block;
   position: relative;
   transform: translateZ(25px);
+  -webkit-transform: translateZ(25px);	 
+  -moz-transform:translateZ(25px); 	
+  -ms-transform: translateZ(25px);		 
+  -o-transform: translateZ(25px);		 
   transform-origin: 50% 50% 25px;
+  -webkit-transform-origin: 50% 50% 25px; 	 
+  -moz-transform-origin: 50% 50% 25px; 	
+  -ms-transform-origin: 50% 50% 25px; 		 
+  -o-transform-origin: 50% 50% 25px; 		 
 }
 
 .letter.out {
   transform: rotateX(90deg);
+  -webkit-transform:rotateX(90deg);	 
+  -moz-transform: rotateX(90deg);	
+  -ms-transform: rotateX(90deg);		 
+  -o-transform: rotateX(90deg);		 
   transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
 
 .letter.behind {
   transform: rotateX(-90deg);
+  -webkit-transform: rotateX(-90deg);	 
+  -moz-transform: rotateX(-90deg);	
+  -ms-transform: rotateX(-90deg);		 
+  -o-transform: rotateX(-90deg);		 
 }
 
 .letter.in {
   transform: rotateX(0deg);
+  -webkit-transform: rotateX(0deg); 	 
+  -moz-transform: rotateX(0deg);	
+  -ms-transform: rotateX(0deg);		 
+  -o-transform: rotateX(0deg);		 
   transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
   
@@ -147,7 +170,11 @@ ul {
   top: 45%;
   left: 50%;
   margin-right: -50%;
-  transform: translate(-50%, -50%) 
+  transform: translate(-50%, -50%) ;
+  -webkit-transform: translate(-50%, -50%) ;	 
+  -moz-transform: translate(-50%, -50%) ;	
+  -ms-transform: translate(-50%, -50%) ;		 
+  -o-transform: translate(-50%, -50%) ;		 
 }
 
 .slide-header h1 {

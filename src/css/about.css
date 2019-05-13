@@ -140,7 +140,6 @@
 
 }
 
-
 .skills-container h4 {
   font-size: 1.em;
   color: #FFFFFF;
@@ -173,14 +172,6 @@
   margin-right: auto;
   width: 25%;
 }
-
-/*
--webkit-transform: rotate(12deg);
--moz-transform: rotate(12deg);
--ms-transform: rotate(12deg);
--o-transform: rotate(12deg);*/
-
-
 
 @media screen and (max-width: 830px) {
   .about-area {
