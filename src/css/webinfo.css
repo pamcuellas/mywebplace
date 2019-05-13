@@ -49,10 +49,8 @@
     font-family: 'Montserrat', sans-serif;
 }
 .website-text a:hover {
-    /* color: #262626; */
     color: black;
     opacity: 0.7;
-    /* font-weight: bolder; */
     transition-duration: 0.7s;
 }
 
@@ -73,7 +71,7 @@
     width: 60%;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
     flex-flow: wrap;
     align-self: center;
     background-color: #FFFFFF;
@@ -100,7 +98,6 @@
     list-style-type: disc;
     margin-left: 6.5em;
 }
-
 
 @media screen and (max-width: 600px) {
     .website {

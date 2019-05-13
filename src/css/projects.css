@@ -5,7 +5,7 @@
     flex-direction: row;
     justify-content: space-around; 
     align-items: center; 
-    min-width: 100%;
+    min-width: 98%;
     margin: 0;
     padding: 0;
 }
@@ -331,7 +331,7 @@
         justify-content: space-between; 
     }        
     .projects-container .extraload {
-        font-size: 1.8em;
+        font-size: 1.7em;
     }        
     .database {
         height: 40vh; 

@@ -31,9 +31,9 @@
     justify-content: space-around;
     align-items: center;
     height: 8rem;
-
-    top: 74%;
-    left: .5%;
+    bottom: 0;
+    /* top: 74%; */
+    /* left: .5%; */
     /*transform: translate(-50%, -50%);*/
     background-color: #1F1F1F;
     padding: 1rem 1.5rem;

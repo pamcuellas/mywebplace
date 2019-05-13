@@ -5,8 +5,6 @@ import node  from '../images/Nodejs64.png';
 import react from '../images/React64.png'; 
 import json from '../images/json.png'; 
 import mongo from '../images/Mongodb64.png'; 
-// import html from '../images/html-5.png'; 
-// import css from '../images/css-3.png'; 
 import html from '../images/html5hexa.png'; 
 import css from '../images/css3hexa.png'; 
 import vanjs from '../images/javascript.png'; 
