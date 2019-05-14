@@ -63,8 +63,9 @@ class App extends Component {
 		var modal = document.querySelector(".modal");
 	    var closeButton = document.querySelector(".close-button");
 	    // Events to close Cookie Policy Message
-	    closeButton.addEventListener("click", this.toggleModal);
-	    window.addEventListener("click", this.windowOnClick);	
+		closeButton.addEventListener("click", this.toggleModal);
+		// Let make this popu really modal. We do not need the line below.
+	    // window.addEventListener("click", this.windowOnClick);	
 	    // Show Cookie Policy Message
 	    modal.classList.toggle("show-modal");
 	}
