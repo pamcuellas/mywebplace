@@ -56,15 +56,13 @@
   cursor: pointer;
 }
 
-
-
 .navbar .linkMenu > i {
   margin-right: 4px;
 }
 
 .color {
   color: #000000;
-  text-shadow: 1px 1px 1px #c9c6c6;  
+  text-shadow: 0.5px 0.5px 0.5px #858585;  
 }
 
 @media screen and (max-width: 610px) { /* 530px) { */
