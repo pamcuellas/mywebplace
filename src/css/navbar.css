@@ -37,6 +37,10 @@
   font-size: 0.7rem;
 }
 
+.shadow {
+  text-shadow: 1px 1px 1px #c9c6c6;  
+}
+
 .navbar .firstmenu .fa-minus:hover {
   color: #e08181;
   cursor: pointer;
@@ -60,6 +64,7 @@
 
 .color {
   color: #000000;
+  text-shadow: 1px 1px 1px #c9c6c6;  
 }
 
 @media screen and (max-width: 610px) { /* 530px) { */
@@ -71,7 +76,6 @@
   .linkMenu {
     margin-top: 3px;
     margin-bottom: 3px;
-    /* font-size: 1em; */
   }
 
 }
