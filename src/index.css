@@ -13,7 +13,7 @@ body {
   color: #a6a6a6;
   font-family: 'Prompt', serif;
   font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
-  /* line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px)/(1600 - 300))); */
+  /*line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px)/(1600 - 300))); */
 }
 
 hr {
@@ -51,8 +51,8 @@ ul {
 }
 
 .main {
-  padding-bottom: 50px;
   overflow: auto;
+  padding-bottom: 50px;
 }
 
 
@@ -60,11 +60,14 @@ ul {
 .content {
   display: flex; 
   width: 100%;
+  height: 100%;
   text-align: center;
   flex-direction: column;
   align-items: center;
+  /*margin-left: -18%; */
   overflow: auto;
-  min-height: 92.5vh; 
+  min-height: 92.5vh;
+/*  padding-bottom: 25px;*/
   }
 
 .content-area {
@@ -80,7 +83,7 @@ ul {
   display: relative;
   flex-direction: row;
   justify-content: center;
-  font: bold 1.4em "Open Sans", sans-serif;
+  font: bold 32px "Open Sans", sans-serif;
   width: 100%;
   margin-top: 70px;
   margin-bottom: 20px;
@@ -97,56 +100,50 @@ ul {
 .word {
   position: absolute;
   opacity: 0;
-  top: 13.5%;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);	 
-  -moz-transform: translate(-50%, -50%);	
-  -ms-transform: translate(-50%, -50%);		 
-  -o-transform: translate(-50%, -50%);		 
 }
 
 .letter {
   display: inline-block;
   position: relative;
+  /* float: left; */
   transform: translateZ(25px);
-  -webkit-transform: translateZ(25px);	 
-  -moz-transform:translateZ(25px); 	
-  -ms-transform: translateZ(25px);		 
-  -o-transform: translateZ(25px);		 
   transform-origin: 50% 50% 25px;
-  -webkit-transform-origin: 50% 50% 25px; 	 
-  -moz-transform-origin: 50% 50% 25px; 	
-  -ms-transform-origin: 50% 50% 25px; 		 
-  -o-transform-origin: 50% 50% 25px; 		 
 }
 
 .letter.out {
   transform: rotateX(90deg);
-  -webkit-transform:rotateX(90deg);	 
-  -moz-transform: rotateX(90deg);	
-  -ms-transform: rotateX(90deg);		 
-  -o-transform: rotateX(90deg);		 
   transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
 
 .letter.behind {
   transform: rotateX(-90deg);
-  -webkit-transform: rotateX(-90deg);	 
-  -moz-transform: rotateX(-90deg);	
-  -ms-transform: rotateX(-90deg);		 
-  -o-transform: rotateX(-90deg);		 
 }
 
 .letter.in {
   transform: rotateX(0deg);
-  -webkit-transform: rotateX(0deg); 	 
-  -moz-transform: rotateX(0deg);	
-  -ms-transform: rotateX(0deg);		 
-  -o-transform: rotateX(0deg);		 
   transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
+
+.wisteria {
+  color: #8e44ad;
+}
+
+.belize {
+  color: #2980b9;
+}
+
+.pomegranate {
+  color: #c0392b;
+}
+
+.green {
+  color: #16a085;
+}
+
+.midnight {
+  color: #2c3e50;
+}
+
   
 /* =======================================================*/
 /*                      SLIDE SHOW                      */
@@ -164,24 +161,19 @@ ul {
   z-index: 5;
 }
 
+/* Header Styles using flex-box*/
 .slide-header {
+  padding-top: 80px;
+  position: relative;
   overflow: hidden;
-  position: absolute;
-  top: 45%;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%) ;
-  -webkit-transform: translate(-50%, -50%) ;	 
-  -moz-transform: translate(-50%, -50%) ;	
-  -ms-transform: translate(-50%, -50%) ;		 
-  -o-transform: translate(-50%, -50%) ;		 
+  margin-top: 100px;
 }
 
 .slide-header h1 {
   visibility: hidden;
   margin-top: 3%;
   z-index: 1002;
-  font-size: 50px; /* The size here can break the page size */
+  /*font-size: 3rem;*/
   color: #F4E6FA;
   text-align: center;
   letter-spacing: .11em;
@@ -189,7 +181,9 @@ ul {
   text-shadow: 2px 2px 2px rgba(255, 0, 255, 0.6);
   animation: showup 25s ease-in 5s infinite both running;
   -webkit-animation: showup 25s ease-in 5s infinite both running;
+
 }
+
 
 @-webkit-keyframes showup {
   0% {
@@ -359,25 +353,5 @@ the following rule in our landing.css:*/
     opacity: 1;
 }
 
-/* MEDIA */ 
-@media screen and (max-width: 510px) {
-  .word {
-    top: 13.5%;
-  }
-  .slide-header h1 {
-    font-size: 30px;
-  }
-}
 
-@media screen and (max-height: 300px) {
-  .word {
-    top: 35%;
-  }
 
-  .slide-header {
-    top: 60%;
-  }
-  .slide-header h1 {
-    font-size: 30px;
-  }
-}
