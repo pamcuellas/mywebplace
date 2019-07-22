@@ -232,7 +232,63 @@ That is the way I describe myself. The problem: too many things to learn; The mo
 								</div>
 							</div>
 						</div>
+						<h4>Full Stack Developer Skills</h4>
+						<div className="table">
+							<div className="thead">
+								<div className="tr tr-title">
+									<div className="th">Skill</div>
+									<div className="th">Beginner</div>
+									<div className="th">Elementary</div>
+									<div className="th">Intermediate</div>
+									<div className="th">Advanced</div>
+									<div className="th">Expert</div>
+								</div>
+							</div>
+							<div className="tbody">
+								<div className="tr">
+									<div className="td">NodeJS</div>
+									<div className="td"><img src={tickedYes} alt="Ticked" /></div>
+									<div className="td"><img src={tickedYes} alt="Ticked" /></div>
+									<div className="td"><img src={tickedYes} alt="Ticked" /></div>
+									<div className="td"><img src={tickedNo} alt="Ticked" /></div>
+									<div className="td"><img src={tickedNo} alt="Ticked" /></div>
+								</div>
+								<div className="tr">
+									<div className="td">HTML5</div>
+									<div className="td"><img src={tickedYes} alt="Ticked" /></div>
+									<div className="td"><img src={tickedYes} alt="Ticked" /></div>
+									<div className="td"><img src={tickedYes} alt="Ticked" /></div>
+									<div className="td"><img src={tickedNo} alt="Ticked" /></div>
+									<div className="td"><img src={tickedNo} alt="Ticked" /></div>
+								</div>
+								<div className="tr">
+									<div className="td">CSS3</div>
+									<div className="td"><img src={tickedYes} alt="Ticked" /></div>
+									<div className="td"><img src={tickedYes} alt="Ticked" /></div>
+									<div className="td"><img src={tickedYes} alt="Ticked" /></div>
+									<div className="td"><img src={tickedNo} alt="Ticked" /></div>
+									<div className="td"><img src={tickedNo} alt="Ticked" /></div>
+								</div>
+								<div className="tr">
+									<div className="td">Laravel - PHP Framework</div>
+									<div className="td"><img src={tickedYes} alt="Ticked" /></div>
+									<div className="td"><img src={tickedYes} alt="Ticked" /></div>
+									<div className="td"><img src={tickedYes} alt="Ticked" /></div>
+									<div className="td"><img src={tickedNo} alt="Ticked" /></div>
+									<div className="td"><img src={tickedNo} alt="Ticked" /></div>
+								</div>
+								<div className="tr">
+									<div className="td">Spring MVC - Java Framework</div>
+									<div className="td"><img src={tickedYes} alt="Ticked" /></div>
+									<div className="td"><img src={tickedYes} alt="Ticked" /></div>
+									<div className="td"><img src={tickedNo} alt="Ticked" /></div>
+									<div className="td"><img src={tickedNo} alt="Ticked" /></div>
+									<div className="td"><img src={tickedNo} alt="Ticked" /></div>
+								</div>
+							</div>
+						</div>
 					</div>
+					
 				</div>
 			);
 	}
