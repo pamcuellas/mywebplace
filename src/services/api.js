@@ -19,7 +19,7 @@ export function apiCall( method, path, data ) {
 }
 
 export function	createReq( resource ) {
-		apiCall("POST", process.env.REACT_APP_PAMZCAPI_REQUEST, { resource: resource })
+		apiCall("post", process.env.REACT_APP_PAMZCAPI_REQUEST, { resource: resource })
 				.then(( data ) => { 
 					// console.log("HERE IS THE RESULT ==> ", data);
 					if (data._id !== undefined) {
