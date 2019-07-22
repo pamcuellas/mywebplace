@@ -21,7 +21,7 @@ export function apiCall( method, path, data ) {
 export function	createReq( resource ) {
 		apiCall("post", process.env.REACT_APP_PAMZCAPI_REQUEST, { resource: resource })
 				.then(( data ) => { 
-					console.log("HERE IS THE RESULT ==> ", data);
+					// console.log("HERE IS THE RESULT ==> ", data);
 					if (data._id !== undefined) {
 						//console.log("Resource access successfully registered with _id=" +  data._id);
 					} else if (data.message !== undefined) {
