@@ -8,7 +8,16 @@ import axios from 'axios';
 */
 export function apiCall( method, path, data ) {
 	return new Promise( ( resolve, reject ) => {
-		return axios[method.toLowerCase()](path, data)
+		// console.log("Passed.******************", data.resource)
+		return axios( { method: method.toLowerCase(),
+						url: path, 
+						headers: {'Access-Control-Allow-Origin': '*',
+									'Content-Type': 'application/json'
+								}, 
+						data: data
+							})
+//		return axios[method.toLowerCase()](path, data)
+
 			.then(res => { 								// Where "data" comes from? The idea here is that when we get back information from AXIOS 
 				//console.log("Here is the res.data ==>", res.data)
 				return resolve (res.data);				// It always comes in a certain object. In this case it is going to come in an object called 
