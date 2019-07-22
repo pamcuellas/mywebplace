@@ -177,7 +177,7 @@ That is the way I describe myself. The problem: too many things to learn; The mo
 
 
 					<div className="skills-container"> 
-						<h4>Database Skills</h4>
+						<h4>Database Developer Skills</h4>
 						<div className="table">
 							<div className="thead">
 								<div className="tr tr-title">
@@ -191,7 +191,7 @@ That is the way I describe myself. The problem: too many things to learn; The mo
 							</div>
 							<div className="tbody">
 								<div className="tr">
-									<div className="td">Oracle</div>
+									<div className="td">PostgreSQL</div>
 									<div className="td"><img src={tickedYes} alt="Ticked" /></div>
 									<div className="td"><img src={tickedYes} alt="Ticked" /></div>
 									<div className="td"><img src={tickedYes} alt="Ticked" /></div>
@@ -207,19 +207,27 @@ That is the way I describe myself. The problem: too many things to learn; The mo
 									<div className="td"><img src={tickedNo} alt="Ticked" /></div>
 								</div>
 								<div className="tr">
-									<div className="td">Oracle</div>
-									<div className="td"><img src={tickedYes} alt="Ticked" /></div>
+									<div className="td">Microsoft SQL Server</div>
 									<div className="td"><img src={tickedYes} alt="Ticked" /></div>
 									<div className="td"><img src={tickedYes} alt="Ticked" /></div>
 									<div className="td"><img src={tickedYes} alt="Ticked" /></div>
 									<div className="td"><img src={tickedNo} alt="Ticked" /></div>
+									<div className="td"><img src={tickedNo} alt="Ticked" /></div>
 								</div>
 								<div className="tr">
-									<div className="td">Oracle</div>
+									<div className="td">MySQL</div>
 									<div className="td"><img src={tickedYes} alt="Ticked" /></div>
 									<div className="td"><img src={tickedYes} alt="Ticked" /></div>
 									<div className="td"><img src={tickedYes} alt="Ticked" /></div>
+									<div className="td"><img src={tickedNo} alt="Ticked" /></div>
+									<div className="td"><img src={tickedNo} alt="Ticked" /></div>
+								</div>
+								<div className="tr">
+									<div className="td">MongoDB</div>
 									<div className="td"><img src={tickedYes} alt="Ticked" /></div>
+									<div className="td"><img src={tickedYes} alt="Ticked" /></div>
+									<div className="td"><img src={tickedNo} alt="Ticked" /></div>
+									<div className="td"><img src={tickedNo} alt="Ticked" /></div>
 									<div className="td"><img src={tickedNo} alt="Ticked" /></div>
 								</div>
 							</div>

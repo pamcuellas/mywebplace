@@ -62,7 +62,7 @@
 
 .color {
   color: #000000;
-  text-shadow: 0.5px 0.5px 0.5px #858585;  
+  text-shadow: 0.5px 0.5px 0.5px #707070;  
 }
 
 @media screen and (max-width: 610px) { /* 530px) { */
