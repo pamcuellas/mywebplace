@@ -14,8 +14,11 @@ export function apiCall( method, path, data ) {
 						headers: {'Access-Control-Allow-Origin': '*',
 									'Content-Type': 'application/json'
 								}, 
-						data: data
-							})
+						data: data,
+						validateStatus: (status) => {
+							return true; // I'm always returning true, you may want to do it depending on the status received
+						  }
+					})
 //		return axios[method.toLowerCase()](path, data)
 
 			.then(res => { 								// Where "data" comes from? The idea here is that when we get back information from AXIOS 
