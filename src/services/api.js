@@ -7,22 +7,21 @@ import axios from 'axios';
 * @param {object} data (optional) data in JSON form for POST requests 
 */
 export function apiCall( method, path, data ) {
+	console.log("It is gonna start Promise...")
 	return new Promise( ( resolve, reject ) => {
-		// console.log("Passed.******************", data.resource)
 		return axios( { method: method.toLowerCase(),
 						url: path, 
 						headers: {'Access-Control-Allow-Origin': '*',
-									'Content-Type': 'application/json'
+								  'Content-Type': 'application/json'
 								}, 
 						data: data,
 						validateStatus: (status) => {
-							return true; // I'm always returning true, you may want to do it depending on the status received
+							return true;
 						  }
 					})
 //		return axios[method.toLowerCase()](path, data)
 
 			.then(res => { 								// Where "data" comes from? The idea here is that when we get back information from AXIOS 
-				//console.log("Here is the res.data ==>", res.data)
 				return resolve (res.data);				// It always comes in a certain object. In this case it is going to come in an object called 
 			}).catch(err => {							// "response" and a sub object called data when something goes wrong inside of data we have the 
 				return reject(err); // sub object called error.
