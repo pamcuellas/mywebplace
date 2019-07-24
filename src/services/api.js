@@ -9,6 +9,7 @@ import axios from 'axios';
 export function apiCall( method, path, data ) {
 	console.log("It is gonna start Promise...")
 	return new Promise( ( resolve, reject ) => {
+		console.log("Promise started...")
 		return axios( { method: method.toLowerCase(),
 						url: path, 
 						headers: {'Access-Control-Allow-Origin': '*',
