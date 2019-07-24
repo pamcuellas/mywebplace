@@ -169,9 +169,9 @@ This scenario demands IT professionals be passionate about technology and be con
 That is the way I describe myself. The problem: too many things to learn; The motivation: so exciting.</p>
 							<p className="Obama-speech"><q></q>There is no matter how much you have done or how successful you have been. There is always more to do, always more to learn and always more to achieve."<br />
 							<a className="Obama-signature" href="https://www.youtube.com/watch?v=Qbel5MhtDq4" target="_blank" rel="noopener noreferrer">- Barack Obama commencement speech at ASU 2009</a></p>
-									
-							<p>Over the last ten years I have been working designing, creating, updating, and performing maintenance in databases.
-							</p>
+							<p>By the way, I'm currently attending the <a className="Obama-signature" href="https://bootcamp.learn.utoronto.ca/data/" target="_blank" rel="noopener noreferrer">Data Analytics Bootcamp at UofT</a></p>
+							<p>Over the last ten years, I have been performing database activities like designing, creating, updating, and maintenance.
+But, as someone that likes keep the hands durty, I'm always coding a bunch of rows to test new features of languages or just testing new ideas. </p>									
 						</div>
 					</div>
 
@@ -207,7 +207,7 @@ That is the way I describe myself. The problem: too many things to learn; The mo
 									<div className="td"><img src={tickedNo} alt="Ticked" /></div>
 								</div>
 								<div className="tr">
-									<div className="td">Microsoft SQL Server</div>
+									<div className="td">MSQL Server</div>
 									<div className="td"><img src={tickedYes} alt="Ticked" /></div>
 									<div className="td"><img src={tickedYes} alt="Ticked" /></div>
 									<div className="td"><img src={tickedYes} alt="Ticked" /></div>
