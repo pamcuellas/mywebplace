@@ -7,10 +7,21 @@ import axios from 'axios';
 * @param {object} data (optional) data in JSON form for POST requests 
 */
 export function apiCall( method, path, data ) {
+	console.log("It is gonna start Promise...")
 	return new Promise( ( resolve, reject ) => {
-		return axios[method.toLowerCase()](path, data)
+		return axios( { method: method.toLowerCase(),
+						url: path, 
+						headers: {'Access-Control-Allow-Origin': '*',
+								  'Content-Type': 'application/json'
+								}, 
+						data: data,
+						validateStatus: (status) => {
+							return true;
+						  }
+					})
+//		return axios[method.toLowerCase()](path, data)
+
 			.then(res => { 								// Where "data" comes from? The idea here is that when we get back information from AXIOS 
-				//console.log("Here is the res.data ==>", res.data)
 				return resolve (res.data);				// It always comes in a certain object. In this case it is going to come in an object called 
 			}).catch(err => {							// "response" and a sub object called data when something goes wrong inside of data we have the 
 				return reject(err); // sub object called error.
@@ -21,7 +32,7 @@ export function apiCall( method, path, data ) {
 export function	createReq( resource ) {
 		apiCall("post", process.env.REACT_APP_PAMZCAPI_REQUEST, { resource: resource })
 				.then(( data ) => { 
-					//console.log("HERE IS THE RESULT ==> ", data);
+					// console.log("HERE IS THE RESULT ==> ", data);
 					if (data._id !== undefined) {
 						//console.log("Resource access successfully registered with _id=" +  data._id);
 					} else if (data.message !== undefined) {
