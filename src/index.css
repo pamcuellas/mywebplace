@@ -228,8 +228,7 @@ ul {
 
 
 
-/*The unordered list and its list items that we added to landing.ejs need some styling to make them fit across the entire page
-First we'll style the unordered list:*/
+/* Starting Slide Show */
 #slideshow { 
   position: fixed;
   width: 100%;
@@ -241,12 +240,7 @@ First we'll style the unordered list:*/
   margin: 0;
   padding: 0;
 }
-/*This will fix the ul to the window, positioning it in the top left corner and filling the entire screen by setting width and height to 
-100%; we set the z-index to 0 to keep the background images behind the rest of the page's content; list-style is set to none in order to 
-hide the bullet points from the list's default styling; margin and padding are removed entirely
-
-Now we can style all of the list items:
-*/
+ 
 #slideshow li { 
   width: 100%;
   height: 100%;
@@ -261,33 +255,28 @@ Now we can style all of the list items:
   -webkit-animation: imageAnimation 90s linear infinite; 
   animation: imageAnimation 90s linear infinite; 
 }
-/*Notice the animation property at the bottom of this rule, this is how we add an animation to an element; in this case we 
-have an animation named imageAnimation that lasts for 50s (seconds), keeps linear timing    (the whole animation runs at the 
-  same speed), and loops an infinite number of times
-
-Each list item needs a background-image and the last four need an animation-delay (this way they all fire off one after the other in ten second intervals):
-*/
+/* Images for Slide Show */
 #slideshow li:nth-child(1) { 
-  background-image: url(./images/wind-energy-kai-gradert-min.jpg);  /* compacted http://images.unsplash.com/photo-1491280108190-30dff9cb47c4);*/ 
+  background-image: url(./images/wind-energy-kai-gradert-min.jpg);    
 }
 #slideshow li:nth-child(2) { 
-  background-image: url(./images/wind-energy-constantine-fountos.jpg);  /* compacted */ 
+  background-image: url(./images/wind-energy-constantine-fountos.jpg);    
   animation-delay: 10s; 
 }
 #slideshow li:nth-child(3) { 
-  background-image: url(./images/wind-energy-tim-vanderhoydonck.jpg);  /* compacted */  
+  background-image: url(./images/wind-energy-tim-vanderhoydonck.jpg);   
   animation-delay: 20s; 
 }
 #slideshow li:nth-child(4) { 
-  background-image: url(./images/wind-energy-karsten-wurth.jpg);  /* compacted https://images.unsplash.com/photo-1466611653911-95081537e5b7);*/ 
+  background-image: url(./images/wind-energy-karsten-wurth.jpg);    
   animation-delay: 30s; 
 }
 #slideshow li:nth-child(5) { 
-  background-image: url(./images/wind-energy-philippe-bourhis-min.jpg); /* wind-energy-jason-blackeye-.jpg);  */ 
+  background-image: url(./images/wind-energy-philippe-bourhis-min.jpg);  
   animation-delay: 40s; 
 }
 #slideshow li:nth-child(6) { 
-  background-image: url(./images/wind-energy-anna-jimenez-calaf-min.jpg); /*wind-energy-rawfilm.jpg);  */
+  background-image: url(./images/wind-energy-anna-jimenez-calaf-min.jpg);  
   animation-delay: 50s; 
 }
 #slideshow li:nth-child(7) { 

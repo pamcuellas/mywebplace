@@ -3,7 +3,7 @@ import animaWords from '../services/animaWords';
 import { TweenMax } from "gsap/TweenMax";
 import { Back } from 'gsap';
 import img01 from '../images/MyGrayFace.jpg'; 
-import img02 from '../images/MyFace-min.jpg'; 
+import img02 from '../images/MyPhotobomb.jpg'; 
 import tickedYes from '../images/combinedblue.png';
 import tickedNo from '../images/combinedred.png';
 
