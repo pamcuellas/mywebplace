@@ -7,17 +7,17 @@ import axios from 'axios';
 * @param {object} data (optional) data in JSON form for POST requests 
 */
 export function apiCall( method, path, data ) {
-	console.log("It is gonna start Promise...")
+	// console.log("It is gonna start Promise...")
 	return new Promise( ( resolve, reject ) => {
-		console.log("Promise started...")
-		return axios( { method: method.toLowerCase(),
-						url: path, 
-						headers: {'Access-Control-Allow-Origin': '*',
-								  'Content-Type': 'application/json'
-								}, 
-						data: JSON.stringify(data)
-					})
-//		return axios[method.toLowerCase()](path, data)
+		// console.log("Promise started...")
+		// return axios( { method: method.toLowerCase(),
+		// 				url: path, 
+		// 				headers: {'Access-Control-Allow-Origin': '*',
+		// 						  'Content-Type': 'application/json'
+		// 						}, 
+		// 				data: JSON.stringify(data)
+		// 			})
+		return axios[method.toLowerCase()](path, JSON.stringify(data))
 
 			.then(res => { 								// Where "data" comes from? The idea here is that when we get back information from AXIOS 
 				return resolve (res.data);				// It always comes in a certain object. In this case it is going to come in an object called 
