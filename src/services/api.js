@@ -15,10 +15,7 @@ export function apiCall( method, path, data ) {
 						headers: {'Access-Control-Allow-Origin': '*',
 								  'Content-Type': 'application/json'
 								}, 
-						data: data,
-						validateStatus: (status) => {
-							return true;
-						  }
+						data: JSON.stringify(data)
 					})
 //		return axios[method.toLowerCase()](path, data)
 
