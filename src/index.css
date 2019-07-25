@@ -1,3 +1,11 @@
+/*** Load fonts ***/
+@font-face {
+  font-family: 'Prompt';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Prompt'), url('./fonts/Prompt-Regular.ttf') format('truetype');
+}
+
 /******** General Styles *********/
 * {
   margin: 0;
@@ -27,13 +35,6 @@ hr {
 
 .invisible {
   visibility: hidden;
-}
-
-@font-face {
-  font-family: 'Prompt';
-  font-style: normal;
-  font-weight: normal;
-  src: local('Prompt'), url('./fonts/Prompt-Regular.ttf') format('truetype');
 }
 
 #root, .app{
