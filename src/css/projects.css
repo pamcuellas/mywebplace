@@ -113,12 +113,18 @@
 
 .nomal-text{
     font-style: normal;
-    font-size: 18px;
+    font-size: 0.8em;
     line-height: 1.6em;
     color: #3a3a3a;
-    margin: 0 0 40px 0;
+    padding-top: 1em;
+    padding-bottom: 1.5em;
     width: 80%;
     text-align:justify;
+    background-color: #FFF5F6;
+}
+.nomal-text p {
+    margin-left: 1em;
+    margin-right: 1em;
 }
 
 

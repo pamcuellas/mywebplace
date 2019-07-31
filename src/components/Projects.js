@@ -55,7 +55,7 @@ class Projects extends Component {
 					</div>
 					<hr></hr>
 					<div className="nomal-text">
-						<p>Over the last ten years, I have been performing database activities like designing, creating, updating, and maintenance. But, as someone that likes keep the hands durty, I am always coding a bunch of rows to test new languages features or just testing new ideas.</p>
+						<p>Over the last ten years, I have been performing roles related to the process to create databases from scratch. The database business goals define which will be its potential data sources. My most experiences are marketing purposes.</p>
 					</div>
 					<div className="projects-container">
 						<div className="source">
@@ -106,6 +106,9 @@ class Projects extends Component {
 							<div className="circle-base common position-two"></div>
 							<div className="circle-base common position-three"></div>
 						</div>
+					</div>
+					<div className="nomal-text">
+						<p>In a nutshell, this kind of project starts by analyzing and documenting the data sources. The Entity-Relationship Model is sketched out as a result of this first step.</p>
 					</div>
 				</div>
 
