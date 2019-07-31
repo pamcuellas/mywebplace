@@ -57,6 +57,16 @@
   color: #FFFFFF;
 }
 
+.personaldata p a {
+  text-decoration: none;
+  color:#FFFFFF;
+}
+.personaldata p a:hover{
+  color: #000000;
+  opacity: 0.7;
+  transition-duration: 0.7s;  
+}
+
 .personaldata .Obama-speech {
   width: 45%;
   font-style: italic;

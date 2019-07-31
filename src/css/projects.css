@@ -111,8 +111,19 @@
     color: #ffffff;
 }
 
+.nomal-text{
+    font-style: normal;
+    font-size: 18px;
+    line-height: 1.6em;
+    color: #3a3a3a;
+    margin: 0 0 40px 0;
+    width: 80%;
+    text-align:justify;
+}
+
+
 .data-text ul{
-    margin-top: 0.5em;
+    margin-top: 0.4em;
     list-style-type: square;
     display: flex;
     flex-direction: column;
