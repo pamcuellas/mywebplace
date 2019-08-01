@@ -190,43 +190,43 @@ That is the way I describe myself. The problem: too many things to learn; The mo
 							<div className="tbody">
 								<div className="tr">
 									<div className="td">PostgreSQL</div>
-									<div className="td"><img src={tickedYes} alt="Ticked" /></div>
-									<div className="td"><img src={tickedYes} alt="Ticked" /></div>
-									<div className="td"><img src={tickedYes} alt="Ticked" /></div>
-									<div className="td"><img src={tickedYes} alt="Ticked" /></div>
-									<div className="td"><img src={tickedNo} alt="Ticked" /></div>
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star"></span>
 								</div>
 								<div className="tr">
 									<div className="td">Oracle</div>
-									<div className="td"><img src={tickedYes} alt="Ticked" /></div>
-									<div className="td"><img src={tickedYes} alt="Ticked" /></div>
-									<div className="td"><img src={tickedYes} alt="Ticked" /></div>
-									<div className="td"><img src={tickedYes} alt="Ticked" /></div>
-									<div className="td"><img src={tickedNo} alt="Ticked" /></div>
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star"></span>
 								</div>
 								<div className="tr">
 									<div className="td">MSQL Server</div>
-									<div className="td"><img src={tickedYes} alt="Ticked" /></div>
-									<div className="td"><img src={tickedYes} alt="Ticked" /></div>
-									<div className="td"><img src={tickedYes} alt="Ticked" /></div>
-									<div className="td"><img src={tickedNo} alt="Ticked" /></div>
-									<div className="td"><img src={tickedNo} alt="Ticked" /></div>
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star"></span>
+									<span class="fa fa-star"></span>
 								</div>
 								<div className="tr">
 									<div className="td">MySQL</div>
-									<div className="td"><img src={tickedYes} alt="Ticked" /></div>
-									<div className="td"><img src={tickedYes} alt="Ticked" /></div>
-									<div className="td"><img src={tickedYes} alt="Ticked" /></div>
-									<div className="td"><img src={tickedNo} alt="Ticked" /></div>
-									<div className="td"><img src={tickedNo} alt="Ticked" /></div>
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star"></span>
+									<span class="fa fa-star"></span>
 								</div>
 								<div className="tr">
 									<div className="td">MongoDB</div>
-									<div className="td"><img src={tickedYes} alt="Ticked" /></div>
-									<div className="td"><img src={tickedYes} alt="Ticked" /></div>
-									<div className="td"><img src={tickedNo} alt="Ticked" /></div>
-									<div className="td"><img src={tickedNo} alt="Ticked" /></div>
-									<div className="td"><img src={tickedNo} alt="Ticked" /></div>
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star"></span>
+									<span class="fa fa-star"></span>
+									<span class="fa fa-star"></span>
 								</div>
 							</div>
 						</div>
@@ -247,75 +247,75 @@ That is the way I describe myself. The problem: too many things to learn; The mo
 							<div className="tbody">
 								<div className="tr">
 									<div className="td">NodeJS</div>
-									<div className="td"><img src={tickedYes} alt="Ticked" /></div>
-									<div className="td"><img src={tickedYes} alt="Ticked" /></div>
-									<div className="td"><img src={tickedYes} alt="Ticked" /></div>
-									<div className="td"><img src={tickedNo} alt="Ticked" /></div>
-									<div className="td"><img src={tickedNo} alt="Ticked" /></div>
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star"></span>
+									<span class="fa fa-star"></span>
 								</div>
 								<div className="tr">
 									<div className="td">React</div>
-									<div className="td"><img src={tickedYes} alt="Ticked" /></div>
-									<div className="td"><img src={tickedYes} alt="Ticked" /></div>
-									<div className="td"><img src={tickedYes} alt="Ticked" /></div>
-									<div className="td"><img src={tickedNo} alt="Ticked" /></div>
-									<div className="td"><img src={tickedNo} alt="Ticked" /></div>
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star"></span>
+									<span class="fa fa-star"></span>
 								</div>
 								<div className="tr">
 									<div className="td">HTML5</div>
-									<div className="td"><img src={tickedYes} alt="Ticked" /></div>
-									<div className="td"><img src={tickedYes} alt="Ticked" /></div>
-									<div className="td"><img src={tickedYes} alt="Ticked" /></div>
-									<div className="td"><img src={tickedNo} alt="Ticked" /></div>
-									<div className="td"><img src={tickedNo} alt="Ticked" /></div>
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star"></span>
+									<span class="fa fa-star"></span>
 								</div>
 								<div className="tr">
 									<div className="td">CSS3</div>
-									<div className="td"><img src={tickedYes} alt="Ticked" /></div>
-									<div className="td"><img src={tickedYes} alt="Ticked" /></div>
-									<div className="td"><img src={tickedYes} alt="Ticked" /></div>
-									<div className="td"><img src={tickedNo} alt="Ticked" /></div>
-									<div className="td"><img src={tickedNo} alt="Ticked" /></div>
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star"></span>
+									<span class="fa fa-star"></span>
 								</div>
 								<div className="tr">
 									<div className="td">Python</div>
-									<div className="td"><img src={tickedYes} alt="Ticked" /></div>
-									<div className="td"><img src={tickedYes} alt="Ticked" /></div>
-									<div className="td"><img src={tickedYes} alt="Ticked" /></div>
-									<div className="td"><img src={tickedNo} alt="Ticked" /></div>
-									<div className="td"><img src={tickedNo} alt="Ticked" /></div>
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star"></span>
+									<span class="fa fa-star"></span>
 								</div>
 								<div className="tr">
 									<div className="td">Laravel - PHP</div>
-									<div className="td"><img src={tickedYes} alt="Ticked" /></div>
-									<div className="td"><img src={tickedYes} alt="Ticked" /></div>
-									<div className="td"><img src={tickedNo} alt="Ticked" /></div>
-									<div className="td"><img src={tickedNo} alt="Ticked" /></div>
-									<div className="td"><img src={tickedNo} alt="Ticked" /></div>
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star"></span>
+									<span class="fa fa-star"></span>
+									<span class="fa fa-star"></span>
 								</div>
 								<div className="tr">
 									<div className="td">Spring MVC - Java</div>
-									<div className="td"><img src={tickedYes} alt="Ticked" /></div>
-									<div className="td"><img src={tickedYes} alt="Ticked" /></div>
-									<div className="td"><img src={tickedNo} alt="Ticked" /></div>
-									<div className="td"><img src={tickedNo} alt="Ticked" /></div>
-									<div className="td"><img src={tickedNo} alt="Ticked" /></div>
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star"></span>
+									<span class="fa fa-star"></span>
+									<span class="fa fa-star"></span>
 								</div>
 								<div className="tr">
 									<div className="td">C#</div>
-									<div className="td"><img src={tickedYes} alt="Ticked" /></div>
-									<div className="td"><img src={tickedYes} alt="Ticked" /></div>
-									<div className="td"><img src={tickedNo} alt="Ticked" /></div>
-									<div className="td"><img src={tickedNo} alt="Ticked" /></div>
-									<div className="td"><img src={tickedNo} alt="Ticked" /></div>
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star"></span>
+									<span class="fa fa-star"></span>
+									<span class="fa fa-star"></span>
 								</div>
 								<div className="tr">
 									<div className="td">C++</div>
-									<div className="td"><img src={tickedYes} alt="Ticked" /></div>
-									<div className="td"><img src={tickedYes} alt="Ticked" /></div>
-									<div className="td"><img src={tickedNo} alt="Ticked" /></div>
-									<div className="td"><img src={tickedNo} alt="Ticked" /></div>
-									<div className="td"><img src={tickedNo} alt="Ticked" /></div>
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star"></span>
+									<span class="fa fa-star"></span>
+									<span class="fa fa-star"></span>
 								</div>
 							</div>
 						</div>
