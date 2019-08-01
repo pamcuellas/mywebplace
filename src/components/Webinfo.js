@@ -58,7 +58,7 @@ class Webinfo extends Component {
 						</span>
 			  		</p>
 				</div>
-				<div className="website">
+				<div className="website paragraph-bottom-space">
 					<div className="website-text">
 						<div className="text-1">
 						<p>This website is hosted at 

@@ -149,7 +149,6 @@ class About extends Component {
 							</span>
 				  		</p>
 					</div>
-					{/* <hr />  */}
 					<div className="about-area ">
 						<div className="photo-container">
 							<div className="photo">
@@ -160,13 +159,12 @@ class About extends Component {
 							</div>
 
 						</div>	
-						{/* <hr />  */}
 						<div className="personaldata">
 							<h4>I am a Database Developer</h4>
 							<p><span id="data">Data</span> is one of the most valuable assets for companies and due to this reason, technologies which surround it have been improving more and more.  
 This scenario demands IT professionals be passionate about technology and be concerned to remain updated acquiring new bits of knowledge constantly. 
 That is the way I describe myself. The problem: too many things to learn; The motivation: so exciting.</p>
-							<p className="Obama-speech"><q></q>There is no matter how much you have done or how successful you have been. There is always more to do, always more to learn and always more to achieve."<br />
+							<p className="Obama-speech"><q>There is no matter how much you have done or how successful you have been. There is always more to do, always more to learn and always more to achieve.</q><br />
 							<a className="Obama-signature" href="https://www.youtube.com/watch?v=Qbel5MhtDq4" target="_blank" rel="noopener noreferrer">- Barack Obama commencement speech at ASU 2009</a></p>
 							<p>By the way, I'm currently attending the<a href="https://bootcamp.learn.utoronto.ca/data/" target="_blank" rel="noopener noreferrer"> Data Analytics Bootcamp at UofT.</a></p>
 						</div>
@@ -230,7 +228,7 @@ That is the way I describe myself. The problem: too many things to learn; The mo
 							</div>
 						</div>
 					</div>
-					<div className="skills-container"> 
+					<div className="skills-container paragraph-bottom-space"> 
 						<h4>Full Stack Developer Skills</h4>
 						<div className="table">
 							<div className="thead">
@@ -277,6 +275,14 @@ That is the way I describe myself. The problem: too many things to learn; The mo
 									<span className="fa fa-star"></span>
 								</div>
 								<div className="tr">
+									<div className="td">Vanilla JS</div>
+									<span className="fa fa-star checked"></span>
+									<span className="fa fa-star checked"></span>
+									<span className="fa fa-star checked"></span>
+									<span className="fa fa-star"></span>
+									<span className="fa fa-star"></span>
+								</div>
+								<div className="tr">
 									<div className="td">Python</div>
 									<span className="fa fa-star checked"></span>
 									<span className="fa fa-star checked"></span>
@@ -285,7 +291,7 @@ That is the way I describe myself. The problem: too many things to learn; The mo
 									<span className="fa fa-star"></span>
 								</div>
 								<div className="tr">
-									<div className="td">Laravel - PHP</div>
+									<div className="td">Laravel-PHP</div>
 									<span className="fa fa-star checked"></span>
 									<span className="fa fa-star checked"></span>
 									<span className="fa fa-star"></span>
@@ -293,7 +299,7 @@ That is the way I describe myself. The problem: too many things to learn; The mo
 									<span className="fa fa-star"></span>
 								</div>
 								<div className="tr">
-									<div className="td">Spring MVC - Java</div>
+									<div className="td">Spring MVC-Java</div>
 									<span className="fa fa-star checked"></span>
 									<span className="fa fa-star checked"></span>
 									<span className="fa fa-star"></span>
@@ -319,7 +325,6 @@ That is the way I describe myself. The problem: too many things to learn; The mo
 							</div>
 						</div>
 					</div>
-					
 				</div>
 			);
 	}
