@@ -6,11 +6,12 @@
 	flex-flow: wrap;
 	float: left;
   width: 65%;
+  padding-bottom: 1em;
 }
 
 .about-area,
 .skills-container {
-  background-color: #E43 ; /**/
+  background-color: salmon; /*#E43 */
 
 }
 
@@ -50,8 +51,9 @@
 
 .personaldata h4 {
   font-size: 1.em;
-  color: #5a5a5a; 
+  color: #FFFFFF ; /* #800080*/ 
   font-style: italic;
+  font-weight: 100;
 }
 
 .personaldata p {
@@ -80,12 +82,10 @@
 }
 
 .personaldata .Obama-signature {
-  text-decoration: none;
+  color: whitesmoke;
   font-style: normal;
-  color: #5a5a5a;
-  font-size: 0.8em;
+  font-size: 0.9em;
   text-align: center;
-  font-weight: bold;
 }
 
 .personaldata #data {
@@ -198,9 +198,14 @@
 @media screen and (max-width: 830px) {
   .about-area {
     width: 98%;
+    margin-bottom: 1%;
   }
+  
+
   .skills-container {
     width: 98%;
+    margin-top: 0;
+    margin-bottom: 1%;
   }
 
   .photo-container {
