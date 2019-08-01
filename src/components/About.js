@@ -190,43 +190,43 @@ That is the way I describe myself. The problem: too many things to learn; The mo
 							<div className="tbody">
 								<div className="tr">
 									<div className="td">PostgreSQL</div>
-									<span class="fa fa-star checked"></span>
-									<span class="fa fa-star checked"></span>
-									<span class="fa fa-star checked"></span>
-									<span class="fa fa-star checked"></span>
-									<span class="fa fa-star"></span>
+									<span className="fa fa-star checked"></span>
+									<span className="fa fa-star checked"></span>
+									<span className="fa fa-star checked"></span>
+									<span className="fa fa-star checked"></span>
+									<span className="fa fa-star"></span>
 								</div>
 								<div className="tr">
 									<div className="td">Oracle</div>
-									<span class="fa fa-star checked"></span>
-									<span class="fa fa-star checked"></span>
-									<span class="fa fa-star checked"></span>
-									<span class="fa fa-star checked"></span>
-									<span class="fa fa-star"></span>
+									<span className="fa fa-star checked"></span>
+									<span className="fa fa-star checked"></span>
+									<span className="fa fa-star checked"></span>
+									<span className="fa fa-star checked"></span>
+									<span className="fa fa-star"></span>
 								</div>
 								<div className="tr">
 									<div className="td">MSQL Server</div>
-									<span class="fa fa-star checked"></span>
-									<span class="fa fa-star checked"></span>
-									<span class="fa fa-star checked"></span>
-									<span class="fa fa-star"></span>
-									<span class="fa fa-star"></span>
+									<span className="fa fa-star checked"></span>
+									<span className="fa fa-star checked"></span>
+									<span className="fa fa-star checked"></span>
+									<span className="fa fa-star"></span>
+									<span className="fa fa-star"></span>
 								</div>
 								<div className="tr">
 									<div className="td">MySQL</div>
-									<span class="fa fa-star checked"></span>
-									<span class="fa fa-star checked"></span>
-									<span class="fa fa-star checked"></span>
-									<span class="fa fa-star"></span>
-									<span class="fa fa-star"></span>
+									<span className="fa fa-star checked"></span>
+									<span className="fa fa-star checked"></span>
+									<span className="fa fa-star checked"></span>
+									<span className="fa fa-star"></span>
+									<span className="fa fa-star"></span>
 								</div>
 								<div className="tr">
 									<div className="td">MongoDB</div>
-									<span class="fa fa-star checked"></span>
-									<span class="fa fa-star checked"></span>
-									<span class="fa fa-star"></span>
-									<span class="fa fa-star"></span>
-									<span class="fa fa-star"></span>
+									<span className="fa fa-star checked"></span>
+									<span className="fa fa-star checked"></span>
+									<span className="fa fa-star"></span>
+									<span className="fa fa-star"></span>
+									<span className="fa fa-star"></span>
 								</div>
 							</div>
 						</div>
@@ -247,75 +247,75 @@ That is the way I describe myself. The problem: too many things to learn; The mo
 							<div className="tbody">
 								<div className="tr">
 									<div className="td">NodeJS</div>
-									<span class="fa fa-star checked"></span>
-									<span class="fa fa-star checked"></span>
-									<span class="fa fa-star checked"></span>
-									<span class="fa fa-star"></span>
-									<span class="fa fa-star"></span>
+									<span className="fa fa-star checked"></span>
+									<span className="fa fa-star checked"></span>
+									<span className="fa fa-star checked"></span>
+									<span className="fa fa-star"></span>
+									<span className="fa fa-star"></span>
 								</div>
 								<div className="tr">
 									<div className="td">React</div>
-									<span class="fa fa-star checked"></span>
-									<span class="fa fa-star checked"></span>
-									<span class="fa fa-star checked"></span>
-									<span class="fa fa-star"></span>
-									<span class="fa fa-star"></span>
+									<span className="fa fa-star checked"></span>
+									<span className="fa fa-star checked"></span>
+									<span className="fa fa-star checked"></span>
+									<span className="fa fa-star"></span>
+									<span className="fa fa-star"></span>
 								</div>
 								<div className="tr">
 									<div className="td">HTML5</div>
-									<span class="fa fa-star checked"></span>
-									<span class="fa fa-star checked"></span>
-									<span class="fa fa-star checked"></span>
-									<span class="fa fa-star"></span>
-									<span class="fa fa-star"></span>
+									<span className="fa fa-star checked"></span>
+									<span className="fa fa-star checked"></span>
+									<span className="fa fa-star checked"></span>
+									<span className="fa fa-star"></span>
+									<span className="fa fa-star"></span>
 								</div>
 								<div className="tr">
 									<div className="td">CSS3</div>
-									<span class="fa fa-star checked"></span>
-									<span class="fa fa-star checked"></span>
-									<span class="fa fa-star checked"></span>
-									<span class="fa fa-star"></span>
-									<span class="fa fa-star"></span>
+									<span className="fa fa-star checked"></span>
+									<span className="fa fa-star checked"></span>
+									<span className="fa fa-star checked"></span>
+									<span className="fa fa-star"></span>
+									<span className="fa fa-star"></span>
 								</div>
 								<div className="tr">
 									<div className="td">Python</div>
-									<span class="fa fa-star checked"></span>
-									<span class="fa fa-star checked"></span>
-									<span class="fa fa-star checked"></span>
-									<span class="fa fa-star"></span>
-									<span class="fa fa-star"></span>
+									<span className="fa fa-star checked"></span>
+									<span className="fa fa-star checked"></span>
+									<span className="fa fa-star checked"></span>
+									<span className="fa fa-star"></span>
+									<span className="fa fa-star"></span>
 								</div>
 								<div className="tr">
 									<div className="td">Laravel - PHP</div>
-									<span class="fa fa-star checked"></span>
-									<span class="fa fa-star checked"></span>
-									<span class="fa fa-star"></span>
-									<span class="fa fa-star"></span>
-									<span class="fa fa-star"></span>
+									<span className="fa fa-star checked"></span>
+									<span className="fa fa-star checked"></span>
+									<span className="fa fa-star"></span>
+									<span className="fa fa-star"></span>
+									<span className="fa fa-star"></span>
 								</div>
 								<div className="tr">
 									<div className="td">Spring MVC - Java</div>
-									<span class="fa fa-star checked"></span>
-									<span class="fa fa-star checked"></span>
-									<span class="fa fa-star"></span>
-									<span class="fa fa-star"></span>
-									<span class="fa fa-star"></span>
+									<span className="fa fa-star checked"></span>
+									<span className="fa fa-star checked"></span>
+									<span className="fa fa-star"></span>
+									<span className="fa fa-star"></span>
+									<span className="fa fa-star"></span>
 								</div>
 								<div className="tr">
 									<div className="td">C#</div>
-									<span class="fa fa-star checked"></span>
-									<span class="fa fa-star checked"></span>
-									<span class="fa fa-star"></span>
-									<span class="fa fa-star"></span>
-									<span class="fa fa-star"></span>
+									<span className="fa fa-star checked"></span>
+									<span className="fa fa-star checked"></span>
+									<span className="fa fa-star"></span>
+									<span className="fa fa-star"></span>
+									<span className="fa fa-star"></span>
 								</div>
 								<div className="tr">
 									<div className="td">C++</div>
-									<span class="fa fa-star checked"></span>
-									<span class="fa fa-star checked"></span>
-									<span class="fa fa-star"></span>
-									<span class="fa fa-star"></span>
-									<span class="fa fa-star"></span>
+									<span className="fa fa-star checked"></span>
+									<span className="fa fa-star checked"></span>
+									<span className="fa fa-star"></span>
+									<span className="fa fa-star"></span>
+									<span className="fa fa-star"></span>
 								</div>
 							</div>
 						</div>

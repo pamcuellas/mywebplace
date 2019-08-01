@@ -137,20 +137,6 @@
 }
 
 /**** SKILLS ****/
-
-.fa-star {
-  /* font-size: 1.5em; */
-  width: 7em;
-  margin: 0.6em 0.15em 0.6em 0.15em;
-  text-align: center;  
-}
-.checked {
-    color: blue;
-}		
-
-
-
-
 .skills-container {
   display: flex;
   flex-direction: column;
@@ -171,12 +157,18 @@
 }
 
 .skills-container .th, 
-.skills-container .td {
+.skills-container .td,
+.skills-container .fa-star{
   color: white;
   width: 7em;
   margin: 0.6em 0.15em 0.6em 0.15em;
   text-align: center;
 }
+
+
+.skills-container .checked {
+  color: #028502;
+}		
 
 .skills-container .tr {
   font-size: 0.7em;
@@ -189,13 +181,13 @@
 .skills-container .td {
   font-weight: 100;
 }
-
+/* 
 .skills-container .td img {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 25%;
-}
+} */
 
 @media screen and (max-width: 830px) {
   .about-area {
@@ -228,7 +220,7 @@
     margin-right: 1.1em;
   }
 
-  .skills-container .td img {
+  .skills-container .fa-star {
     width: 30%;
   }
   .skills-container .th {
@@ -236,7 +228,7 @@
   }
 
   .skills-container .th, 
-  .skills-container .td {
+  .skills-container .fa-star {
     width: 5em;
   }
 
