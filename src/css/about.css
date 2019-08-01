@@ -5,8 +5,13 @@
 	justify-content: center;
 	flex-flow: wrap;
 	float: left;
-  background-color: salmon; /*#E43*/
   width: 65%;
+}
+
+.about-area,
+.skills-container {
+  background-color: #E43 ; /**/
+
 }
 
 .photo-container {
@@ -145,7 +150,6 @@
   padding-top: 1em;
   padding-bottom: 1em;
   margin-top: 1em;
-  background: salmon; 
   width: 65%;
 
 }
@@ -197,9 +201,6 @@
   }
   .skills-container {
     width: 98%;
-    /* margin-top: 0;
-    margin-bottom: 0; */
-  
   }
 
   .photo-container {
@@ -212,14 +213,22 @@
     margin-left: 0.4em;
     margin-right: 0.4em;
     padding: 0em;
-    width: 24em;
-    height: 20em;
+    width: 23em;
+    height: 19em;
   }
 
   .introduction{
-    width: 70%; 
+    width: 80%; 
     margin-left: 1.1em;
     margin-right: 1.1em;
+  }
+
+  .personaldata p{
+    width: 80%;
+  }
+
+  .personaldata .Obama-speech{
+    width: 70%;
   }
 
   .skills-container .fa-star {
