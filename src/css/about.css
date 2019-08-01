@@ -145,7 +145,7 @@
   padding-bottom: 1em;
   margin-top: 1em;
   margin-bottom: 1em;
-  background: #323b43; 
+  background: salmon; /*323b43*/
   width: 65%;
 
 }
@@ -156,34 +156,38 @@
   font-weight: 100;
 }
 
-.skills-container .th, 
-.skills-container .td { 
-  color: white;
+.skills-container .th{ 
+  font-size: 0.7em;
+  color: #FFFFFF;
+}
+
+.skills-container .td {
+  font-size: 0.7em;
+  color: #FFFFFF;
+  text-align: center; 
+  font-style: italic;
+  
 }
 .skills-container .fa-star{
-  color: #858585;
+  font-size: 0.7em;
+  color: #454545;
 }
+
 .skills-container .checked {
-  color: #27DDEB;
+  color: #14c9d7;
 }		
 .skills-container .th, 
 .skills-container .td,
 .skills-container .fa-star{
   width: 7em;
   margin: 0.6em 0.15em 0.6em 0.15em;
-  text-align: center;
 }
 
 .skills-container .tr {
-  font-size: 0.7em;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   font-weight: 500;
-}
-
-.skills-container .td {
-  color: salmon 
 }
 
 @media screen and (max-width: 830px) {
