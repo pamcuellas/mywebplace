@@ -356,8 +356,15 @@
     .projects-container .extraload {
         font-size: 3em;
     }        
+
+    .projects-container{
+        height: 12em;
+    }        
+
     .database {
-        height: 50vh;
+        margin-top: 1em;
+        height: 35vw; 
+        /* height: 50vh; */
     }
     .common {
         border: white 2.7px solid;
@@ -393,7 +400,7 @@
         font-size: 1.7em;
     }        
     .database {
-        height: 44vh; 
+        height: 38vw; 
     }
     .behind-wall {
         font-size: 0.6em;
@@ -429,7 +436,6 @@
     }
     .database {
         height: 20vh;
-        margin-top: 1em;
         margin-right: 15px;
     }
 }
