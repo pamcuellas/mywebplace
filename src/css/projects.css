@@ -16,7 +16,7 @@
     justify-content: center;
     align-items: center;
     width: 17%;
-    height: 30vw;
+    height: 28vw;
 }
 
 .circle-top {
@@ -33,7 +33,7 @@
     height: 25%;
     width: 100%;
     min-height: 55px;
-    min-width: 83px; 
+    min-width: 78px; 
     border: white 2px solid;
     background-color: #267a88;
 }
@@ -393,7 +393,7 @@
         font-size: 1.7em;
     }        
     .database {
-        height: 40vh; 
+        height: 44vh; 
     }
     .behind-wall {
         font-size: 0.6em;
@@ -423,8 +423,13 @@
         margin-right: 15px;
     }
 
+    .common{
+        height: 95%;
+        width: 95%;
+    }
     .database {
-        height: 35vh;
+        height: 20vh;
+        margin-top: 1em;
         margin-right: 15px;
     }
 }

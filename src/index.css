@@ -84,7 +84,7 @@ ul {
   display: relative;
   flex-direction: row;
   justify-content: center;
-  font: bold 32px "Open Sans", sans-serif;
+  font: bold 1.3em "Open Sans", sans-serif; /* 32px */
   width: 100%;
   margin-top: 70px;
   margin-bottom: 20px;

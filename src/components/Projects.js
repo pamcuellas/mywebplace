@@ -109,7 +109,7 @@ class Projects extends Component {
 						</div>
 					</div>
 					<div className="nomal-text">
-						<p>In a nutshell, this kind of project starts by analyzing and documenting the data sources. As a result, the Entity-Relationship Model and the ETL process can be sketched out.</p>
+						<p>In a nutshell, this kind of project starts by analyzing and documenting the data sources. As a result, the Entity-Relationship Model and the ETL process are sketched out.</p>
 					</div>
 				</div>
 
