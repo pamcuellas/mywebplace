@@ -393,9 +393,6 @@
     .wordscircle p {
         font-size: 0.6em;
     }
-    .projects-container{
-        justify-content: space-between; 
-    }        
     .projects-container .extraload {
         font-size: 1.7em;
     }        
@@ -425,6 +422,10 @@
     .newarrow {
         margin-top: 3.5px;
     }
+    
+    .projects-container{
+        justify-content: space-between; 
+    }        
 
     .circlecontainer  {
         margin-right: 15px;
