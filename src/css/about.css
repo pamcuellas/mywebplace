@@ -195,12 +195,49 @@
   font-weight: 500;
 }
 
+.resume-container {
+  margin-top: .5em;
+  height: 2em;
+  width: 10em;
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-flow: row;
+}
+
+.personaldata   .status {
+  text-align: center;
+}
+.resume-btn {
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
+  border: none;
+  height: 1.5em;
+  width: 6em;
+  font-family: Lato;
+  background-color: #555;
+  border-radius: 2em;
+  box-shadow: none ;
+}
+.resume-btn:hover {
+  margin-top: 1px;
+  box-shadow: 1px 1px #222 ;
+  transition   : all .4s;
+}
+.resume-btn a {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: .6em;
+  text-transform: uppercase;
+}
+
+
 @media screen and (max-width: 830px) {
   .about-area {
     width: 98%;
     margin-bottom: 1%;
   }
-  
 
   .skills-container {
     width: 98%;

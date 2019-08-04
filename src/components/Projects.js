@@ -109,7 +109,21 @@ class Projects extends Component {
 						</div>
 					</div>
 					<div className="nomal-text">
-						<p>In a nutshell, this kind of project starts by analyzing and documenting the data sources. As a result, the Entity-Relationship Model and the ETL process are sketched out.</p>
+						<p>In a nutshell, this kind of project starts by analyzing and documenting the data sources. 
+						Customers can provide some data dictionaries and data models, but sometimes a reverse engineer is necessary due to the lack of documents.
+							With this information in our hands, we can sketch out the Entity-Relationship Model and design the ETL process for the new RDBMS.</p>
+						<p>At this point, we are able to create the IT infrastructure to support the database and implement the ETL applications, 
+							activities that should be done concurrently and considering we already have a development environment. 
+							Now, it is time to create our physical database. The ERM design tool like ERWIN or Toad Data Modeler 
+							(there are a lot of them) will generate the script (or DDL) for us.</p>
+						<p>Next step, we configure and test our ETL applications. Most of them are executed at night to avoid concurrence with users. 
+						   The first import, usually, is a ton of data. So, that demands a good plan of how to perform it.</p>
+						<p>Since our database is populated and the ETL routines are working well, we are in the production situation, and it is time to have fun.
+						That is the moment when our customers start to ask for information and to have many ideas and insights over the new data source. 
+						In my opinion, the best part of this job. New structures must be created; data must be grouped and summarised; performance is a 
+						big issue, etc. Many new requirements show up.  
+						</p>
+
 					</div>
 				</div>
 

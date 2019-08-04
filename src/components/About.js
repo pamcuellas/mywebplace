@@ -227,7 +227,7 @@ That is the way I describe myself. The problem: too many things to learn; The mo
 							</div>
 						</div>
 					</div>
-					<div className="skills-container paragraph-bottom-space"> 
+					<div className="skills-container"> 
 						<h4>Full Stack Developer Skills</h4>
 						<div className="table">
 							<div className="thead">
@@ -324,6 +324,24 @@ That is the way I describe myself. The problem: too many things to learn; The mo
 							</div>
 						</div>
 					</div>
+				
+					<div className="skills-container personaldata paragraph-bottom-space">
+						<h4>Status</h4>
+						<p className="status">I am currently attending the 
+							<a href="https://bootcamp.learn.utoronto.ca/data/" target="_blank" rel="noopener noreferrer"> Data Analytics Bootcamp at University of Toronto </a>
+							and available for new opportunities.
+						</p>
+            			
+						<span className="resume-container">
+							<div className="resume-btn" >
+								<a href="https://drive.google.com/file/d/1oLc2TABtI93c_IpAJn-Acn3A0hziDDkY/view?usp=sharing" target="_blank" rel="noopener noreferrer">View Resume</a>
+							</div>
+						</span>
+					  </div>					
+
+
+
+
 				</div>
 			);
 	}

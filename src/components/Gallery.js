@@ -1,3 +1,4 @@
+/*jshint esversion: 6 */
 import React, { Component } from 'react';  
 import ListPicture 			from './ListPicture';
 import animaWords 			from '../services/animaWords';

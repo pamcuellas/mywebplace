@@ -1,3 +1,4 @@
+/*jshint esversion: 6 */
 import React, { Component } from 'react';  
 import animaWords 			from '../services/animaWords';
 import { apiCall } 			from "../services/api";
