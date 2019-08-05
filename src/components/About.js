@@ -169,7 +169,6 @@ That is the way I describe myself. The problem: too many things to learn; The mo
 						</div>
 					</div>
 
-
 					<div className="skills-container"> 
 						<h4>Database Developer Skills</h4>
 						<div className="table">

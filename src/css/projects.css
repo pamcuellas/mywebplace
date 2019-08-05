@@ -116,17 +116,19 @@
     font-size: 0.8em;
     line-height: 1.6em;
     color: #3a3a3a;
-    padding-top: 1em;
+    /* padding-top: 1em; */
     padding-bottom: 1.5em;
     width: 80%;
     text-align:justify;
     background-color: #FFF5F6;
 }
 .nomal-text p {
-    margin-left: 1em;
-    margin-right: 1em;
-}
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+    margin-top: 1em;
+    /* margin-bottom: 0.5em; */
 
+}
 
 .data-text ul{
     margin-top: 0.4em;
@@ -142,7 +144,6 @@
     font-size: 0.7em;
     color: #ffffff;
 }
-
 
 /**********************************************/
     /* TRY USING THIS LIKE A ARROW ROTATE -45 or 135 Degrees */    
@@ -422,7 +423,7 @@
     .newarrow {
         margin-top: 3.5px;
     }
-    
+
     .projects-container{
         justify-content: space-between; 
     }        
