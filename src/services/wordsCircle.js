@@ -1,3 +1,4 @@
+/*jshint esversion: 6 */
 let wordsCircle = (words, radius, classIndex) => {
     words = words.split("");
     classIndex = document.getElementsByClassName("wordscircle")[classIndex];
@@ -20,8 +21,8 @@ let wordsCircle = (words, radius, classIndex) => {
                         transform-origin:0 100%';
                         >${ea}</p>`;
         classIndex.innerHTML += ea;
-        counter += -0.4;
+        counter += -0.415;
         origin += deg;
     });
-}
+};
 export default wordsCircle;

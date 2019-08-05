@@ -8,7 +8,7 @@ class Projects extends Component {
 	componentDidMount(){
 		var words = document.querySelectorAll('.word');
 		animaWords(words);
-		wordsCircle(" Cleansing Standardizing Deduplication ", 10, 0);  
+		wordsCircle("Cleansing-Standardize-Deduplication-", 10, 0);  
 	}
 
 	componentWillUnmount() {
