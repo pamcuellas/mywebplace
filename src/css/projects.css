@@ -116,7 +116,6 @@
     font-size: 0.8em;
     line-height: 1.6em;
     color: #3a3a3a;
-    /* padding-top: 1em; */
     padding-bottom: 1.5em;
     width: 80%;
     text-align:justify;
@@ -126,8 +125,6 @@
     margin-left: 1.5em;
     margin-right: 1.5em;
     margin-top: 1em;
-    /* margin-bottom: 0.5em; */
-
 }
 
 .data-text ul{

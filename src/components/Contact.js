@@ -60,7 +60,9 @@ class Contact extends Component {
 		animaWords(words);
 		if (this.Captcha) {
 	        this.Captcha.reset();
-	    }
+		}
+		const msg = document.querySelector(".msg-returned");
+		msg.textContent = "Keep in touch! You can use my social media links on the footer below or send me a message above.";
 	}
 
 	onLoadRecaptcha() {
@@ -123,6 +125,7 @@ class Contact extends Component {
 					</p>
 				</div>
 				<div className="form-container">
+
 					<form className="contact-form" onSubmit={this.onSubmit}>
 
 						<div className="form-element">
