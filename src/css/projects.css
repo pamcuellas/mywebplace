@@ -338,6 +338,7 @@
 
 /* @MEDIA */ 
 @media screen and (max-width: 940px) {
+
     .data-text ul{
         list-style-type: none;
         margin-left: 0em;
@@ -362,7 +363,6 @@
     .database {
         margin-top: 1em;
         height: 35vw; 
-        /* height: 50vh; */
     }
     .common {
         border: white 2.7px solid;
@@ -370,6 +370,10 @@
 }
 
 @media screen and (max-width: 730px) {
+
+    .title p {
+        margin-left: -60%; 
+    }
     .data-text ul{
         visibility: hidden;
     }    
@@ -437,4 +441,9 @@
         height: 20vh;
         margin-right: 15px;
     }
+
+    .title p {
+        margin-left: -100%; 
+    }
+
 }

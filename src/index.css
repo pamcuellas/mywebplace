@@ -85,10 +85,8 @@ ul {
 /*************** ANIMATION ********************/
 .title {
   display: relative;
-  flex-direction: row;
-  justify-content: center;
   font: bold 1.3em "Open Sans", sans-serif; /* 32px */
-  width: 100%;
+  width: 17%;
   margin-top: 70px;
   margin-bottom: 20px;
 }
@@ -96,9 +94,7 @@ ul {
 .title p {
   display: inline-block;
   vertical-align: top;
-  align-items: center;
-  align-content: center;
-  margin-left: -100px; 
+  margin-left: -50%; 
 }
 
 .word {
