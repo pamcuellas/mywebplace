@@ -1,6 +1,6 @@
 .form-container {
   width: 100%;
-  height: 600px;
+  height: 20em;
   display: flex;
   flex-direction: column;
   flex-flow: column;
@@ -8,10 +8,6 @@
   align-items: center;
   
 }
-
-/* .form-container .keep-in-touch {
-  width: 50%;
-} */
 
 .msg-returned {
   font-size: 1em;
@@ -148,5 +144,15 @@
   background-color: #373737;
 }
 
+@media screen and (max-width: 450px) {
 
+    .form-container {
+        height: 33em;
+    }
+
+    .title p {
+        margin-left: -100%; 
+    }
+
+}
 

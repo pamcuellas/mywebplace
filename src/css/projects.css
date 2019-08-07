@@ -441,9 +441,4 @@
         height: 20vh;
         margin-right: 15px;
     }
-
-    .title p {
-        margin-left: -100%; 
-    }
-
 }

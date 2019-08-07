@@ -43,6 +43,9 @@
     width: unset;
 }
 
+.website-text .text-4 ul {
+    margin-top: 0.5em;
+}
 .website-text a {
     text-decoration: none;
     color: #FFFFFF;
