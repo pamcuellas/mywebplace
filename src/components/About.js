@@ -14,7 +14,7 @@ const options = {
   containerName : "placeholder",
   columns:14,
   margin:1.2
-}
+};
 
 class About extends Component {
 	constructor(props){
@@ -166,8 +166,23 @@ This scenario demands IT professionals be passionate about technology and be con
 That is the way I describe myself. The problem: too many things to learn; The motivation: so exciting.</p>
 							<p className="Obama-speech"><q>There is no matter how much you have done or how successful you have been. There is always more to do, always more to learn and always more to achieve.</q><br />
 							<a className="Obama-signature" href="https://www.youtube.com/watch?v=Qbel5MhtDq4" target="_blank" rel="noopener noreferrer">- Barack Obama commencement speech at ASU 2009</a></p>
+							<p> I also like coding as a full stack developer. It is in my nature. I love to keep my hands dirty.</p>
 						</div>
 					</div>
+
+					<div className="skills-container personaldata">
+						<h4>Status</h4>
+						<p className="status">I am currently attending the 
+							<a href="https://bootcamp.learn.utoronto.ca/data/" target="_blank" rel="noopener noreferrer"> Data Analytics Bootcamp at University of Toronto </a>
+							and available for new opportunities.
+						</p>
+            			
+						<span className="resume-container">
+							<div className="resume-btn" >
+								<a href="https://drive.google.com/file/d/1oLc2TABtI93c_IpAJn-Acn3A0hziDDkY/view?usp=sharing" target="_blank" rel="noopener noreferrer">View Resume</a>
+							</div>
+						</span>
+					</div>					
 
 					<div className="skills-container"> 
 						<h4>Database Developer Skills</h4>
@@ -226,7 +241,7 @@ That is the way I describe myself. The problem: too many things to learn; The mo
 							</div>
 						</div>
 					</div>
-					<div className="skills-container"> 
+					<div className="skills-container paragraph-bottom-space"> 
 						<h4>Full Stack Developer Skills</h4>
 						<div className="table">
 							<div className="thead">
@@ -324,19 +339,6 @@ That is the way I describe myself. The problem: too many things to learn; The mo
 						</div>
 					</div>
 				
-					<div className="skills-container personaldata paragraph-bottom-space">
-						<h4>Status</h4>
-						<p className="status">I am currently attending the 
-							<a href="https://bootcamp.learn.utoronto.ca/data/" target="_blank" rel="noopener noreferrer"> Data Analytics Bootcamp at University of Toronto </a>
-							and available for new opportunities.
-						</p>
-            			
-						<span className="resume-container">
-							<div className="resume-btn" >
-								<a href="https://drive.google.com/file/d/1oLc2TABtI93c_IpAJn-Acn3A0hziDDkY/view?usp=sharing" target="_blank" rel="noopener noreferrer">View Resume</a>
-							</div>
-						</span>
-					  </div>					
 
 
 

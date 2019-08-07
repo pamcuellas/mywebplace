@@ -131,8 +131,8 @@ class Projects extends Component {
 						because more intelligence is applied here. We also could say now we begin to build more information than only gather data.  
 						</p>
 						<p>That was a very brief explanation about my experience in projects like this. Obviously, there are a lot of more details to talk about. 
-						I am proud to say I have been building a successful career, bringing positive energy, enthusiasm, commitment and more than everything, passion for what I do. 
-						I also like coding as a full stack developer. It is in my nature. I love to keep my hands dirty.</p>
+						I am proud to say I have been building a successful career, bringing positive energy, enthusiasm, commitment and more than everything, passion for what I do.
+						</p>
 					</div>
 				</div>
 
