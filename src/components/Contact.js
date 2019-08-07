@@ -41,7 +41,7 @@ class Contact extends Component {
 					)
 					.then(( data ) => { 
 						if (data._id !== undefined) {
-							msg.textContent = "Thank you! Your message has been successfully created. We will contact you as soon as possible." ;
+							msg.textContent = "Thank you! Your message has been successfully created. I will contact you as soon as possible." ;
 						} else if (data.message !== undefined) {
 							msg.textContent = "Sorry, something goes wrong [ " +  data.message + "]."; 
 						} else {	
@@ -123,19 +123,19 @@ class Contact extends Component {
 					</p>
 				</div>
 				<div className="form-container">
-					<div className="keep-in-touch">
+					<div className="keep-in-touch" id="keep">
 						<p>Keep in touch and send me a message!</p>
 					</div>
 					<form className="contact-form" onSubmit={this.onSubmit}>
 
 						<div className="form-element">
-							<input type="text"  name="firstname" onChange={ (e) => this.handleChange(e)} placeholder="First Name *" autoComplete='off'required /> 
+							<input type="text"  name="firstname" onChange={ (e) => this.handleChange(e)} placeholder="First Name *" list="autocompleteOff" autoComplete='off'required /> 
 						</div>
 						<div className="form-element">
-							<input type="text"  name="lastname"  onChange={ (e) => this.handleChange(e)} placeholder="Last Name *" autoComplete='off'required />
+							<input type="text"  name="lastname"  onChange={ (e) => this.handleChange(e)} placeholder="Last Name *" list="autocompleteOff" autoComplete='off'required />
 						</div>
 						<div className="form-element">
-							<input type="email" name="email" onChange={ (e) => this.handleChange(e)} placeholder="Email *" autoComplete='off'required />
+							<input type="email" name="email" onChange={ (e) => this.handleChange(e)} placeholder="Email *" list="autocompleteOff" autoComplete='off'required />
 						</div>
 						<div className="form-element">
 							<textarea rows="3" type="text" onChange={ (e) => this.handleChange(e)}  placeholder="Drop your message here *" 
