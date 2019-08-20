@@ -41,7 +41,7 @@ class Contact extends Component {
 					)
 					.then(( data ) => { 
 						if (data._id !== undefined) {
-							msg.textContent = "Thank you! Your message has been successfully created. I will contact you as soon as possible." ;
+							msg.textContent = "Thank you! Your message has been successfully created with id [" + data._id + "]. I will contact you ASAP." ;
 						} else if (data.message !== undefined) {
 							msg.textContent = "Sorry, something goes wrong [ " +  data.message + "]."; 
 						} else {	
@@ -123,8 +123,8 @@ class Contact extends Component {
 					</p>
 				</div>
 				<div className="form-container">
-					<div className="keep-in-touch" id="keep">
-						<p>Keep in touch and send me a message!</p>
+					<div className="keep-in-touch">
+						<p>Keep in touch! You can use my social media links on the footer or the fields below.</p>
 					</div>
 					<form className="contact-form" onSubmit={this.onSubmit}>
 
@@ -160,7 +160,9 @@ class Contact extends Component {
 						<div className="form-element">
 							<button className="form-btn">Send</button>
 						</div>
-						<span className="msg-returned"></span>
+						<div>
+							<span className="msg-returned"></span>
+						</div>
 					</form>
 				</div>
 				 

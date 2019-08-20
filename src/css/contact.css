@@ -9,11 +9,10 @@
   
 }
 
-.msg-returned {
-  font-size: 1em;
+.form-container .msg-returned {
+  font-size: 0.8em;
+  width: 60%;
   color: #858585;
-  padding-top: 10px;
-
 }
 
 .form-container .recaptcha {
@@ -144,6 +143,13 @@
   background-color: #373737;
 }
 
+.keep-in-touch {
+  font-size: 0.9em;
+  width: 40%;
+  text-align: center;
+}
+
+
 @media screen and (max-width: 450px) {
 
     .form-container {
@@ -153,6 +159,12 @@
     .title p {
         margin-left: -100%; 
     }
+
+    .keep-in-touch,
+    .msg-returned {
+      width: 80%;
+    }
+    
 
 }
 
