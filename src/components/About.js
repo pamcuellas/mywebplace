@@ -179,7 +179,7 @@ That is the way I describe myself. The problem: too many things to learn; The mo
             			
 						<span className="resume-container">
 							<div className="resume-btn" >
-								<a href="https://drive.google.com/file/d/1oLc2TABtI93c_IpAJn-Acn3A0hziDDkY/view?usp=sharing" target="_blank" rel="noopener noreferrer">View Resume</a>
+								<a href="https://drive.google.com/open?id=1CmA_TXS8YZJCmkWAM4kylp56tZiJ2KkK" target="_blank" rel="noopener noreferrer">View Resume</a>
 							</div>
 						</span>
 					</div>					
