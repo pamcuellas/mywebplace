@@ -327,6 +327,17 @@
     -o-transform: translate(-50%, -50%);		 
 }    
 
+.nomal-text p::first-letter {
+    padding-left: 1.5em;
+}
+
+hr {
+    border-style: groove;
+  border-width: 0.3px;
+  border-color: salmon;
+  opacity: 0.4;
+}
+
 @-webkit-keyframes spin{
     0%{ transform: rotate(0deg); }
     100% {transform: rotate(360deg);}
