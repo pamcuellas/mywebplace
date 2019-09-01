@@ -3,8 +3,10 @@ import React, { Component } from 'react';
 import animaWords from '../services/animaWords';
 import { TweenMax } from "gsap/TweenMax";
 import { Back } from 'gsap';
+import Resume from './Resume';
 import img01 from '../images/MyGrayFace.jpg'; 
 import img02 from '../images/MyPhoto_bomb.jpg'; 
+
 
 import '../css/about.css';
 
@@ -20,7 +22,13 @@ class About extends Component {
 	constructor(props){
 		super(props);
 		this.VenetianBlinds = this.VenetianBlinds.bind(this);
+		this.onSearch		= this.onSearch.bind(this);
 	}
+
+	onSearch(value) { 
+		this.getNewPictures(value);
+	}
+
 
 	componentDidMount(){
 		this.VenetianBlinds(options);
@@ -172,10 +180,8 @@ That is the way I describe myself. The problem: too many things to learn; The mo
 
 					<div className="skills-container personaldata">
 						<h4>Status</h4>
-						<p className="status">I am currently attending the 
-							<a href="https://bootcamp.learn.utoronto.ca/data/" target="_blank" rel="noopener noreferrer"> Data Analytics Bootcamp at University of Toronto </a>
-							and available for new opportunities.
-						</p>
+
+						<Resume onSearch={this.onSearch}/>
             			
 						<span className="resume-container">
 							<div className="resume-btn" >
@@ -338,11 +344,6 @@ That is the way I describe myself. The problem: too many things to learn; The mo
 							</div>
 						</div>
 					</div>
-				
-
-
-
-
 				</div>
 			);
 	}
