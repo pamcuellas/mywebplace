@@ -49,9 +49,11 @@ class Resume extends Component {
 		// const KEY = process.env.REACT_APP_TST_SITE_KEY;	
 		const KEY = process.env.REACT_APP_HRK_SITE_KEYI;	
 		return (
-				<p className="status">I am currently attending the 
-					<a href="https://bootcamp.learn.utoronto.ca/data/" target="_blank" rel="noopener noreferrer"> Data Analytics Bootcamp at University of Toronto </a>
-					and available for new opportunities.
+				<div className="personaldata"> 
+					<p className="status">I am currently attending the 
+						<a href="https://bootcamp.learn.utoronto.ca/data/" target="_blank" rel="noopener noreferrer"> Data Analytics Bootcamp at University of Toronto </a>
+						and available for new opportunities.
+					</p>
 					<div className="recaptcha">
 						<ReCaptcha
 						ref={(el) => {this.Captcha = el;}}
@@ -63,7 +65,7 @@ class Resume extends Component {
 						verifyCallback={this.verifyCallback}
 						/>
 					</div>
-				</p>
+				</div>
 		);
 	}
 }
