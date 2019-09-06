@@ -84,12 +84,15 @@
     -webkit-align-items: center;
     position: relative;
     min-width: 15%;
-    background: purple; 
+    background: #6762a6; 
     padding-bottom: 15%;
     border-radius: 50%;
-    border: 1vw solid #9a12b3;
-    border-top-color: #0B9665;
-    border-bottom-color: #171F96;
+    border-width: 1vw ;
+    border-style:  solid;
+    border-left-color: #0077b5;
+    border-top-color: #0077b5;
+    border-right-color: #c9c3e6;
+    border-bottom-color: #c9c3e6;
     left: -5px;
 }
 
@@ -107,7 +110,7 @@
 } 
 
 .data-text h4{
-    font-size: 1em;
+    font-size: 1.4rem;
     color: #ffffff;
 }
 
@@ -263,14 +266,14 @@
         justify-content: center;
         font-size: 1.3vw;
         font-weight: 600;
-        color: #ff1493;
+        color: #0077b5;
     }
 
     .newarrow {
         width: 0.7vw;
         height: 0.7vw;
         border: 0.35vw solid;
-        border-color: black transparent transparent red;
+        border-color: #ff5454 transparent transparent  #0077b5;
         transform: rotate(135deg);
         -webkit-transform: rotate(135deg);	 
         -moz-transform: rotate(135deg);	
@@ -332,8 +335,8 @@
 }
 
 hr {
-    border-style: groove;
-  border-width: 0.3px;
+  border-style: groove;
+  border-width: 0.4px;
   border-color: salmon;
   opacity: 0.4;
 }
