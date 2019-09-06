@@ -145,11 +145,10 @@ class Projects extends Component {
 						<p>That was a concise explanation of my experience in projects like this. Obviously, there are a lot of more details to talk about. 
 						I am proud to say I have been building a successful career, bringing positive energy, enthusiasm, commitment and more than everything, 
 						passion for what I do. I also like playing as a full stack developer. You might consider see 
-						my <a href="http://pamcuellas.github.io" target="blank">portfolio</a> or my <a href="https://github.com/pamcuellas?tab=repositories" target="blank">GitHub</a>.
+						my <a href="http://pamcuellas.github.io" target="blank">Portfolio</a> or my <a href="https://github.com/pamcuellas?tab=repositories" target="blank">GitHub</a>.
 						</p>
 					</div>
 				</div>
-
 		);
 
 	}
