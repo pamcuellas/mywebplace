@@ -117,9 +117,10 @@ class Projects extends Component {
 							information about something or, more than that, you need to find answers to your business questions.
 							My most experiences are marketing purposes, and I am describing here very briefly, what I lived and learned.</p>
 						
-						<p>This type of project starts by choosing the right data sources, that means, they must always be up-to-date and aligned with the marketing goals.
-							Second step, we have to analyze and document the data sources. Customers can provide data dictionaries and data models,
-							but sometimes a reverse engineer is necessary due to the lack of documents. With this information in our hands, we can sketch out 
+						<p>This type of project starts by choosing the right data sources, it means, being aligned with the marketing goals. They should
+							have data that will help to answer your questions and, to be able to accomplish it, they must always be up-to-date.
+							Second step, we have to analyze and document the data sources. Customers can provide data dictionaries, data samples, and data models,
+							but sometimes reverse engineering is necessary due to the lack of documents. With this information in our hands, we can sketch out 
 							the Entity-Relationship Model (ERM) and design the Extract, Transform, and Load process (ETL). Some keys tasks to be mindful at this 
 							stage are normalization, data cleansing, data standardization, and maybe we need to architect some match keys for deduplication. 
 							All these activities are important to ensure consistency and quality of our new database.

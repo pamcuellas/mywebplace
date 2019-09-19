@@ -124,7 +124,7 @@ class Contact extends Component {
 				</div>
 				<div className="form-container">
 					<div className="keep-in-touch">
-						<p>Keep in touch! You can use my social media links on the footer or the fields below.</p>
+						<p>Keep in touch! You can send me a message below or use my social media links on the footer.</p>
 					</div>
 					<form className="contact-form" onSubmit={this.onSubmit}>
 

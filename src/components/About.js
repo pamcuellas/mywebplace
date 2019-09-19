@@ -174,8 +174,9 @@ This scenario demands IT professionals be passionate about technology and be con
 That is the way I describe myself. The problem: too many things to learn; The motivation: so exciting.</p>
 							<p className="Obama-speech"><q>There is no matter how much you have done or how successful you have been. There is always more to do, always more to learn and always more to achieve.</q><br />
 							<a className="Obama-signature" href="https://www.youtube.com/watch?v=Qbel5MhtDq4" target="_blank" rel="noopener noreferrer">- Barack Obama commencement speech at ASU 2009</a></p>
-							<p> I also like coding as a full stack developer. It is in my nature. I love to keep my hands dirty.</p>
-						</div>
+							{/* <p> I also like coding as a full stack developer. It is in my nature. I love to keep my hands dirty.</p> */}
+							<p> I also like to keep my hands dirty as a full stack developer.</p>
+							</div>
 					</div>
 
 					<div className="skills-container personaldata">
