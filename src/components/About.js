@@ -357,7 +357,7 @@ That is the way I describe myself. The problem: too many things to learn; The mo
 									<span className="fa fa-star"></span>
 								</div>
 							</div>
-							<p>That is true. I also like to keep my hands dirty as a full stack developer.</p>
+							<p className="last-phrase">That is true. I also like to keep my hands dirty as a full stack developer.</p>
 						</div>
 					</div>
 				</div>
