@@ -65,6 +65,15 @@
   color: #FFFFFF;
 }
 
+.skills-container p {
+  padding-top:  1.5em;
+  font-size: 0.7em;
+  width: 100%;
+  text-align: center;
+  padding-bottom:  .5em;
+  color: #FFFFFF;
+}
+
 .personaldata p a {
   text-decoration: none;
   color:#FFFFFF;

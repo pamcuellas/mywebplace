@@ -174,9 +174,7 @@ This scenario demands IT professionals be passionate about technology and be con
 That is the way I describe myself. The problem: too many things to learn; The motivation: so exciting.</p>
 							<p className="Obama-speech"><q>There is no matter how much you have done or how successful you have been. There is always more to do, always more to learn and always more to achieve.</q><br />
 							<a className="Obama-signature" href="https://www.youtube.com/watch?v=Qbel5MhtDq4" target="_blank" rel="noopener noreferrer">- Barack Obama commencement speech at ASU 2009</a></p>
-							{/* <p> I also like coding as a full stack developer. It is in my nature. I love to keep my hands dirty.</p> */}
-							<p> I also like to keep my hands dirty as a full stack developer.</p>
-							</div>
+						</div>
 					</div>
 
 					<div className="skills-container personaldata">
@@ -263,7 +261,23 @@ That is the way I describe myself. The problem: too many things to learn; The mo
 							</div>
 							<div className="tbody">
 								<div className="tr">
+									<div className="td">Python</div>
+									<span className="fa fa-star checked"></span>
+									<span className="fa fa-star checked"></span>
+									<span className="fa fa-star checked"></span>
+									<span className="fa fa-star"></span>
+									<span className="fa fa-star"></span>
+								</div>
+								<div className="tr">
 									<div className="td">NodeJS</div>
+									<span className="fa fa-star checked"></span>
+									<span className="fa fa-star checked"></span>
+									<span className="fa fa-star checked"></span>
+									<span className="fa fa-star"></span>
+									<span className="fa fa-star"></span>
+								</div>
+								<div className="tr">
+									<div className="td">D3</div>
 									<span className="fa fa-star checked"></span>
 									<span className="fa fa-star checked"></span>
 									<span className="fa fa-star checked"></span>
@@ -295,7 +309,7 @@ That is the way I describe myself. The problem: too many things to learn; The mo
 									<span className="fa fa-star"></span>
 								</div>
 								<div className="tr">
-									<div className="td">Vanilla JS</div>
+									<div className="td">Bootstrap</div>
 									<span className="fa fa-star checked"></span>
 									<span className="fa fa-star checked"></span>
 									<span className="fa fa-star checked"></span>
@@ -303,7 +317,7 @@ That is the way I describe myself. The problem: too many things to learn; The mo
 									<span className="fa fa-star"></span>
 								</div>
 								<div className="tr">
-									<div className="td">Python</div>
+									<div className="td">Vanilla JS</div>
 									<span className="fa fa-star checked"></span>
 									<span className="fa fa-star checked"></span>
 									<span className="fa fa-star checked"></span>
@@ -343,6 +357,7 @@ That is the way I describe myself. The problem: too many things to learn; The mo
 									<span className="fa fa-star"></span>
 								</div>
 							</div>
+							<p>That is true. I also like to keep my hands dirty as a full stack developer.</p>
 						</div>
 					</div>
 				</div>
