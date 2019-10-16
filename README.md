@@ -1,4 +1,4 @@
-## If you want to take a look, this website is available on the URL below:
+## This is my website project. The main technologies used to build it are React, Node.js, and MongoDB. If you want to take a look, it is available on the URL below:
 https://pamzc.com/
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
