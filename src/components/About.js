@@ -184,7 +184,7 @@ That is the way I describe myself. The problem: too many things to learn; The mo
             			
 						<span className="resume-container">
 							<div className="resume-btn" >
-								<a href="https://drive.google.com/open?id=1CmA_TXS8YZJCmkWAM4kylp56tZiJ2KkK" target="_blank" rel="noopener noreferrer">View Resume</a>
+								<a href="https://pamcuellas.github.io/assets/images/PAULO_CUELLAS-Resume.pdf" target="_blank" rel="noopener noreferrer">View Resume</a>
 							</div>
 						</span>
 					</div>					
