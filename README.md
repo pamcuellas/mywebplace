@@ -1,5 +1,14 @@
-## This is my website project. The main technologies used to build it are React, Node.js, and MongoDB. If you want to take a look, it is available on the URL below:
-https://pamzc.com/
+## This is my website project. 
+The technologies used to build it are:
+- Reac
+- Node.js
+- HTML5, CSS3, Vanilla Javascript, and Font Awesome
+- JSON
+- Google reCaptcha
+- and MongoDB. <br>
+If you consider to take a look, it is available on the URL https://pamzc.com/.
+
+## More detailed information below:
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
