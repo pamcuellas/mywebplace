@@ -168,7 +168,7 @@ class About extends Component {
 
 						</div>	
 						<div className="personaldata">
-							<h4>I am a Database Developer</h4>
+							<h4>I am a Data Engineer</h4>
 							<p><span id="data">Data</span> is one of the most valuable assets for companies and due to this reason, technologies which surround it have been improving more and more.  
 This scenario demands IT professionals be passionate about technology and be concerned to remain updated acquiring new bits of knowledge constantly. 
 That is the way I describe myself. The problem: too many things to learn; The motivation: so exciting.</p>
