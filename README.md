@@ -1,6 +1,6 @@
 ## This is my website project. 
 The technologies used to build it are:
-- Reac
+- React
 - Node.js
 - HTML5, CSS3, Vanilla Javascript, and Font Awesome
 - JSON
