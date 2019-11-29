@@ -6,7 +6,8 @@ The technologies used to build it are:
 - JSON
 - Google reCaptcha
 - and MongoDB. <br>
-If you consider to take a look, it is available on the URL https://pamzc.com/.
+
+#### This website is available online at the URL https://pamzc.com/.
 
 ## More detailed information below:
 
