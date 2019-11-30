@@ -1,4 +1,4 @@
-## Personal website project. 
+# Personal website. 
 This was my first project using React. The goal was to create my personal web site learning React besides applying other technologies like Google Recaptcha, Nodejs, MongoDB, and consuming <a href="https://unsplash.com/">Unsplash</a> RESTful API, all at the same time.
 The experience was invaluable, providing a lot of essential knowledge to apply on future projects. 
 
