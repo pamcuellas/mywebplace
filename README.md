@@ -1,5 +1,8 @@
-## This is my website project. 
-The technologies used to build it are:
+## Personal website project. 
+This was my first project using React. The goal was to create my personal web site learning React besides applying other technologies like Google Recaptcha, Nodejs, MongoDB, and consuming <a href="https://unsplash.com/">Unsplash</a> RESTful API, all at the same time.
+The experience was invaluable, providing a lot of essential knowledge to apply on future projects. 
+
+### The technologies used to build it are:
 - React
 - Node.js
 - HTML5, CSS3, Vanilla Javascript, and Font Awesome
