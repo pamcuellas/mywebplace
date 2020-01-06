@@ -37,7 +37,7 @@ class App extends Component {
 
 	componentDidMount(){
 		loadReCaptcha();
-	 	this.handleMenu("visible", "invisible");
+	 	//this.handleMenu("visible", "invisible");
 		createReq( this.state.currPage ); 	 	
 		document.querySelector(".linkMenu").style.color = this.state.selMenuColor;
 	}
