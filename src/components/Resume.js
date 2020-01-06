@@ -50,9 +50,9 @@ class Resume extends Component {
 		const KEY = process.env.REACT_APP_HRK_SITE_KEYI;	
 		return (
 				<div className="personaldata"> 
-					<p className="status">I am currently attending the 
+					<p className="status">I recently completed the 
 						<a href="https://bootcamp.learn.utoronto.ca/data/" target="_blank" rel="noopener noreferrer"> Data Analytics Bootcamp at University of Toronto </a>
-						and available for new opportunities.
+						and I am available for new opportunities.
 					</p>
 					<div className="recaptcha">
 						<ReCaptcha
