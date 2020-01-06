@@ -12,7 +12,7 @@ class Footer extends Component {
 					<p className="courtesy visible">Icons courtesy of 
 						<a href="https://www.shareicon.net/" target="_blank" rel="noopener noreferrer"> Shareicon</a>
 					</p>
-					<p className="rights">© 2019 Paulo Cuellas. All rights reserved.</p>
+					<p className="rights">© 2020 Paulo Cuellas. All rights reserved.</p>
 					<div className="social-media">
 						<span><a className="social visible" href="https://www.linkedin.com/in/paulocuellas/"  target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin-in fa-2x"></i></a></span>
 						<span><a className="social visible" href="https://www.facebook.com/paulo.cuellas" 	target="_blank" rel="noopener noreferrer"><i className="fab fa-facebook-f fa-2x"></i></a></span>
